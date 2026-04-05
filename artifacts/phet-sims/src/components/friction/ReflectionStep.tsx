@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, Volume2, Hammer, BookOpen, Lightbulb } from 'lucide-react';
 import { Link } from 'wouter';
+const handsOnImg = `${import.meta.env.BASE_URL}images/friction-handson.png`;
 
 interface Props {
   language: 'en' | 'zh';
@@ -146,6 +147,13 @@ export function ReflectionStep({ language, speakText, onPrev }: Props) {
           <div className="flex items-center gap-2 mb-4">
             <Hammer className="h-5 w-5 text-orange-400" />
             <h3 className="text-lg font-semibold text-orange-300">{c.handsOn.title}</h3>
+          </div>
+          <div className="mb-4 rounded-xl overflow-hidden">
+            <img
+              src={handsOnImg}
+              alt={language === 'zh' ? '摩擦力动手实验' : 'Hands-on friction experiment'}
+              className="w-full h-36 object-cover"
+            />
           </div>
           <p className="text-sm text-gray-300 leading-relaxed mb-4">{c.handsOn.desc}</p>
           <div className="grid grid-cols-3 gap-3">

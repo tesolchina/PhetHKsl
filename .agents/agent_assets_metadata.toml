@@ -24,6 +24,24 @@ uri = "file://artifacts/phet-sims/public/biology-bg.png"
 type = "image"
 title = "Biology concept background"
 
+[[generated]]
+id = "xHEpo3YHkYy__y09stJ1F"
+uri = "file://artifacts/phet-sims/public/images/friction-story.png"
+type = "image"
+title = "boy rubbing hands winter"
+
+[[generated]]
+id = "KD6inNGMbREfeM2mqRt85"
+uri = "file://artifacts/phet-sims/public/images/friction-atoms.png"
+type = "image"
+title = "atoms vibrating friction heat"
+
+[[generated]]
+id = "Lqvv8Omo6oZcSZ4_LIbTB"
+uri = "file://artifacts/phet-sims/public/images/friction-handson.png"
+type = "image"
+title = "hands-on friction experiment"
+
 [[outputs]]
 id = "idWgZ06bwYj11tWGsE-1s"
 uri = "file://artifacts/phet-sims/curriculum-mapping.md"

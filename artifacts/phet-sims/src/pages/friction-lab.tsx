@@ -10,6 +10,8 @@ import { StoryIntro } from '@/components/friction/StoryIntro';
 import { PredictionStep } from '@/components/friction/PredictionStep';
 import { ChallengeStep } from '@/components/friction/ChallengeStep';
 import { ReflectionStep } from '@/components/friction/ReflectionStep';
+import { TeacherNote } from '@/components/friction/TeacherNote';
+import { OriginalPhetToggle } from '@/components/friction/OriginalPhetToggle';
 
 const STEPS = [
   { id: 'story', icon: '1' },
@@ -160,7 +162,12 @@ export default function FrictionLab() {
             <PredictionStep language={language} onNext={goNext} onPrev={goPrev} />
           )}
           {stepId === 'explore' && (
-            <FrictionSimCanvas language={language} speakText={speakText} onNext={goNext} onPrev={goPrev} />
+            <>
+              <FrictionSimCanvas language={language} speakText={speakText} onNext={goNext} onPrev={goPrev} />
+              <div className="max-w-3xl mx-auto mt-6">
+                <OriginalPhetToggle language={language} />
+              </div>
+            </>
           )}
           {stepId === 'challenge' && (
             <ChallengeStep language={language} onNext={goNext} onPrev={goPrev} />
@@ -168,6 +175,10 @@ export default function FrictionLab() {
           {stepId === 'reflect' && (
             <ReflectionStep language={language} speakText={speakText} onPrev={goPrev} />
           )}
+
+          <div className="max-w-2xl mx-auto mt-8">
+            <TeacherNote language={language} />
+          </div>
         </div>
       </main>
 

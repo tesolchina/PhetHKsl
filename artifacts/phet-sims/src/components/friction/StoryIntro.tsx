@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Volume2 } from 'lucide-react';
 
+const storyImg = `${import.meta.env.BASE_URL}images/friction-story.png`;
+
 interface Props {
   language: 'en' | 'zh';
   speakText: (text: string) => void;
@@ -62,21 +64,23 @@ export function StoryIntro({ language, speakText, onNext }: Props) {
   return (
     <div className="flex flex-col items-center">
       <div className="w-full max-w-2xl">
-        <div className="text-center mb-10">
+        <div className="text-center mb-6">
           <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text text-transparent">
             {c.title}
           </h2>
           <p className="text-muted-foreground text-lg">{c.subtitle}</p>
         </div>
 
-        <div className="relative bg-gradient-to-br from-orange-950/30 via-red-950/20 to-transparent rounded-2xl border border-orange-500/10 p-8 mb-8">
-          <div className="absolute -top-3 left-6">
-            <span className="text-3xl">
-              {language === 'zh' ? '\u{1F9E4}' : '\u{1F9E4}'}
-            </span>
-          </div>
+        <div className="mb-6 rounded-2xl overflow-hidden border border-orange-500/10 shadow-lg shadow-orange-500/5">
+          <img
+            src={storyImg}
+            alt={language === 'zh' ? '小明在操场上搓手取暖' : 'Xiao Ming rubbing hands on the playground'}
+            className="w-full h-48 object-cover"
+          />
+        </div>
 
-          <div className="space-y-4 mt-2">
+        <div className="relative bg-gradient-to-br from-orange-950/30 via-red-950/20 to-transparent rounded-2xl border border-orange-500/10 p-8 mb-8">
+          <div className="space-y-4">
             {c.paragraphs.map((p, i) => (
               <p
                 key={i}
