@@ -41,3 +41,9 @@ id = "O9tH4ItA-TaIoXyIbhbRt"
 uri = "file://artifacts/phet-sims/phet-full-catalog.md"
 type = "text"
 title = "PhET全部模拟目录 — 小学适用性筛查报告"
+
+[[outputs]]
+id = "6RUVMQu8YEOO6G6nB2qRn"
+uri = "file://artifacts/phet-sims/cross-curricular-plan.md"
+type = "text"
+title = "跨学科融合方案：科学模拟 × 语文 × 英语"
