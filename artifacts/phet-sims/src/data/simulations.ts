@@ -1,4 +1,5 @@
 export type Category = 'Physics' | 'Chemistry' | 'Biology';
+export type GradeLevel = 'elementary' | 'middle';
 
 export interface GuideStep {
   title: { en: string; zh: string };
@@ -11,6 +12,7 @@ export interface Simulation {
   description: { en: string; zh: string };
   url: { en: string; zh: string };
   category: Category;
+  gradeLevel: GradeLevel;
   tags: { en: string[]; zh: string[] };
   guide: GuideStep[];
   localDev?: boolean;
@@ -18,46 +20,146 @@ export interface Simulation {
 
 export const simulations: Simulation[] = [
   {
-    id: 'neuron',
-    name: { en: 'Neuron', zh: '神经元' },
+    id: 'color-vision',
+    name: { en: 'Color Vision', zh: '彩色视觉' },
     description: {
-      en: 'Stimulate a neuron and watch what happens. Pause, rewind, and move forward in time to observe the ions as they move across the neuron membrane.',
-      zh: '刺激一个神经元并观察发生了什么。暂停、倒退和快进，观察离子穿过神经元细胞膜的过程。'
+      en: 'Make a whole rainbow by mixing red, green, and blue light. Change the wavelength of a monochromatic beam or filter white light.',
+      zh: '通过混合红、绿、蓝光制造彩虹。改变单色光束的波长或过滤白光。'
     },
     url: {
-      en: '/phet-local/neuron/neuron_en.html',
-      zh: '/phet-local/neuron/neuron_en.html?locale=zh_CN'
+      en: 'https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_en.html',
+      zh: 'https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_zh_CN.html'
     },
-    category: 'Biology',
-    tags: { en: ['Action Potential', 'Ions', 'Nerve'], zh: ['动作电位', '离子', '神经'] },
-    localDev: true,
+    category: 'Physics',
+    gradeLevel: 'elementary',
+    tags: { en: ['Light', 'Color', 'Mixing'], zh: ['光', '颜色', '混合'] },
     guide: [
       {
-        title: { en: 'What is a Neuron?', zh: '什么是神经元？' },
+        title: { en: 'How Do We See Colors?', zh: '我们怎么看到颜色的？' },
         content: {
-          en: 'A neuron is a nerve cell that transmits electrical signals throughout the body. It has a cell body, dendrites that receive signals, and an axon that sends signals to other cells.',
-          zh: '神经元是一种通过全身传输电信号的神经细胞。它有细胞体、接收信号的树突和将信号发送到其他细胞的轴突。'
+          en: 'Our eyes can see three main colors of light: red, green, and blue. When these colors mix together, they make all the other colors we see every day!',
+          zh: '我们的眼睛能看到三种主要的光色：红色、绿色和蓝色。当这些颜色混合在一起时，就会变出我们每天看到的所有颜色！'
         }
       },
       {
-        title: { en: 'The Action Potential', zh: '动作电位' },
+        title: { en: 'Mixing Light is Like Magic!', zh: '混合光就像变魔术！' },
         content: {
-          en: 'When a neuron is stimulated, sodium ions (Na+) rush into the cell, making the inside more positive. This creates an electrical pulse called an action potential that travels along the axon.',
-          zh: '当神经元被刺激时，钠离子（Na+）涌入细胞内部，使细胞内部变得更加正电。这产生了一个称为动作电位的电脉冲，沿轴突传播。'
-        }
-      },
-      {
-        title: { en: 'Ion Channels', zh: '离子通道' },
-        content: {
-          en: 'The neuron membrane has special protein channels that open and close. Sodium channels open first (depolarization), then potassium channels open (repolarization), restoring the resting potential.',
-          zh: '神经元细胞膜上有特殊的蛋白质通道可以打开和关闭。钠通道首先打开（去极化），然后钾通道打开（复极化），恢复静息电位。'
+          en: 'When you mix red light and green light, you get yellow! Red and blue make pink (magenta). Green and blue make light blue (cyan). And all three together make white light!',
+          zh: '当你把红光和绿光混在一起，就会变成黄色！红色和蓝色变成粉色。绿色和蓝色变成浅蓝色。三种光全部混在一起就变成白光！'
         }
       },
       {
         title: { en: 'Try It!', zh: '试一试！' },
         content: {
-          en: 'Click the "Stimulate Neuron" button to trigger an action potential. Watch the ions move across the membrane. Use the playback controls to slow down or pause the animation.',
-          zh: '点击"刺激神经元"按钮触发一个动作电位。观察离子穿过细胞膜的过程。使用播放控件来减慢或暂停动画。'
+          en: 'Move the color sliders to mix different lights. Can you make your favorite color? Try making white light by turning all three colors to maximum!',
+          zh: '移动颜色滑块来混合不同的光。你能调出你最喜欢的颜色吗？试试把三种颜色都调到最大，看看会变成什么！'
+        }
+      }
+    ]
+  },
+  {
+    id: 'friction',
+    name: { en: 'Friction', zh: '摩擦力' },
+    description: {
+      en: 'Rub two objects together and see what happens! Watch how rubbing makes things hotter at the tiny atom level.',
+      zh: '把两个物体摩擦在一起，看看会发生什么！观察摩擦如何在微小的原子层面让东西变热。'
+    },
+    url: {
+      en: 'https://phet.colorado.edu/sims/html/friction/latest/friction_en.html',
+      zh: 'https://phet.colorado.edu/sims/html/friction/latest/friction_zh_CN.html'
+    },
+    category: 'Physics',
+    gradeLevel: 'elementary',
+    tags: { en: ['Friction', 'Heat', 'Atoms'], zh: ['摩擦力', '热量', '原子'] },
+    guide: [
+      {
+        title: { en: 'What is Friction?', zh: '什么是摩擦力？' },
+        content: {
+          en: 'Friction is what happens when two things rub together. Try rubbing your hands together quickly - do you feel them getting warm? That warmth comes from friction!',
+          zh: '摩擦力就是两个东西互相摩擦时产生的力。试着快速搓搓你的双手——感觉到变暖了吗？那个热量就是摩擦产生的！'
+        }
+      },
+      {
+        title: { en: 'Tiny Atoms Are Shaking!', zh: '小小的原子在抖动！' },
+        content: {
+          en: 'Everything around us is made of tiny tiny particles called atoms. When you rub things together, the atoms start shaking faster and faster. That shaking is what we feel as heat!',
+          zh: '我们周围的一切都是由叫做"原子"的超小粒子组成的。当你摩擦东西时，原子会越抖越快。我们感觉到的热量就是原子在抖动！'
+        }
+      },
+      {
+        title: { en: 'Try It!', zh: '试一试！' },
+        content: {
+          en: 'Drag the top book back and forth. Watch the little atoms jiggle! Rub really fast and see what happens - can you make the atoms break free?',
+          zh: '来回拖动上面的书。看看那些小原子在抖动！使劲快速摩擦，看看会发生什么——你能让原子挣脱出来吗？'
+        }
+      }
+    ]
+  },
+  {
+    id: 'states-of-matter',
+    name: { en: 'States of Matter', zh: '物质状态' },
+    description: {
+      en: 'Heat up or cool down atoms and watch them change between solid, liquid, and gas - just like ice, water, and steam!',
+      zh: '给原子加热或冷却，观察它们在固态、液态和气态之间变化——就像冰、水和蒸气一样！'
+    },
+    url: {
+      en: 'https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_en.html',
+      zh: 'https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_zh_CN.html'
+    },
+    category: 'Chemistry',
+    gradeLevel: 'elementary',
+    tags: { en: ['Solid', 'Liquid', 'Gas'], zh: ['固体', '液体', '气体'] },
+    guide: [
+      {
+        title: { en: 'Three Forms of Stuff', zh: '东西的三种形态' },
+        content: {
+          en: 'Everything around us can be a solid (like ice), a liquid (like water), or a gas (like steam). The tiny atoms inside behave differently in each form!',
+          zh: '我们周围的一切都可以是固体（像冰）、液体（像水）或气体（像蒸气）。里面的小原子在每种形态下的表现都不一样！'
+        }
+      },
+      {
+        title: { en: 'Heat Makes Things Move!', zh: '加热让东西动起来！' },
+        content: {
+          en: 'In a solid, atoms stay in place and just wiggle a little. Add heat and they start moving more - that is melting! Add even more heat and they fly around everywhere - that is boiling!',
+          zh: '在固体中，原子待在原地只是轻轻晃动。加热后它们开始移动更多——这就是融化！再加更多热量，它们就到处飞——这就是沸腾！'
+        }
+      },
+      {
+        title: { en: 'Try It!', zh: '试一试！' },
+        content: {
+          en: 'Press the heat button to warm things up. Watch the atoms start moving faster! Then cool it down and watch them slow down and freeze. Try different materials like water or oxygen!',
+          zh: '按加热按钮让东西变暖。看原子动得越来越快！然后冷却它们，看它们慢下来并冻住。试试不同的材料，比如水或氧气！'
+        }
+      }
+    ]
+  },
+  {
+    id: 'balancing-act',
+    name: { en: 'Balancing Act', zh: '平衡探秘' },
+    description: {
+      en: 'Play with objects on a seesaw to learn about balance! Can you figure out how to keep it level?',
+      zh: '在跷跷板上放置物体来学习平衡！你能想出怎么让它保持水平吗？'
+    },
+    url: {
+      en: 'https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_en.html',
+      zh: 'https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_zh_CN.html'
+    },
+    category: 'Physics',
+    gradeLevel: 'elementary',
+    tags: { en: ['Balance', 'Seesaw', 'Weight'], zh: ['平衡', '跷跷板', '重量'] },
+    guide: [
+      {
+        title: { en: 'The Seesaw Rule', zh: '跷跷板的秘密' },
+        content: {
+          en: 'On a seesaw, a heavy person sitting close to the middle can balance a lighter person sitting farther away. It is all about weight AND distance from the center!',
+          zh: '在跷跷板上，一个重的人坐得离中间近，可以和一个轻的人坐得远的一边平衡。关键是重量和离中心的距离！'
+        }
+      },
+      {
+        title: { en: 'Try It!', zh: '试一试！' },
+        content: {
+          en: 'Put different objects on each side of the seesaw. Can you make it balance? Try the game mode and see if you can guess where to put things!',
+          zh: '在跷跷板的两边放不同的东西。你能让它平衡吗？试试游戏模式，看看你能不能猜对该把东西放在哪里！'
         }
       }
     ]
@@ -66,36 +168,75 @@ export const simulations: Simulation[] = [
     id: 'equality-explorer',
     name: { en: 'Equality Explorer', zh: '等式探索' },
     description: {
-      en: 'Explore what it means for two expressions to be equal. Use a balance to build equations and solve for unknowns.',
-      zh: '探索两个表达式相等的含义。使用天平建立方程并求解未知数。'
+      en: 'Use a balance scale to understand what "equal" really means. Put things on both sides and keep the scale level!',
+      zh: '用天平来理解"相等"到底是什么意思。在两边放东西，保持天平平衡！'
     },
     url: {
       en: '/phet-local/equality-explorer/equality-explorer_en.html',
       zh: '/phet-local/equality-explorer/equality-explorer_en.html?locale=zh_CN'
     },
     category: 'Physics',
-    tags: { en: ['Algebra', 'Equations', 'Balance'], zh: ['代数', '方程', '天平'] },
+    gradeLevel: 'elementary',
+    tags: { en: ['Equality', 'Balance', 'Math'], zh: ['等式', '天平', '数学'] },
     localDev: true,
     guide: [
       {
-        title: { en: 'Understanding Equality', zh: '理解等式' },
+        title: { en: 'What Does "Equal" Mean?', zh: '"相等"是什么意思？' },
         content: {
-          en: 'An equation shows that two expressions are equal. The balance scale helps you visualize this: when both sides weigh the same, the scale is balanced.',
-          zh: '等式表示两个表达式相等。天平帮助你直观理解：当两边重量相同时，天平是平衡的。'
+          en: 'When a balance scale is perfectly level, both sides have the same weight. That is what "equal" means - the two sides are the same!',
+          zh: '当天平完全水平时，两边的重量一样。这就是"相等"的意思——两边是一样的！'
         }
       },
       {
-        title: { en: 'Using the Balance', zh: '使用天平' },
+        title: { en: 'Keep It Balanced!', zh: '保持平衡！' },
         content: {
-          en: 'Drag objects onto both sides of the scale. Add the same amount to both sides to keep it balanced. This is the key principle of solving equations.',
-          zh: '将物体拖到天平两侧。在两边加上相同的量以保持平衡。这是解方程的关键原则。'
+          en: 'If you add something to one side, you need to add the same thing to the other side to keep it balanced. This is the most important rule!',
+          zh: '如果你在一边加了东西，你也需要在另一边加上一样的东西来保持平衡。这是最重要的规则！'
         }
       },
       {
-        title: { en: 'Solving Equations', zh: '解方程' },
+        title: { en: 'Try It!', zh: '试一试！' },
         content: {
-          en: 'To solve, isolate x on one side. Whatever you do to one side, you must do to the other. Try the "Solve It!" screen to practice!',
-          zh: '要解方程，需要将x孤立在一边。对一边做的操作必须对另一边也做。试试"解题"页面来练习！'
+          en: 'Drag objects onto both sides of the scale. Can you keep it balanced? Try the "Solve It!" game to practice finding the mystery number!',
+          zh: '把物体拖到天平的两边。你能保持平衡吗？试试"解题"游戏来练习找出神秘数字！'
+        }
+      }
+    ]
+  },
+  {
+    id: 'energy-skate-park',
+    name: { en: 'Energy Skate Park', zh: '能量滑板公园' },
+    description: {
+      en: 'Watch a skater zoom up and down on tracks! See how speed and height are connected through energy.',
+      zh: '看滑板选手在轨道上飞驰！了解速度和高度是怎么通过能量联系在一起的。'
+    },
+    url: {
+      en: 'https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html',
+      zh: 'https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_zh_CN.html'
+    },
+    category: 'Physics',
+    gradeLevel: 'elementary',
+    tags: { en: ['Energy', 'Speed', 'Height'], zh: ['能量', '速度', '高度'] },
+    guide: [
+      {
+        title: { en: 'Energy is Like a Superpower!', zh: '能量就像超能力！' },
+        content: {
+          en: 'When the skater is high up, they have stored energy (like a stretched rubber band). As they roll down, that stored energy turns into speed energy. Higher up means faster at the bottom!',
+          zh: '当滑板选手在高处时，他有储存的能量（就像拉伸的橡皮筋）。当他往下滑时，储存的能量变成了速度能量。起点越高，到底部就越快！'
+        }
+      },
+      {
+        title: { en: 'Energy Never Disappears!', zh: '能量不会消失！' },
+        content: {
+          en: 'Energy cannot just vanish! It changes form: height energy becomes speed energy, and speed energy becomes height energy. Watch the colored bars to see this happen!',
+          zh: '能量不会凭空消失！它会变换形式：高度能量变成速度能量，速度能量又变回高度能量。看看彩色的柱状图就能看到这个过程！'
+        }
+      },
+      {
+        title: { en: 'Try It!', zh: '试一试！' },
+        content: {
+          en: 'Put the skater at the top of the ramp and let go. Watch the energy bars change! Try turning on friction - where does the energy go then?',
+          zh: '把滑板选手放在坡道顶部然后放手。看看能量柱状图的变化！试试打开摩擦力——那能量去哪里了呢？'
         }
       }
     ]
@@ -112,8 +253,8 @@ export const simulations: Simulation[] = [
       zh: 'https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_zh_CN.html'
     },
     category: 'Physics',
+    gradeLevel: 'middle',
     tags: { en: ['Electricity', 'Circuits', 'Voltage'], zh: ['电学', '电路', '电压'] },
-    localDev: false,
     guide: [
       {
         title: { en: 'What is a Circuit?', zh: '什么是电路？' },
@@ -157,6 +298,7 @@ export const simulations: Simulation[] = [
       zh: 'https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits_zh_CN.html'
     },
     category: 'Physics',
+    gradeLevel: 'middle',
     tags: { en: ['Gravity', 'Force', 'Space'], zh: ['引力', '力', '太空'] },
     guide: [
       {
@@ -194,6 +336,7 @@ export const simulations: Simulation[] = [
       zh: 'https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_zh_CN.html'
     },
     category: 'Physics',
+    gradeLevel: 'middle',
     tags: { en: ['Waves', 'Frequency', 'Amplitude'], zh: ['波', '频率', '振幅'] },
     guide: [
       {
@@ -231,6 +374,7 @@ export const simulations: Simulation[] = [
       zh: 'https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_zh_CN.html'
     },
     category: 'Chemistry',
+    gradeLevel: 'middle',
     tags: { en: ['Atoms', 'Elements', 'Protons'], zh: ['原子', '元素', '质子'] },
     guide: [
       {
@@ -257,110 +401,6 @@ export const simulations: Simulation[] = [
     ]
   },
   {
-    id: 'energy-skate-park',
-    name: { en: 'Energy Skate Park', zh: '能量滑板公园' },
-    description: {
-      en: 'Explore the conservation of energy with a skater! Build tracks, ramps and jumps for the skater and view the kinetic energy.',
-      zh: '与滑板选手一起探索能量守恒！建造轨道、坡道和跳台，查看动能的变化。'
-    },
-    url: {
-      en: 'https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html',
-      zh: 'https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_zh_CN.html'
-    },
-    category: 'Physics',
-    tags: { en: ['Energy', 'Kinetic', 'Potential'], zh: ['能量', '动能', '势能'] },
-    guide: [
-      {
-        title: { en: 'Conservation of Energy', zh: '能量守恒' },
-        content: {
-          en: 'Energy cannot be created or destroyed, only transformed from one form to another. In this simulation, potential energy (height) converts to kinetic energy (motion) and back.',
-          zh: '能量不能被创造或消灭，只能从一种形式转变为另一种形式。在这个模拟中，势能（高度）转化为动能（运动），然后又转变回来。'
-        }
-      },
-      {
-        title: { en: 'Kinetic vs Potential', zh: '动能与势能' },
-        content: {
-          en: 'Kinetic energy is the energy of motion (KE = 1/2 mv^2). Potential energy is stored energy due to position (PE = mgh). At the highest point, PE is maximum; at the lowest point, KE is maximum.',
-          zh: '动能是运动的能量（KE = 1/2 mv^2）。势能是由于位置而储存的能量（PE = mgh）。在最高点，势能最大；在最低点，动能最大。'
-        }
-      },
-      {
-        title: { en: 'Try It!', zh: '试一试！' },
-        content: {
-          en: 'Place the skater at different heights and release. Watch the energy bar graph change. Try turning on friction - where does the energy go?',
-          zh: '将滑板选手放在不同的高度然后释放。观察能量柱状图的变化。试着打开摩擦力——能量去了哪里？'
-        }
-      }
-    ]
-  },
-  {
-    id: 'balancing-act',
-    name: { en: 'Balancing Act', zh: '平衡探秘' },
-    description: {
-      en: 'Play with objects on a teeter totter to learn about balance. Test what you\'ve learned by trying the Balance Challenge game.',
-      zh: '在跷跷板上放置物体来学习平衡。通过平衡挑战游戏测试你学到的知识。'
-    },
-    url: {
-      en: 'https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_en.html',
-      zh: 'https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_zh_CN.html'
-    },
-    category: 'Physics',
-    tags: { en: ['Torque', 'Mass', 'Balance'], zh: ['力矩', '质量', '平衡'] },
-    guide: [
-      {
-        title: { en: 'Torque & Balance', zh: '力矩与平衡' },
-        content: {
-          en: 'Torque = Force x Distance from the pivot. For a seesaw to balance, the torques on both sides must be equal. A heavier object closer to the center can balance a lighter object farther away.',
-          zh: '力矩 = 力 x 到支点的距离。要使跷跷板平衡，两边的力矩必须相等。靠近中心的重物可以平衡远离中心的轻物。'
-        }
-      },
-      {
-        title: { en: 'Try It!', zh: '试一试！' },
-        content: {
-          en: 'Place different masses on the balance. Try the game mode to test your understanding. Can you predict where to place objects to achieve balance?',
-          zh: '在天平上放置不同的质量。尝试游戏模式来测试你的理解。你能预测将物体放在哪里才能实现平衡吗？'
-        }
-      }
-    ]
-  },
-  {
-    id: 'color-vision',
-    name: { en: 'Color Vision', zh: '彩色视觉' },
-    description: {
-      en: 'Make a whole rainbow by mixing red, green, and blue light. Change the wavelength of a monochromatic beam or filter white light.',
-      zh: '通过混合红、绿、蓝光制造彩虹。改变单色光束的波长或过滤白光。'
-    },
-    url: {
-      en: 'https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_en.html',
-      zh: 'https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_zh_CN.html'
-    },
-    category: 'Physics',
-    tags: { en: ['Light', 'Color', 'Vision'], zh: ['光', '颜色', '视觉'] },
-    guide: [
-      {
-        title: { en: 'How We See Color', zh: '我们如何看到颜色' },
-        content: {
-          en: 'Our eyes have three types of cone cells sensitive to red, green, and blue light. The brain combines signals from all three to produce the colors we perceive. This is called trichromatic vision.',
-          zh: '我们的眼睛有三种类型的锥状细胞，分别对红光、绿光和蓝光敏感。大脑将三者的信号组合在一起，产生我们所感知的颜色。这叫做三色视觉。'
-        }
-      },
-      {
-        title: { en: 'Additive Color Mixing', zh: '加色混合' },
-        content: {
-          en: 'When mixing light (additive mixing): Red + Green = Yellow, Red + Blue = Magenta, Green + Blue = Cyan, Red + Green + Blue = White. This is different from mixing paints!',
-          zh: '混合光（加色混合）：红 + 绿 = 黄，红 + 蓝 = 品红，绿 + 蓝 = 青，红 + 绿 + 蓝 = 白。这与混合颜料不同！'
-        }
-      },
-      {
-        title: { en: 'Try It!', zh: '试一试！' },
-        content: {
-          en: 'Adjust the RGB sliders to mix different colors of light. Try making yellow, cyan, and white. Switch to single-bulb mode and change the wavelength to explore the visible spectrum.',
-          zh: '调整RGB滑块来混合不同颜色的光。尝试制作黄色、青色和白色。切换到单灯泡模式并改变波长来探索可见光谱。'
-        }
-      }
-    ]
-  },
-  {
     id: 'masses-and-springs',
     name: { en: 'Masses and Springs', zh: '质量与弹簧' },
     description: {
@@ -372,6 +412,7 @@ export const simulations: Simulation[] = [
       zh: 'https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_zh_CN.html'
     },
     category: 'Physics',
+    gradeLevel: 'middle',
     tags: { en: ['Springs', 'Hooke\'s Law', 'Force'], zh: ['弹簧', '胡克定律', '力'] },
     guide: [
       {
@@ -402,6 +443,7 @@ export const simulations: Simulation[] = [
       zh: 'https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_zh_CN.html'
     },
     category: 'Physics',
+    gradeLevel: 'middle',
     tags: { en: ['Kinematics', 'Velocity', 'Vectors'], zh: ['运动学', '速度', '矢量'] },
     guide: [
       {
@@ -428,75 +470,47 @@ export const simulations: Simulation[] = [
     ]
   },
   {
-    id: 'states-of-matter',
-    name: { en: 'States of Matter', zh: '物质状态' },
+    id: 'neuron',
+    name: { en: 'Neuron', zh: '神经元' },
     description: {
-      en: 'Heat, cool and compress atoms and molecules and watch as they change between solid, liquid and gas phases.',
-      zh: '加热、冷却和压缩原子与分子，观察它们在固态、液态和气态之间的变化。'
+      en: 'Stimulate a neuron and watch what happens. Pause, rewind, and move forward in time to observe the ions as they move across the neuron membrane.',
+      zh: '刺激一个神经元并观察发生了什么。暂停、倒退和快进，观察离子穿过神经元细胞膜的过程。'
     },
     url: {
-      en: 'https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_en.html',
-      zh: 'https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_zh_CN.html'
+      en: '/phet-local/neuron/neuron_en.html',
+      zh: '/phet-local/neuron/neuron_en.html?locale=zh_CN'
     },
-    category: 'Chemistry',
-    tags: { en: ['Thermodynamics', 'Phase Change'], zh: ['热力学', '相变'] },
+    category: 'Biology',
+    gradeLevel: 'middle',
+    tags: { en: ['Action Potential', 'Ions', 'Nerve'], zh: ['动作电位', '离子', '神经'] },
+    localDev: true,
     guide: [
       {
-        title: { en: 'Three States of Matter', zh: '物质的三种状态' },
+        title: { en: 'What is a Neuron?', zh: '什么是神经元？' },
         content: {
-          en: 'Solid: particles vibrate in fixed positions. Liquid: particles move freely but stay close together. Gas: particles move rapidly in all directions with large spaces between them.',
-          zh: '固态：粒子在固定位置振动。液态：粒子自由移动但保持紧密。气态：粒子快速向各方向运动，彼此间距很大。'
+          en: 'A neuron is a nerve cell that transmits electrical signals throughout the body. It has a cell body, dendrites that receive signals, and an axon that sends signals to other cells.',
+          zh: '神经元是一种通过全身传输电信号的神经细胞。它有细胞体、接收信号的树突和将信号发送到其他细胞的轴突。'
         }
       },
       {
-        title: { en: 'Phase Transitions', zh: '相变' },
+        title: { en: 'The Action Potential', zh: '动作电位' },
         content: {
-          en: 'Adding heat causes melting (solid to liquid) and evaporation (liquid to gas). Removing heat causes condensation (gas to liquid) and freezing (liquid to solid). These transitions happen at specific temperatures.',
-          zh: '加热导致熔化（固态变液态）和蒸发（液态变气态）。冷却导致凝结（气态变液态）和凝固（液态变固态）。这些转变发生在特定温度下。'
+          en: 'When a neuron is stimulated, sodium ions (Na+) rush into the cell, making the inside more positive. This creates an electrical pulse called an action potential that travels along the axon.',
+          zh: '当神经元被刺激时，钠离子（Na+）涌入细胞内部，使细胞内部变得更加正电。这产生了一个称为动作电位的电脉冲，沿轴突传播。'
+        }
+      },
+      {
+        title: { en: 'Ion Channels', zh: '离子通道' },
+        content: {
+          en: 'The neuron membrane has special protein channels that open and close. Sodium channels open first (depolarization), then potassium channels open (repolarization), restoring the resting potential.',
+          zh: '神经元细胞膜上有特殊的蛋白质通道可以打开和关闭。钠通道首先打开（去极化），然后钾通道打开（复极化），恢复静息电位。'
         }
       },
       {
         title: { en: 'Try It!', zh: '试一试！' },
         content: {
-          en: 'Use the heat/cool buttons to change the temperature. Watch how the particles behave differently in each state. Try different substances like water, oxygen, and neon.',
-          zh: '使用加热/冷却按钮来改变温度。观察粒子在每种状态下的不同行为。试试不同的物质，如水、氧气和氖气。'
-        }
-      }
-    ]
-  },
-  {
-    id: 'friction',
-    name: { en: 'Friction', zh: '摩擦力' },
-    description: {
-      en: 'Observe what happens at the atomic level when you rub two objects together. See how the temperature rises as the atoms move.',
-      zh: '观察两个物体摩擦时在原子层面发生了什么。看看原子运动时温度如何上升。'
-    },
-    url: {
-      en: 'https://phet.colorado.edu/sims/html/friction/latest/friction_en.html',
-      zh: 'https://phet.colorado.edu/sims/html/friction/latest/friction_zh_CN.html'
-    },
-    category: 'Physics',
-    tags: { en: ['Heat', 'Thermodynamics'], zh: ['热量', '热力学'] },
-    guide: [
-      {
-        title: { en: 'What is Friction?', zh: '什么是摩擦力？' },
-        content: {
-          en: 'Friction is a force that opposes the relative motion of surfaces in contact. At the atomic level, friction arises from interactions between the atoms on the surfaces of the two objects.',
-          zh: '摩擦力是一种阻碍接触表面相对运动的力。在原子层面上，摩擦力来自两个物体表面原子之间的相互作用。'
-        }
-      },
-      {
-        title: { en: 'Friction & Heat', zh: '摩擦与热量' },
-        content: {
-          en: 'When objects rub together, kinetic energy is converted to thermal energy (heat). The faster you rub, the more heat is generated. This is why rubbing your hands together warms them up!',
-          zh: '当物体互相摩擦时，动能转化为热能（热量）。摩擦越快，产生的热量越多。这就是为什么搓手可以让手变暖！'
-        }
-      },
-      {
-        title: { en: 'Try It!', zh: '试一试！' },
-        content: {
-          en: 'Drag the top book back and forth to create friction. Watch the atoms jiggle more as they heat up. Rub fast enough and the atoms will break free!',
-          zh: '来回拖动上面的书来产生摩擦力。观察原子随着温度升高而抖动得更厉害。摩擦得足够快，原子就会挣脱束缚！'
+          en: 'Click the "Stimulate Neuron" button to trigger an action potential. Watch the ions move across the membrane. Use the playback controls to slow down or pause the animation.',
+          zh: '点击"刺激神经元"按钮触发一个动作电位。观察离子穿过细胞膜的过程。使用播放控件来减慢或暂停动画。'
         }
       }
     ]
