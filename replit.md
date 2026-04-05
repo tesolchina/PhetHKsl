@@ -19,7 +19,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 
 ## Architecture
 
-- `artifacts/phet-sims/` — Main website (React + Vite). Presentation-first, no backend required. Features embedded PhET simulation iframes organized by category (Physics, Chemistry, Biology). Dark museum-inspired theme with warm amber accents.
+- `artifacts/phet-sims/` — Main website (React + Vite). Presentation-first, no backend required. Features embedded PhET simulation iframes organized by category (Physics, Chemistry, Biology). Dark museum-inspired theme with warm amber accents. Full bilingual (EN/ZH) support including simulation iframe URLs (PhET's `_zh_CN.html` variants). Enhanced simulation viewer with split-pane layout: simulation iframe on left, scrollable Learning Guide panel on right with step-by-step educational content and Web Speech API audio narration (text-to-speech in both languages).
 - `artifacts/api-server/` — Shared Express API server (currently only health check endpoint).
 - `lib/` — Shared libraries (api-client-react, api-spec, api-zod, db).
 

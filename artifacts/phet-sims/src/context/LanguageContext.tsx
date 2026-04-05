@@ -41,6 +41,12 @@ const translations: Record<Language, Record<string, string>> = {
     'category.Physics': 'Physics',
     'category.Chemistry': 'Chemistry',
     'category.Biology': 'Biology',
+    'viewer.guide': 'Learning Guide',
+    'viewer.narrate': 'Read Aloud',
+    'viewer.stop': 'Stop',
+    'viewer.simulation': 'Simulation',
+    'viewer.showGuide': 'Show Guide',
+    'viewer.hideGuide': 'Hide Guide',
   },
   zh: {
     'nav.exhibitionHall': '展览大厅',
@@ -72,6 +78,12 @@ const translations: Record<Language, Record<string, string>> = {
     'category.Physics': '物理',
     'category.Chemistry': '化学',
     'category.Biology': '生物',
+    'viewer.guide': '学习指南',
+    'viewer.narrate': '朗读',
+    'viewer.stop': '停止',
+    'viewer.simulation': '模拟实验',
+    'viewer.showGuide': '显示指南',
+    'viewer.hideGuide': '隐藏指南',
   },
 };
 
