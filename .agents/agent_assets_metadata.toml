@@ -1,5 +1,4 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "054Cdv3Dt_dQ83SlNqk0d"
@@ -24,3 +23,9 @@ id = "S6HSx9J7QszXcbMgInpdZ"
 uri = "file://artifacts/phet-sims/public/biology-bg.png"
 type = "image"
 title = "Biology concept background"
+
+[[outputs]]
+id = "idWgZ06bwYj11tWGsE-1s"
+uri = "file://artifacts/phet-sims/curriculum-mapping.md"
+type = "text"
+title = "PhET模拟与中国小学课程大纲对照分析"
