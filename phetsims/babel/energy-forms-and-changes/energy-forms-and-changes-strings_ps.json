@@ -1,0 +1,310 @@
+{
+  "intro": {
+    "value": "پېژندنه",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "سریزه"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "سریزه",
+        "newValue": "پېژندنه",
+        "explanation": null
+      }
+    ]
+  },
+  "systems": {
+    "value": "سیستمونه",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "سیستمونه"
+      }
+    ]
+  },
+  "energySymbols": {
+    "value": "د انرژۍ سمبولونه",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "د انرژۍ سمبولونه"
+      }
+    ]
+  },
+  "linkHeaters": {
+    "value": "ګرموونکې وصل کړئ",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "ګرموونکې وصل کړئ"
+      }
+    ]
+  },
+  "oliveOil": {
+    "value": "د زیتون غوړي",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "د زیتون غوړي"
+      }
+    ]
+  },
+  "water": {
+    "value": "اوبه",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "اوبه"
+      }
+    ]
+  },
+  "feedMe": {
+    "value": "ما تغذیه کړه!",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "ما تغذیه کړه!"
+      }
+    ]
+  },
+  "chemical": {
+    "value": "کیمیاوي",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "کیمایي"
+      },
+      {
+        "userId": 11192058,
+        "timestamp": 1705603286096,
+        "oldValue": "کیمایي",
+        "newValue": "کیمیایي",
+        "explanation": null
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "کیمیایي",
+        "newValue": "کیمیاوي",
+        "explanation": null
+      }
+    ]
+  },
+  "electrical": {
+    "value": "برېښنايي انرژي",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "برېښنايي"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "برېښنايي",
+        "newValue": "برېښنايي انرژي",
+        "explanation": null
+      }
+    ]
+  },
+  "formsOfEnergy": {
+    "value": "د انرژي ډولونه",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "د انرژي ډولونه"
+      }
+    ]
+  },
+  "light": {
+    "value": "نوري انرژي",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "نوري"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "نوري",
+        "newValue": "نوري انرژي",
+        "explanation": null
+      }
+    ]
+  },
+  "mechanical": {
+    "value": "میخانیکي انرژي",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "میخانیکي"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "میخانیکي",
+        "newValue": "میخانیکي انرژي",
+        "explanation": null
+      }
+    ]
+  },
+  "thermal": {
+    "value": "حرارتي انرژي",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "حرارتي"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "حرارتي",
+        "newValue": "حرارتي انرژي",
+        "explanation": null
+      }
+    ]
+  },
+  "generator": {
+    "value": "جنراتور",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "تولیدونکی"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "تولیدونکی",
+        "newValue": "جنراتور",
+        "explanation": null
+      }
+    ]
+  },
+  "clouds": {
+    "value": "وریځ",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "واوره"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "واوره",
+        "newValue": "وریځ",
+        "explanation": null
+      }
+    ]
+  },
+  "lots": {
+    "value": "ډېر",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "زیات"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "زیات",
+        "newValue": "ډېر",
+        "explanation": null
+      }
+    ]
+  },
+  "none": {
+    "value": "هیڅ",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "هیڅ"
+      }
+    ]
+  },
+  "brick": {
+    "value": "خښته",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "خښته"
+      }
+    ]
+  },
+  "iron": {
+    "value": "اوسپنه",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "اوسپنه"
+      }
+    ]
+  },
+  "energy-forms-and-changes.title": {
+    "value": "د انرژي ډولونه او د هغې بدلونونه",
+    "history": [
+      {
+        "userId": 11192058,
+        "timestamp": 1705589957378,
+        "oldValue": "",
+        "newValue": "د انرژي ډولونه او بدلونونه"
+      },
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "د انرژي ډولونه او بدلونونه",
+        "newValue": "د انرژي ډولونه او د هغې بدلونونه",
+        "explanation": null
+      }
+    ]
+  },
+  "energyChunkLabel": {
+    "value": "E",
+    "history": [
+      {
+        "userId": 11503520,
+        "timestamp": 1775105639688,
+        "oldValue": "",
+        "newValue": "E"
+      }
+    ]
+  }
+}

@@ -13,6 +13,7 @@ export interface Simulation {
   category: Category;
   tags: { en: string[]; zh: string[] };
   guide: GuideStep[];
+  localDev?: boolean;
 }
 
 export const simulations: Simulation[] = [
@@ -24,11 +25,12 @@ export const simulations: Simulation[] = [
       zh: '刺激一个神经元并观察发生了什么。暂停、倒退和快进，观察离子穿过神经元细胞膜的过程。'
     },
     url: {
-      en: 'https://phet.colorado.edu/sims/html/neuron/latest/neuron_en.html',
-      zh: 'https://phet.colorado.edu/sims/html/neuron/latest/neuron_zh_CN.html'
+      en: '/phet-local/neuron/neuron_en.html',
+      zh: '/phet-local/neuron/neuron_en.html?locale=zh_CN'
     },
     category: 'Biology',
     tags: { en: ['Action Potential', 'Ions', 'Nerve'], zh: ['动作电位', '离子', '神经'] },
+    localDev: true,
     guide: [
       {
         title: { en: 'What is a Neuron?', zh: '什么是神经元？' },
@@ -61,6 +63,44 @@ export const simulations: Simulation[] = [
     ]
   },
   {
+    id: 'equality-explorer',
+    name: { en: 'Equality Explorer', zh: '等式探索' },
+    description: {
+      en: 'Explore what it means for two expressions to be equal. Use a balance to build equations and solve for unknowns.',
+      zh: '探索两个表达式相等的含义。使用天平建立方程并求解未知数。'
+    },
+    url: {
+      en: '/phet-local/equality-explorer/equality-explorer_en.html',
+      zh: '/phet-local/equality-explorer/equality-explorer_en.html?locale=zh_CN'
+    },
+    category: 'Physics',
+    tags: { en: ['Algebra', 'Equations', 'Balance'], zh: ['代数', '方程', '天平'] },
+    localDev: true,
+    guide: [
+      {
+        title: { en: 'Understanding Equality', zh: '理解等式' },
+        content: {
+          en: 'An equation shows that two expressions are equal. The balance scale helps you visualize this: when both sides weigh the same, the scale is balanced.',
+          zh: '等式表示两个表达式相等。天平帮助你直观理解：当两边重量相同时，天平是平衡的。'
+        }
+      },
+      {
+        title: { en: 'Using the Balance', zh: '使用天平' },
+        content: {
+          en: 'Drag objects onto both sides of the scale. Add the same amount to both sides to keep it balanced. This is the key principle of solving equations.',
+          zh: '将物体拖到天平两侧。在两边加上相同的量以保持平衡。这是解方程的关键原则。'
+        }
+      },
+      {
+        title: { en: 'Solving Equations', zh: '解方程' },
+        content: {
+          en: 'To solve, isolate x on one side. Whatever you do to one side, you must do to the other. Try the "Solve It!" screen to practice!',
+          zh: '要解方程，需要将x孤立在一边。对一边做的操作必须对另一边也做。试试"解题"页面来练习！'
+        }
+      }
+    ]
+  },
+  {
     id: 'circuit-construction-kit',
     name: { en: 'Circuit Construction Kit', zh: '电路组建实验' },
     description: {
@@ -73,6 +113,7 @@ export const simulations: Simulation[] = [
     },
     category: 'Physics',
     tags: { en: ['Electricity', 'Circuits', 'Voltage'], zh: ['电学', '电路', '电压'] },
+    localDev: false,
     guide: [
       {
         title: { en: 'What is a Circuit?', zh: '什么是电路？' },

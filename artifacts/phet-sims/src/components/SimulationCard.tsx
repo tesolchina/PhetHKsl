@@ -93,9 +93,16 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
         
         <div className="relative z-10 flex-1">
           <div className="mb-4 flex items-center justify-between">
-            <Badge variant="outline" className="border-primary/20 text-primary uppercase tracking-wider text-xs font-semibold">
-              {categoryLabel}
-            </Badge>
+            <div className="flex items-center gap-2">
+              <Badge variant="outline" className="border-primary/20 text-primary uppercase tracking-wider text-xs font-semibold">
+                {categoryLabel}
+              </Badge>
+              {simulation.localDev && (
+                <Badge variant="outline" className="border-green-500/30 text-green-400 uppercase tracking-wider text-[10px] font-semibold">
+                  {language === 'zh' ? '已修改' : 'Modified'}
+                </Badge>
+              )}
+            </div>
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110">
               <Play className="h-4 w-4" />
             </div>

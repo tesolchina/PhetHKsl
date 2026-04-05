@@ -1,8 +1,59 @@
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import fs from "fs";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+
+function phetLocalServer(): Plugin {
+  const PHET_ROOT = path.resolve(import.meta.dirname, "..", "..", "phetsims");
+  const MIME: Record<string, string> = {
+    ".html": "text/html",
+    ".js": "application/javascript",
+    ".mjs": "application/javascript",
+    ".css": "text/css",
+    ".json": "application/json",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".svg": "image/svg+xml",
+    ".mp3": "audio/mpeg",
+    ".wav": "audio/wav",
+    ".ogg": "audio/ogg",
+  };
+  function handler(req: any, res: any, next: any) {
+    if (!req.url?.startsWith("/phet-local/")) return next();
+    const urlPath = decodeURIComponent(req.url.replace(/^\/phet-local/, "").split("?")[0]);
+    const resolved = path.resolve(PHET_ROOT, "." + urlPath);
+    if (!resolved.startsWith(PHET_ROOT + path.sep) && resolved !== PHET_ROOT) {
+      res.writeHead(403);
+      res.end("Forbidden");
+      return;
+    }
+    try {
+      const stat = fs.statSync(resolved);
+      if (!stat.isFile()) { res.writeHead(404); res.end("Not Found"); return; }
+      const ext = path.extname(resolved).toLowerCase();
+      res.writeHead(200, {
+        "Content-Type": MIME[ext] || "application/octet-stream",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-cache",
+      });
+      fs.createReadStream(resolved).pipe(res);
+    } catch {
+      res.writeHead(404);
+      res.end("Not Found");
+    }
+  }
+  return {
+    name: "phet-local-server",
+    configureServer(server) {
+      server.middlewares.use(handler);
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(handler);
+    },
+  };
+}
 
 const rawPort = process.env.PORT;
 
@@ -32,6 +83,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),
+    phetLocalServer(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
