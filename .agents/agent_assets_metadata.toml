@@ -47,3 +47,9 @@ id = "6RUVMQu8YEOO6G6nB2qRn"
 uri = "file://artifacts/phet-sims/cross-curricular-plan.md"
 type = "text"
 title = "跨学科融合方案：科学模拟 × 语文 × 英语"
+
+[[outputs]]
+id = "A71LZjayKuT_hJtvAJQKp"
+uri = "file://artifacts/phet-sims/hands-on-projects.md"
+type = "text"
+title = "从屏幕到现实：每个模拟配套的动手实践项目"
