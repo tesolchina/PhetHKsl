@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "054Cdv3Dt_dQ83SlNqk0d"
+uri = "file://artifacts/phet-sims/public/hero-bg.png"
+type = "image"
+title = "Hero science background"
+
+[[generated]]
+id = "qxR76fDH1TwTuEmHfe3x9"
+uri = "file://artifacts/phet-sims/public/physics-bg.png"
+type = "image"
+title = "Physics concept background"
+
+[[generated]]
+id = "vve-K5iDBdhMqXta4qG9n"
+uri = "file://artifacts/phet-sims/public/chemistry-bg.png"
+type = "image"
+title = "Chemistry concept background"
+
+[[generated]]
+id = "S6HSx9J7QszXcbMgInpdZ"
+uri = "file://artifacts/phet-sims/public/biology-bg.png"
+type = "image"
+title = "Biology concept background"
