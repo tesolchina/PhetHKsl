@@ -208,38 +208,100 @@ export default function ContentCatalog() {
               </h2>
             </div>
 
+            <p className="text-sm text-muted-foreground mb-6">
+              {language === 'zh'
+                ? '两种方式创建模块：手动编写JSON，或使用DocAI的AI助手自动生成。详细的格式说明和AI提示模板请查看'
+                : 'Two ways to create modules: write JSON manually, or use DocAI\'s AI assistant to auto-generate. See the complete format guide and AI prompt template in'}
+              <a
+                href="/api/content"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline ml-1"
+              >
+                content/README.md
+              </a>
+              {' '}
+              {language === 'zh' ? '(GitHub仓库中)' : '(in the GitHub repo)'}
+              
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-black/20 rounded-xl p-5 border border-white/5">
+                <div className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2">
+                  {language === 'zh' ? '方式一' : 'Option A'}
+                </div>
+                <h3 className="font-semibold text-sm mb-2">
+                  {language === 'zh' ? '通过 DocAI (aitutor.ink)' : 'Via DocAI (aitutor.ink)'}
+                </h3>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-3">
+                  {language === 'zh'
+                    ? '在DocAI中与AI助手对话，自动生成符合格式的module.json文件。适合LANG 2077课程的同学。'
+                    : 'Chat with DocAI\'s AI assistant to auto-generate a valid module.json file. Ideal for LANG 2077 students.'}
+                </p>
+                <a
+                  href="https://agent.aitutor.ink"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  agent.aitutor.ink <ChevronRight className="h-3 w-3" />
+                </a>
+              </div>
+              <div className="bg-black/20 rounded-xl p-5 border border-white/5">
+                <div className="text-xs font-semibold text-green-400 uppercase tracking-wider mb-2">
+                  {language === 'zh' ? '方式二' : 'Option B'}
+                </div>
+                <h3 className="font-semibold text-sm mb-2">
+                  {language === 'zh' ? '手动编写 JSON' : 'Write JSON Manually'}
+                </h3>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-3">
+                  {language === 'zh'
+                    ? '按照content/README.md中的schema文档，手动编写module.json文件。适合有编程经验的贡献者。'
+                    : 'Follow the schema documented in content/README.md to write module.json by hand. For contributors with coding experience.'}
+                </p>
+                <a
+                  href="/api/content/friction-lab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-green-400 hover:text-green-300 transition-colors"
+                >
+                  {language === 'zh' ? '查看示例 JSON' : 'View example JSON'} <ChevronRight className="h-3 w-3" />
+                </a>
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-black/20 rounded-xl p-4">
                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold text-primary mb-3">1</div>
                 <h3 className="font-semibold text-sm mb-2">
-                  {language === 'zh' ? '创建模块文件' : 'Create Module File'}
+                  {language === 'zh' ? '创建 module.json' : 'Create module.json'}
                 </h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   {language === 'zh'
-                    ? '在 content/modules/ 下创建新文件夹，按照schema格式编写 module.json'
-                    : 'Create a new folder under content/modules/ and write module.json following the schema'}
+                    ? '用DocAI生成或手动编写。放在 content/modules/你的模块ID/ 下'
+                    : 'Generate via DocAI or write by hand. Place under content/modules/your-module-id/'}
                 </p>
               </div>
               <div className="bg-black/20 rounded-xl p-4">
                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold text-primary mb-3">2</div>
                 <h3 className="font-semibold text-sm mb-2">
-                  {language === 'zh' ? '添加图片资源' : 'Add Image Assets'}
+                  {language === 'zh' ? '注册并添加图片' : 'Register & Add Images'}
                 </h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   {language === 'zh'
-                    ? '将插图放到 public/images/ 目录，在JSON中引用路径'
-                    : 'Place illustrations in public/images/ and reference them in the JSON'}
+                    ? '在 content/index.ts 中注册模块，图片放到 public/images/'
+                    : 'Register in content/index.ts, place images in public/images/'}
                 </p>
               </div>
               <div className="bg-black/20 rounded-xl p-4">
                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold text-primary mb-3">3</div>
                 <h3 className="font-semibold text-sm mb-2">
-                  {language === 'zh' ? '提交PR' : 'Submit a PR'}
+                  {language === 'zh' ? '提交 Pull Request' : 'Submit a PR'}
                 </h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   {language === 'zh'
-                    ? '通过GitHub提交Pull Request，审核通过后自动部署'
-                    : 'Submit a Pull Request via GitHub. After review, it auto-deploys'}
+                    ? '在GitHub上Fork仓库，提交PR。审核通过后自动部署到学生端'
+                    : 'Fork on GitHub, submit PR. After review, auto-deploys to student site'}
                 </p>
               </div>
             </div>
@@ -249,7 +311,7 @@ export default function ContentCatalog() {
                 {language === 'zh' ? '内容API端点：' : 'Content API endpoints:'}<br />
                 GET /api/content &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 {language === 'zh' ? '— 列出所有模块' : '— List all modules'}<br />
-                GET /api/content/friction-lab &nbsp;
+                GET /api/content/{'{'}{language === 'zh' ? '模块ID' : 'module-id'}{'}'} &nbsp;
                 {language === 'zh' ? '— 获取模块详情' : '— Get module details'}
               </p>
             </div>
