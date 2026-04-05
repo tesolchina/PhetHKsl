@@ -24,6 +24,16 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `artifacts/api-server/` — Shared Express API server with `/api/simulations` endpoint (filtering by category, gradeLevel, featured). Input validation rejects invalid filter values with 400.
 - `lib/` — Shared libraries (api-client-react, api-spec, api-zod, db). DB schema includes `simulations` table (108 sims: slug, bilingual names/descriptions, category, gradeLevel, tags JSONB, URLs, thumbnail, isFeatured, guide JSONB). Seed script at `scripts/src/seed-simulations.ts` uses atomic transaction for delete+insert.
 
+## Community & Documentation
+
+- `README.md` — Project introduction (bilingual), getting started, how to contribute
+- `CONTRIBUTING.md` — Bilingual contribution guide (fork/branch/PR workflow, content types, quality standards, code of conduct)
+- `CONTENT_GUIDE.md` — Bilingual guide documenting the learning module JSON schema, step types, BilingualText format, file organization
+- `ROADMAP.md` — Near-term milestones for community participation
+- `hk-curriculum-mapping.md` — Hong Kong (P1-S6) + Mainland China curriculum mapping with cross-reference
+- `.github/PULL_REQUEST_TEMPLATE.md` — PR template with contributor checklist
+- `.github/ISSUE_TEMPLATE/` — Issue templates for curriculum mapping, module proposals, content corrections
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
