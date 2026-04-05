@@ -29,3 +29,9 @@ id = "idWgZ06bwYj11tWGsE-1s"
 uri = "file://artifacts/phet-sims/curriculum-mapping.md"
 type = "text"
 title = "PhET模拟与中国小学课程大纲对照分析"
+
+[[outputs]]
+id = "Y2P7KahvlMpbSlLPAry2l"
+uri = "file://artifacts/phet-sims/research-upgrade-plan.md"
+type = "text"
+title = "PhET模拟升级调研报告：从单版面到故事化多步骤学习体验"
