@@ -3,7 +3,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ChevronRight, ChevronLeft, Home, Volume2, VolumeX, RotateCcw } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Home, VolumeX } from 'lucide-react';
 import { Link } from 'wouter';
 import { FrictionSimCanvas } from '@/components/friction/FrictionSimCanvas';
 import { StoryIntro } from '@/components/friction/StoryIntro';
@@ -12,13 +12,17 @@ import { ChallengeStep } from '@/components/friction/ChallengeStep';
 import { ReflectionStep } from '@/components/friction/ReflectionStep';
 import { TeacherNote } from '@/components/friction/TeacherNote';
 import { OriginalPhetToggle } from '@/components/friction/OriginalPhetToggle';
+import { LanguageArtsStep } from '@/components/friction/LanguageArtsStep';
+import { HandsOnStep } from '@/components/friction/HandsOnStep';
 
 const STEPS = [
   { id: 'story', icon: '1' },
   { id: 'predict', icon: '2' },
   { id: 'explore', icon: '3' },
   { id: 'challenge', icon: '4' },
-  { id: 'reflect', icon: '5' },
+  { id: 'language', icon: '5' },
+  { id: 'handson', icon: '6' },
+  { id: 'reflect', icon: '7' },
 ] as const;
 
 type StepId = typeof STEPS[number]['id'];
@@ -28,11 +32,13 @@ const stepLabels: Record<StepId, { en: string; zh: string }> = {
   predict: { en: 'Predict', zh: '预测' },
   explore: { en: 'Explore', zh: '探索' },
   challenge: { en: 'Challenge', zh: '挑战' },
+  language: { en: 'Language', zh: '读写' },
+  handson: { en: 'Hands-On', zh: '动手' },
   reflect: { en: 'Reflect', zh: '反思' },
 };
 
 export default function FrictionLab() {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
   const [currentStep, setCurrentStep] = useState(0);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [completedSteps, setCompletedSteps] = useState<Set<number>>(new Set());
@@ -109,13 +115,9 @@ export default function FrictionLab() {
             <Badge className="bg-green-500/20 text-green-400 border-green-500/30 text-[10px]">
               {language === 'zh' ? '原创' : 'Original'}
             </Badge>
-            {canSpeak && (
-              <Button
-                variant="ghost" size="icon"
-                className="h-8 w-8"
-                onClick={() => isSpeaking ? stopSpeaking() : null}
-              >
-                {isSpeaking ? <VolumeX className="h-4 w-4 text-primary" /> : null}
+            {isSpeaking && (
+              <Button variant="ghost" size="icon" className="h-8 w-8" onClick={stopSpeaking}>
+                <VolumeX className="h-4 w-4 text-primary" />
               </Button>
             )}
             <LanguageToggle />
@@ -124,7 +126,7 @@ export default function FrictionLab() {
       </header>
 
       <div className="fixed top-14 left-0 right-0 z-40 bg-black/30 backdrop-blur-md border-b border-white/5">
-        <div className="max-w-3xl mx-auto px-4 py-2 flex items-center justify-center gap-1">
+        <div className="max-w-4xl mx-auto px-2 py-2 flex items-center justify-center gap-0.5 overflow-x-auto">
           {STEPS.map((step, i) => {
             const isActive = i === currentStep;
             const isCompleted = completedSteps.has(i);
@@ -133,7 +135,7 @@ export default function FrictionLab() {
               <button
                 key={step.id}
                 onClick={() => (isCompleted || i <= currentStep) ? setCurrentStep(i) : null}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[11px] font-medium transition-all shrink-0 ${
                   isActive
                     ? 'bg-primary text-primary-foreground scale-105'
                     : isCompleted
@@ -141,12 +143,12 @@ export default function FrictionLab() {
                     : 'bg-white/5 text-muted-foreground'
                 } ${!isCompleted && i > currentStep ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer'}`}
               >
-                <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
+                <span className={`w-4.5 h-4.5 rounded-full flex items-center justify-center text-[9px] font-bold ${
                   isActive ? 'bg-white/20' : isCompleted ? 'bg-primary/30' : 'bg-white/10'
                 }`}>
                   {isCompleted && !isActive ? '\u2713' : step.icon}
                 </span>
-                <span className="hidden sm:inline">{label}</span>
+                <span>{label}</span>
               </button>
             );
           })}
@@ -171,6 +173,12 @@ export default function FrictionLab() {
           )}
           {stepId === 'challenge' && (
             <ChallengeStep language={language} onNext={goNext} onPrev={goPrev} />
+          )}
+          {stepId === 'language' && (
+            <LanguageArtsStep language={language} speakText={speakText} onNext={goNext} onPrev={goPrev} />
+          )}
+          {stepId === 'handson' && (
+            <HandsOnStep language={language} onNext={goNext} onPrev={goPrev} />
           )}
           {stepId === 'reflect' && (
             <ReflectionStep language={language} speakText={speakText} onPrev={goPrev} />

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, ChevronLeft, Star, Check, X } from 'lucide-react';
 
+const BASE = import.meta.env.BASE_URL;
+
 interface Props {
   language: 'en' | 'zh';
   onNext: () => void;
@@ -10,10 +12,11 @@ interface Props {
 
 interface Challenge {
   question: string;
-  type: 'rank' | 'match' | 'truefalse';
+  image?: string;
+  imageAlt?: string;
+  type: 'rank' | 'truefalse';
   items?: string[];
   correctOrder?: number[];
-  pairs?: Array<{ left: string; right: string }>;
   statement?: string;
   isTrue?: boolean;
   explanation: string;
@@ -23,6 +26,8 @@ const challenges: Record<'zh' | 'en', Challenge[]> = {
   zh: [
     {
       question: '把这些表面按摩擦力从小到大排列：',
+      image: `${BASE}images/quiz-rank-surfaces.png`,
+      imageAlt: '冰面、木头、砂纸三种表面',
       type: 'rank',
       items: ['冰面', '木头', '砂纸'],
       correctOrder: [0, 1, 2],
@@ -30,6 +35,8 @@ const challenges: Record<'zh' | 'en', Challenge[]> = {
     },
     {
       question: '判断对错：',
+      image: `${BASE}images/quiz-rub-desk.png`,
+      imageAlt: '搓手产生热量',
       type: 'truefalse',
       statement: '搓手的时候手会变热，这是因为摩擦产生了热量',
       isTrue: true,
@@ -37,6 +44,8 @@ const challenges: Record<'zh' | 'en', Challenge[]> = {
     },
     {
       question: '判断对错：',
+      image: `${BASE}images/quiz-surfaces.png`,
+      imageAlt: '光滑和粗糙表面',
       type: 'truefalse',
       statement: '在冰面上滑动比在砂纸上滑动会产生更多的热量',
       isTrue: false,
@@ -44,6 +53,8 @@ const challenges: Record<'zh' | 'en', Challenge[]> = {
     },
     {
       question: '判断对错：',
+      image: `${BASE}images/quiz-speed.png`,
+      imageAlt: '不同速度搓手',
       type: 'truefalse',
       statement: '搓得越快，产生的热量越多',
       isTrue: true,
@@ -53,6 +64,8 @@ const challenges: Record<'zh' | 'en', Challenge[]> = {
   en: [
     {
       question: 'Rank these surfaces from least to most friction:',
+      image: `${BASE}images/quiz-rank-surfaces.png`,
+      imageAlt: 'Ice, wood, and sandpaper surfaces',
       type: 'rank',
       items: ['Ice', 'Wood', 'Sandpaper'],
       correctOrder: [0, 1, 2],
@@ -60,6 +73,8 @@ const challenges: Record<'zh' | 'en', Challenge[]> = {
     },
     {
       question: 'True or False:',
+      image: `${BASE}images/quiz-rub-desk.png`,
+      imageAlt: 'Rubbing hands together',
       type: 'truefalse',
       statement: 'When you rub your hands together they get warm because friction produces heat',
       isTrue: true,
@@ -67,6 +82,8 @@ const challenges: Record<'zh' | 'en', Challenge[]> = {
     },
     {
       question: 'True or False:',
+      image: `${BASE}images/quiz-surfaces.png`,
+      imageAlt: 'Smooth vs rough surfaces',
       type: 'truefalse',
       statement: 'Sliding on ice produces more heat than sliding on sandpaper',
       isTrue: false,
@@ -74,6 +91,8 @@ const challenges: Record<'zh' | 'en', Challenge[]> = {
     },
     {
       question: 'True or False:',
+      image: `${BASE}images/quiz-speed.png`,
+      imageAlt: 'Different rubbing speeds',
       type: 'truefalse',
       statement: 'Rubbing faster produces more heat',
       isTrue: true,
@@ -143,7 +162,6 @@ export function ChallengeStep({ language, onNext, onPrev }: Props) {
                 className={`h-12 w-12 transition-all duration-500 ${
                   i <= stars ? 'text-yellow-400 fill-yellow-400 scale-110' : 'text-gray-600'
                 }`}
-                style={{ animationDelay: `${i * 200}ms` }}
               />
             ))}
           </div>
@@ -170,7 +188,7 @@ export function ChallengeStep({ language, onNext, onPrev }: Props) {
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white gap-2 px-8 rounded-full"
               onClick={onNext}
             >
-              {language === 'zh' ? '总结反思' : 'Reflect'}
+              {language === 'zh' ? '语文与英语' : 'Language Arts'}
               <ChevronRight className="h-5 w-5" />
             </Button>
           </div>
@@ -193,7 +211,17 @@ export function ChallengeStep({ language, onNext, onPrev }: Props) {
           </p>
         </div>
 
-        <div className="bg-gradient-to-br from-purple-950/30 to-pink-950/20 rounded-2xl border border-purple-500/10 p-8">
+        <div className="bg-gradient-to-br from-purple-950/30 to-pink-950/20 rounded-2xl border border-purple-500/10 p-6">
+          {current.image && (
+            <div className="mb-4 rounded-xl overflow-hidden">
+              <img
+                src={current.image}
+                alt={current.imageAlt || ''}
+                className="w-full h-36 object-cover"
+              />
+            </div>
+          )}
+
           <h3 className="text-lg font-semibold mb-2 text-purple-100">{current.question}</h3>
 
           {current.type === 'truefalse' && (

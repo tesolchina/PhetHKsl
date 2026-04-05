@@ -42,6 +42,30 @@ uri = "file://artifacts/phet-sims/public/images/friction-handson.png"
 type = "image"
 title = "hands-on friction experiment"
 
+[[generated]]
+id = "guTqXbls5yoIDWlBRvLW8"
+uri = "file://artifacts/phet-sims/public/images/quiz-rub-desk.png"
+type = "image"
+title = "hand rubbing desk surface"
+
+[[generated]]
+id = "CDmR4CuJiry_qrxh3k3W9"
+uri = "file://artifacts/phet-sims/public/images/quiz-surfaces.png"
+type = "image"
+title = "smooth vs rough surfaces"
+
+[[generated]]
+id = "tG8GO_HvF8505lzUaedJG"
+uri = "file://artifacts/phet-sims/public/images/quiz-speed.png"
+type = "image"
+title = "slow vs fast rubbing hands"
+
+[[generated]]
+id = "CB8Yv17JoCQ7xdDkfAs_n"
+uri = "file://artifacts/phet-sims/public/images/quiz-rank-surfaces.png"
+type = "image"
+title = "ice wood sandpaper ranking"
+
 [[outputs]]
 id = "idWgZ06bwYj11tWGsE-1s"
 uri = "file://artifacts/phet-sims/curriculum-mapping.md"

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, ChevronLeft, Check } from 'lucide-react';
 
+const BASE = import.meta.env.BASE_URL;
+
 interface Props {
   language: 'en' | 'zh';
   onNext: () => void;
@@ -12,18 +14,24 @@ const questions = {
   zh: [
     {
       question: '用手快速搓桌子表面，手会感觉怎样？',
+      image: `${BASE}images/quiz-rub-desk.png`,
+      imageAlt: '手快速搓桌面',
       options: ['变冷', '变热', '没有变化'],
       correct: 1,
       explanation: '摩擦会产生热量！两个表面接触并移动时，微小的原子互相碰撞，产生了热能。',
     },
     {
       question: '哪个表面搓起来更费力？',
+      image: `${BASE}images/quiz-surfaces.png`,
+      imageAlt: '光滑玻璃和粗糙砂纸对比',
       options: ['光滑的玻璃', '粗糙的砂纸', '两个一样'],
       correct: 1,
       explanation: '粗糙的表面有更多凹凸不平的地方，原子之间的碰撞更多，所以摩擦力更大！',
     },
     {
       question: '搓得越快，温度会……',
+      image: `${BASE}images/quiz-speed.png`,
+      imageAlt: '慢速和快速搓手对比',
       options: ['升得越高', '降得越低', '不变'],
       correct: 0,
       explanation: '搓得越快，原子碰撞越剧烈，产生的热量就越多，温度升得越高。',
@@ -32,18 +40,24 @@ const questions = {
   en: [
     {
       question: 'If you rub the desk quickly with your hand, how will your hand feel?',
+      image: `${BASE}images/quiz-rub-desk.png`,
+      imageAlt: 'Hand rubbing desk surface',
       options: ['Colder', 'Warmer', 'No change'],
       correct: 1,
       explanation: 'Friction generates heat! When two surfaces touch and slide, tiny atoms collide and produce thermal energy.',
     },
     {
       question: 'Which surface takes more effort to rub?',
+      image: `${BASE}images/quiz-surfaces.png`,
+      imageAlt: 'Smooth glass vs rough sandpaper',
       options: ['Smooth glass', 'Rough sandpaper', 'Both the same'],
       correct: 1,
       explanation: 'Rough surfaces have more bumps, causing more atomic collisions, which means greater friction!',
     },
     {
       question: 'If you rub faster, the temperature will...',
+      image: `${BASE}images/quiz-speed.png`,
+      imageAlt: 'Slow vs fast rubbing comparison',
       options: ['Go higher', 'Go lower', 'Stay the same'],
       correct: 0,
       explanation: 'Faster rubbing means more intense atomic collisions, producing more heat, so the temperature rises higher.',
@@ -118,7 +132,7 @@ export function PredictionStep({ language, onNext, onPrev }: Props) {
   return (
     <div className="flex flex-col items-center">
       <div className="w-full max-w-xl">
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
             {language === 'zh' ? '你来预测' : 'Make Your Prediction'}
           </h2>
@@ -129,8 +143,16 @@ export function PredictionStep({ language, onNext, onPrev }: Props) {
           </p>
         </div>
 
-        <div className="bg-gradient-to-br from-blue-950/30 to-cyan-950/20 rounded-2xl border border-blue-500/10 p-8 mb-6">
-          <h3 className="text-xl font-semibold mb-6 text-blue-100">{q.question}</h3>
+        <div className="bg-gradient-to-br from-blue-950/30 to-cyan-950/20 rounded-2xl border border-blue-500/10 p-6 mb-6">
+          <div className="mb-4 rounded-xl overflow-hidden">
+            <img
+              src={q.image}
+              alt={q.imageAlt}
+              className="w-full h-40 object-cover"
+            />
+          </div>
+
+          <h3 className="text-xl font-semibold mb-5 text-blue-100">{q.question}</h3>
 
           <div className="space-y-3">
             {q.options.map((opt, i) => {
