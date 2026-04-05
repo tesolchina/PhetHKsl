@@ -100,7 +100,8 @@ const translations: Record<Language, Record<string, string>> = {
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>(() => {
     const saved = localStorage.getItem('phet-lang');
-    return (saved === 'zh' ? 'zh' : 'en') as Language;
+    if (saved === 'en') return 'en';
+    return 'zh';
   });
 
   const handleSetLanguage = useCallback((lang: Language) => {
