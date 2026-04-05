@@ -8,3 +8,46 @@
 export interface HealthStatus {
   status: string;
 }
+
+export type GuideStepTitle = {
+  en: string;
+  zh: string;
+};
+
+export type GuideStepContent = {
+  en: string;
+  zh: string;
+};
+
+export interface GuideStep {
+  title: GuideStepTitle;
+  content: GuideStepContent;
+}
+
+export interface SimulationItem {
+  id: number;
+  slug: string;
+  nameEn: string;
+  nameZh: string;
+  descriptionEn: string;
+  descriptionZh: string;
+  category: string;
+  gradeLevel: string;
+  tagsEn: string[];
+  tagsZh: string[];
+  urlEn: string;
+  urlZh: string;
+  githubRepoUrl?: string | null;
+  thumbnailUrl?: string | null;
+  hasChineseLocalization: boolean;
+  isFeatured: boolean;
+  localDev: boolean;
+  customRoute?: string | null;
+  guide: GuideStep[];
+}
+
+export type ListSimulationsParams = {
+  category?: string;
+  gradeLevel?: string;
+  featured?: boolean;
+};

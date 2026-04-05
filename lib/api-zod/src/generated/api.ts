@@ -14,3 +14,47 @@ import * as zod from "zod";
 export const HealthCheckResponse = zod.object({
   status: zod.string(),
 });
+
+/**
+ * Returns a list of simulations with optional filtering
+ * @summary List simulations
+ */
+export const ListSimulationsQueryParams = zod.object({
+  category: zod.coerce.string().optional(),
+  gradeLevel: zod.coerce.string().optional(),
+  featured: zod.coerce.boolean().optional(),
+});
+
+export const ListSimulationsResponseItem = zod.object({
+  id: zod.number(),
+  slug: zod.string(),
+  nameEn: zod.string(),
+  nameZh: zod.string(),
+  descriptionEn: zod.string(),
+  descriptionZh: zod.string(),
+  category: zod.string(),
+  gradeLevel: zod.string(),
+  tagsEn: zod.array(zod.string()),
+  tagsZh: zod.array(zod.string()),
+  urlEn: zod.string(),
+  urlZh: zod.string(),
+  githubRepoUrl: zod.string().nullish(),
+  thumbnailUrl: zod.string().nullish(),
+  hasChineseLocalization: zod.boolean(),
+  isFeatured: zod.boolean(),
+  localDev: zod.boolean(),
+  customRoute: zod.string().nullish(),
+  guide: zod.array(
+    zod.object({
+      title: zod.object({
+        en: zod.string(),
+        zh: zod.string(),
+      }),
+      content: zod.object({
+        en: zod.string(),
+        zh: zod.string(),
+      }),
+    }),
+  ),
+});
+export const ListSimulationsResponse = zod.array(ListSimulationsResponseItem);

@@ -6,4 +6,9 @@
  * OpenAPI spec version: 0.1.0
  */
 
+export * from "./guideStep";
+export * from "./guideStepContent";
+export * from "./guideStepTitle";
 export * from "./healthStatus";
+export * from "./listSimulationsParams";
+export * from "./simulationItem";

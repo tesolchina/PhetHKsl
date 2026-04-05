@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: simulations
+    description: Simulation operations
 paths:
   /healthz:
     get:
@@ -24,6 +26,37 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /simulations:
+    get:
+      operationId: listSimulations
+      tags: [simulations]
+      summary: List simulations
+      description: Returns a list of simulations with optional filtering
+      parameters:
+        - name: category
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: gradeLevel
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: featured
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        "200":
+          description: List of simulations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/SimulationItem"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +66,96 @@ components:
           type: string
       required:
         - status
-
+    GuideStep:
+      type: object
+      properties:
+        title:
+          type: object
+          properties:
+            en:
+              type: string
+            zh:
+              type: string
+          required:
+            - en
+            - zh
+        content:
+          type: object
+          properties:
+            en:
+              type: string
+            zh:
+              type: string
+          required:
+            - en
+            - zh
+      required:
+        - title
+        - content
+    SimulationItem:
+      type: object
+      properties:
+        id:
+          type: integer
+        slug:
+          type: string
+        nameEn:
+          type: string
+        nameZh:
+          type: string
+        descriptionEn:
+          type: string
+        descriptionZh:
+          type: string
+        category:
+          type: string
+        gradeLevel:
+          type: string
+        tagsEn:
+          type: array
+          items:
+            type: string
+        tagsZh:
+          type: array
+          items:
+            type: string
+        urlEn:
+          type: string
+        urlZh:
+          type: string
+        githubRepoUrl:
+          type: string
+          nullable: true
+        thumbnailUrl:
+          type: string
+          nullable: true
+        hasChineseLocalization:
+          type: boolean
+        isFeatured:
+          type: boolean
+        localDev:
+          type: boolean
+        customRoute:
+          type: string
+          nullable: true
+        guide:
+          type: array
+          items:
+            $ref: "#/components/schemas/GuideStep"
+      required:
+        - id
+        - slug
+        - nameEn
+        - nameZh
+        - descriptionEn
+        - descriptionZh
+        - category
+        - gradeLevel
+        - tagsEn
+        - tagsZh
+        - urlEn
+        - urlZh
+        - hasChineseLocalization
+        - isFeatured
+        - localDev
+        - guide

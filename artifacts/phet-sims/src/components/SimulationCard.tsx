@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
-import { type Simulation } from '@/data/simulations';
-import { Play, Volume2, VolumeX, BookOpen, ChevronRight, PanelRightOpen, PanelRightClose, Sparkles } from 'lucide-react';
+import { type SimulationItem } from '@workspace/api-client-react';
+import { Play, Volume2, VolumeX, BookOpen, ChevronRight, PanelRightOpen, PanelRightClose, Sparkles, Star } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -9,12 +9,13 @@ import { useLanguage } from '@/context/LanguageContext';
 import { useLocation } from 'wouter';
 
 interface SimulationCardProps {
-  simulation: Simulation;
+  simulation: SimulationItem;
 }
 
 export function SimulationCard({ simulation }: SimulationCardProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [showGuide, setShowGuide] = useState(true);
+  const hasGuide = Array.isArray(simulation.guide) && simulation.guide.length > 0;
+  const [showGuide, setShowGuide] = useState(hasGuide);
   const [activeStep, setActiveStep] = useState(0);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
@@ -22,12 +23,12 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
   const { language, t } = useLanguage();
   const [, navigate] = useLocation();
 
-  const name = simulation.name[language];
-  const description = simulation.description[language];
-  const tags = simulation.tags[language];
+  const name = language === 'zh' ? simulation.nameZh : simulation.nameEn;
+  const description = language === 'zh' ? simulation.descriptionZh : simulation.descriptionEn;
+  const tags = language === 'zh' ? simulation.tagsZh : simulation.tagsEn;
   const categoryLabel = t(`category.${simulation.category}`);
   const gradeLabel = t(`grade.label.${simulation.gradeLevel}`);
-  const simUrl = simulation.url[language];
+  const simUrl = language === 'zh' ? simulation.urlZh : simulation.urlEn;
 
   const stopSpeaking = useCallback(() => {
     if (canSpeak) {
@@ -57,8 +58,9 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
     }
     const step = simulation.guide[activeStep];
     if (step) {
-      const text = `${step.title[language]}. ${step.content[language]}`;
-      speakText(text);
+      const titleText = language === 'zh' ? step.title.zh : step.title.en;
+      const contentText = language === 'zh' ? step.content.zh : step.content.en;
+      speakText(`${titleText}. ${contentText}`);
     }
   }, [isSpeaking, simulation.guide, activeStep, language, speakText, stopSpeaking]);
 
@@ -78,19 +80,19 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
     if (!open) {
       stopSpeaking();
       setActiveStep(0);
-      setShowGuide(true);
+      setShowGuide(hasGuide);
     }
     setIsOpen(open);
-  }, [stopSpeaking]);
+  }, [stopSpeaking, hasGuide]);
 
-  const currentStep = simulation.guide[activeStep];
+  const currentStep = hasGuide ? simulation.guide[activeStep] : undefined;
 
   return (
     <>
       <div 
         className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-white/5 bg-card p-6 card-hover-glow cursor-pointer h-full"
         onClick={() => simulation.customRoute ? navigate(simulation.customRoute) : setIsOpen(true)}
-        data-testid={`card-${simulation.id}`}
+        data-testid={`card-${simulation.slug}`}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         
@@ -103,6 +105,12 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
               <Badge variant="outline" className={`uppercase tracking-wider text-[10px] font-semibold ${simulation.gradeLevel === 'elementary' ? 'border-amber-500/30 text-amber-400' : 'border-blue-500/30 text-blue-400'}`}>
                 {gradeLabel}
               </Badge>
+              {simulation.isFeatured && (
+                <Badge variant="outline" className="border-amber-500/30 text-amber-300 uppercase tracking-wider text-[10px] font-semibold">
+                  <Star className="h-2.5 w-2.5 mr-1" />
+                  {language === 'zh' ? '精选' : 'Featured'}
+                </Badge>
+              )}
               {simulation.customRoute && (
                 <Badge variant="outline" className="border-emerald-500/30 text-emerald-400 uppercase tracking-wider text-[10px] font-semibold">
                   <Sparkles className="h-2.5 w-2.5 mr-1" />
@@ -149,19 +157,21 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  if (showGuide) stopSpeaking();
-                  setShowGuide(!showGuide);
-                }}
-                className="border-white/10 hover:bg-white/10 gap-2"
-                data-testid="button-toggle-guide"
-              >
-                {showGuide ? <PanelRightClose className="h-4 w-4" /> : <PanelRightOpen className="h-4 w-4" />}
-                <span className="hidden sm:inline">{showGuide ? t('viewer.hideGuide') : t('viewer.showGuide')}</span>
-              </Button>
+              {hasGuide && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    if (showGuide) stopSpeaking();
+                    setShowGuide(!showGuide);
+                  }}
+                  className="border-white/10 hover:bg-white/10 gap-2"
+                  data-testid="button-toggle-guide"
+                >
+                  {showGuide ? <PanelRightClose className="h-4 w-4" /> : <PanelRightOpen className="h-4 w-4" />}
+                  <span className="hidden sm:inline">{showGuide ? t('viewer.hideGuide') : t('viewer.showGuide')}</span>
+                </Button>
+              )}
             </div>
           </div>
 
@@ -219,10 +229,10 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
                   {currentStep && (
                     <div className="p-5">
                       <h4 className="font-serif text-lg font-semibold mb-3 text-glow">
-                        {currentStep.title[language]}
+                        {language === 'zh' ? currentStep.title.zh : currentStep.title.en}
                       </h4>
                       <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
-                        {currentStep.content[language]}
+                        {language === 'zh' ? currentStep.content.zh : currentStep.content.en}
                       </p>
 
                       <div className="mt-6 flex items-center justify-between">
@@ -235,7 +245,7 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
                             data-testid="button-prev-step"
                           >
                             <ChevronRight className="h-3 w-3 rotate-180 mr-1" />
-                            {simulation.guide[activeStep - 1]?.title[language]}
+                            {language === 'zh' ? simulation.guide[activeStep - 1]?.title.zh : simulation.guide[activeStep - 1]?.title.en}
                           </Button>
                         )}
                         <div className="flex-1" />
@@ -247,7 +257,7 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
                             className="text-xs text-primary"
                             data-testid="button-next-step"
                           >
-                            {simulation.guide[activeStep + 1]?.title[language]}
+                            {language === 'zh' ? simulation.guide[activeStep + 1]?.title.zh : simulation.guide[activeStep + 1]?.title.en}
                             <ChevronRight className="h-3 w-3 ml-1" />
                           </Button>
                         )}

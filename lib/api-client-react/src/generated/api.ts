@@ -13,7 +13,11 @@ import type {
   UseQueryResult,
 } from "@tanstack/react-query";
 
-import type { HealthStatus } from "./api.schemas";
+import type {
+  HealthStatus,
+  ListSimulationsParams,
+  SimulationItem,
+} from "./api.schemas";
 
 import { customFetch } from "../custom-fetch";
 import type { ErrorType } from "../custom-fetch";
@@ -92,6 +96,101 @@ export function useHealthCheck<
   request?: SecondParameter<typeof customFetch>;
 }): UseQueryResult<TData, TError> & { queryKey: QueryKey } {
   const queryOptions = getHealthCheckQueryOptions(options);
+
+  const query = useQuery(queryOptions) as UseQueryResult<TData, TError> & {
+    queryKey: QueryKey;
+  };
+
+  return { ...query, queryKey: queryOptions.queryKey };
+}
+
+/**
+ * Returns a list of simulations with optional filtering
+ * @summary List simulations
+ */
+export const getListSimulationsUrl = (params?: ListSimulationsParams) => {
+  const normalizedParams = new URLSearchParams();
+
+  Object.entries(params || {}).forEach(([key, value]) => {
+    if (value !== undefined) {
+      normalizedParams.append(key, value === null ? "null" : value.toString());
+    }
+  });
+
+  const stringifiedParams = normalizedParams.toString();
+
+  return stringifiedParams.length > 0
+    ? `/api/simulations?${stringifiedParams}`
+    : `/api/simulations`;
+};
+
+export const listSimulations = async (
+  params?: ListSimulationsParams,
+  options?: RequestInit,
+): Promise<SimulationItem[]> => {
+  return customFetch<SimulationItem[]>(getListSimulationsUrl(params), {
+    ...options,
+    method: "GET",
+  });
+};
+
+export const getListSimulationsQueryKey = (params?: ListSimulationsParams) => {
+  return [`/api/simulations`, ...(params ? [params] : [])] as const;
+};
+
+export const getListSimulationsQueryOptions = <
+  TData = Awaited<ReturnType<typeof listSimulations>>,
+  TError = ErrorType<unknown>,
+>(
+  params?: ListSimulationsParams,
+  options?: {
+    query?: UseQueryOptions<
+      Awaited<ReturnType<typeof listSimulations>>,
+      TError,
+      TData
+    >;
+    request?: SecondParameter<typeof customFetch>;
+  },
+) => {
+  const { query: queryOptions, request: requestOptions } = options ?? {};
+
+  const queryKey = queryOptions?.queryKey ?? getListSimulationsQueryKey(params);
+
+  const queryFn: QueryFunction<Awaited<ReturnType<typeof listSimulations>>> = ({
+    signal,
+  }) => listSimulations(params, { signal, ...requestOptions });
+
+  return { queryKey, queryFn, ...queryOptions } as UseQueryOptions<
+    Awaited<ReturnType<typeof listSimulations>>,
+    TError,
+    TData
+  > & { queryKey: QueryKey };
+};
+
+export type ListSimulationsQueryResult = NonNullable<
+  Awaited<ReturnType<typeof listSimulations>>
+>;
+export type ListSimulationsQueryError = ErrorType<unknown>;
+
+/**
+ * @summary List simulations
+ */
+
+export function useListSimulations<
+  TData = Awaited<ReturnType<typeof listSimulations>>,
+  TError = ErrorType<unknown>,
+>(
+  params?: ListSimulationsParams,
+  options?: {
+    query?: UseQueryOptions<
+      Awaited<ReturnType<typeof listSimulations>>,
+      TError,
+      TData
+    >;
+    request?: SecondParameter<typeof customFetch>;
+  },
+): UseQueryResult<TData, TError> & { queryKey: QueryKey } {
+  const queryOptions = getListSimulationsQueryOptions(params, options);
 
   const query = useQuery(queryOptions) as UseQueryResult<TData, TError> & {
     queryKey: QueryKey;
