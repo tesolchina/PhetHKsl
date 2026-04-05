@@ -35,3 +35,9 @@ id = "Y2P7KahvlMpbSlLPAry2l"
 uri = "file://artifacts/phet-sims/research-upgrade-plan.md"
 type = "text"
 title = "PhET升级调研报告（整合Google Learn Your Way/LearnLM研究）"
+
+[[outputs]]
+id = "O9tH4ItA-TaIoXyIbhbRt"
+uri = "file://artifacts/phet-sims/phet-full-catalog.md"
+type = "text"
+title = "PhET全部模拟目录 — 小学适用性筛查报告"
