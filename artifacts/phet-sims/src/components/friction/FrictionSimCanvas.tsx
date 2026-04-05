@@ -504,7 +504,7 @@ export function FrictionSimCanvas({ language, speakText, onNext, onPrev }: Props
               {language === 'zh' ? '\u6E29\u5EA6' : 'Temperature'}
             </p>
             <p className={`text-2xl font-bold ${temperature > 50 ? 'text-orange-400' : temperature > 30 ? 'text-yellow-400' : 'text-blue-400'}`}>
-              {Math.round(temperature)}\u00B0C
+              {Math.round(temperature)}{"°C"}
             </p>
           </div>
           <div className="bg-white/5 rounded-xl p-3 text-center border border-white/5">
@@ -512,7 +512,7 @@ export function FrictionSimCanvas({ language, speakText, onNext, onPrev }: Props
               {language === 'zh' ? '\u62D6\u52A8\u901F\u5EA6' : 'Drag Speed'}
             </p>
             <p className="text-2xl font-bold text-green-400">
-              {Math.round(dragSpeed)}
+              {Math.round(dragSpeed)}{" cm/s"}
             </p>
           </div>
           <div className="bg-white/5 rounded-xl p-3 text-center border border-white/5">
@@ -520,7 +520,7 @@ export function FrictionSimCanvas({ language, speakText, onNext, onPrev }: Props
               {language === 'zh' ? '\u4EA7\u751F\u70ED\u91CF' : 'Heat Generated'}
             </p>
             <p className="text-2xl font-bold text-red-400">
-              {totalFriction.toFixed(1)}J
+              {totalFriction.toFixed(1)}{" J"}
             </p>
           </div>
         </div>
