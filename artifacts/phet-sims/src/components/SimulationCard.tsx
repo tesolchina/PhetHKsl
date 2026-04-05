@@ -24,6 +24,7 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
   const description = simulation.description[language];
   const tags = simulation.tags[language];
   const categoryLabel = t(`category.${simulation.category}`);
+  const gradeLabel = t(`grade.label.${simulation.gradeLevel}`);
   const simUrl = simulation.url[language];
 
   const stopSpeaking = useCallback(() => {
@@ -96,6 +97,9 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
             <div className="flex items-center gap-2">
               <Badge variant="outline" className="border-primary/20 text-primary uppercase tracking-wider text-xs font-semibold">
                 {categoryLabel}
+              </Badge>
+              <Badge variant="outline" className={`uppercase tracking-wider text-[10px] font-semibold ${simulation.gradeLevel === 'elementary' ? 'border-amber-500/30 text-amber-400' : 'border-blue-500/30 text-blue-400'}`}>
+                {gradeLabel}
               </Badge>
               {simulation.localDev && (
                 <Badge variant="outline" className="border-green-500/30 text-green-400 uppercase tracking-wider text-[10px] font-semibold">

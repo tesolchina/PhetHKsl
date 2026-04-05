@@ -1,17 +1,28 @@
-import { useEffect } from 'react';
-import { simulations } from '@/data/simulations';
+import { useEffect, useState } from 'react';
+import { simulations, type GradeLevel } from '@/data/simulations';
 import { SimulationCard } from '@/components/SimulationCard';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Atom, Beaker, Globe, Activity, ChevronRight } from 'lucide-react';
+import { ArrowDown, Atom, Beaker, Globe, Activity, ChevronRight, GraduationCap } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/context/LanguageContext';
 
+type GradeFilter = 'all' | GradeLevel;
+
 export default function Home() {
   const { t } = useLanguage();
-  const physicsSims = simulations.filter(s => s.category === 'Physics');
-  const chemistrySims = simulations.filter(s => s.category === 'Chemistry');
-  const biologySims = simulations.filter(s => s.category === 'Biology');
+  const [gradeFilter, setGradeFilter] = useState<GradeFilter>('all');
+
+  const filtered = gradeFilter === 'all'
+    ? simulations
+    : simulations.filter(s => s.gradeLevel === gradeFilter);
+
+  const physicsSims = filtered.filter(s => s.category === 'Physics');
+  const chemistrySims = filtered.filter(s => s.category === 'Chemistry');
+  const biologySims = filtered.filter(s => s.category === 'Biology');
+
+  const elementaryCount = simulations.filter(s => s.gradeLevel === 'elementary').length;
+  const middleCount = simulations.filter(s => s.gradeLevel === 'middle').length;
 
   useEffect(() => {
     document.documentElement.classList.add('dark');
@@ -20,6 +31,12 @@ export default function Home() {
   const scrollToSims = () => {
     document.getElementById('exhibition')?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const gradeButtons: { value: GradeFilter; count?: number }[] = [
+    { value: 'all' },
+    { value: 'elementary', count: elementaryCount },
+    { value: 'middle', count: middleCount },
+  ];
 
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/30 selection:text-primary">
@@ -106,80 +123,120 @@ export default function Home() {
       </section>
 
       <div id="exhibition" className="relative">
-        <section id="physics" className="py-32 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-1/2 h-full z-0 opacity-20 pointer-events-none">
-            <img src="/physics-bg.png" alt="" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
-          </div>
-          
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="flex items-center gap-4 mb-12">
-              <div className="p-4 rounded-2xl bg-secondary/20 text-secondary border border-secondary/30">
-                <Atom className="w-8 h-8" />
-              </div>
-              <div>
-                <h2 className="text-4xl font-serif font-bold">{t('physics.title')}</h2>
-                <p className="text-muted-foreground mt-2">{t('physics.subtitle')}</p>
-              </div>
+        <div className="max-w-7xl mx-auto px-6 pt-20 pb-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <GraduationCap className="w-6 h-6 text-primary" />
+              <span className="text-lg font-medium text-foreground">{t('grade.all')}</span>
             </div>
+            <div className="flex gap-2" role="group" aria-label="Grade level filter">
+              {gradeButtons.map(({ value, count }) => {
+                const label = t(`grade.${value}`);
+                const isActive = gradeFilter === value;
+                return (
+                  <button
+                    key={value}
+                    onClick={() => setGradeFilter(value)}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                      isActive
+                        ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/25'
+                        : 'bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground'
+                    }`}
+                  >
+                    {label}{count !== undefined ? ` (${count})` : ''}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {physicsSims.map((sim) => (
-                <SimulationCard key={sim.id} simulation={sim} />
-              ))}
+        {physicsSims.length > 0 && (
+          <section id="physics" className="py-20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-1/2 h-full z-0 opacity-20 pointer-events-none">
+              <img src="/physics-bg.png" alt="" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
             </div>
-          </div>
-        </section>
-
-        <section id="chemistry" className="py-32 bg-card/20 relative overflow-hidden border-y border-white/5">
-          <div className="absolute top-0 left-0 w-1/2 h-full z-0 opacity-20 pointer-events-none">
-            <img src="/chemistry-bg.png" alt="" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background" />
-          </div>
-          
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="flex items-center gap-4 mb-12 justify-end text-right">
-              <div>
-                <h2 className="text-4xl font-serif font-bold">{t('chemistry.title')}</h2>
-                <p className="text-muted-foreground mt-2">{t('chemistry.subtitle')}</p>
+            
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
+              <div className="flex items-center gap-4 mb-12">
+                <div className="p-4 rounded-2xl bg-secondary/20 text-secondary border border-secondary/30">
+                  <Atom className="w-8 h-8" />
+                </div>
+                <div>
+                  <h2 className="text-4xl font-serif font-bold">{t('physics.title')}</h2>
+                  <p className="text-muted-foreground mt-2">{t('physics.subtitle')}</p>
+                </div>
               </div>
-              <div className="p-4 rounded-2xl bg-purple-500/20 text-purple-400 border border-purple-500/30">
-                <Beaker className="w-8 h-8" />
-              </div>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {chemistrySims.map((sim) => (
-                <SimulationCard key={sim.id} simulation={sim} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="biology" className="py-32 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-1/2 h-full z-0 opacity-20 pointer-events-none">
-            <img src="/biology-bg.png" alt="" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
-          </div>
-          
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="flex items-center gap-4 mb-12">
-              <div className="p-4 rounded-2xl bg-green-500/20 text-green-400 border border-green-500/30">
-                <Globe className="w-8 h-8" />
-              </div>
-              <div>
-                <h2 className="text-4xl font-serif font-bold">{t('biology.title')}</h2>
-                <p className="text-muted-foreground mt-2">{t('biology.subtitle')}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {physicsSims.map((sim) => (
+                  <SimulationCard key={sim.id} simulation={sim} />
+                ))}
               </div>
             </div>
+          </section>
+        )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {biologySims.map((sim) => (
-                <SimulationCard key={sim.id} simulation={sim} />
-              ))}
+        {chemistrySims.length > 0 && (
+          <section id="chemistry" className="py-20 bg-card/20 relative overflow-hidden border-y border-white/5">
+            <div className="absolute top-0 left-0 w-1/2 h-full z-0 opacity-20 pointer-events-none">
+              <img src="/chemistry-bg.png" alt="" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background" />
             </div>
+            
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
+              <div className="flex items-center gap-4 mb-12 justify-end text-right">
+                <div>
+                  <h2 className="text-4xl font-serif font-bold">{t('chemistry.title')}</h2>
+                  <p className="text-muted-foreground mt-2">{t('chemistry.subtitle')}</p>
+                </div>
+                <div className="p-4 rounded-2xl bg-purple-500/20 text-purple-400 border border-purple-500/30">
+                  <Beaker className="w-8 h-8" />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {chemistrySims.map((sim) => (
+                  <SimulationCard key={sim.id} simulation={sim} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {biologySims.length > 0 && (
+          <section id="biology" className="py-20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-1/2 h-full z-0 opacity-20 pointer-events-none">
+              <img src="/biology-bg.png" alt="" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
+            </div>
+            
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
+              <div className="flex items-center gap-4 mb-12">
+                <div className="p-4 rounded-2xl bg-green-500/20 text-green-400 border border-green-500/30">
+                  <Globe className="w-8 h-8" />
+                </div>
+                <div>
+                  <h2 className="text-4xl font-serif font-bold">{t('biology.title')}</h2>
+                  <p className="text-muted-foreground mt-2">{t('biology.subtitle')}</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {biologySims.map((sim) => (
+                  <SimulationCard key={sim.id} simulation={sim} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {filtered.length === 0 && (
+          <div className="max-w-7xl mx-auto px-6 py-32 text-center">
+            <p className="text-2xl text-muted-foreground">{t('grade.all')}</p>
           </div>
-        </section>
+        )}
       </div>
 
       <footer className="border-t border-white/10 bg-card py-16">
