@@ -1,11 +1,12 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { type Simulation } from '@/data/simulations';
-import { Play, Volume2, VolumeX, BookOpen, ChevronRight, PanelRightOpen, PanelRightClose } from 'lucide-react';
+import { Play, Volume2, VolumeX, BookOpen, ChevronRight, PanelRightOpen, PanelRightClose, Sparkles } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useLanguage } from '@/context/LanguageContext';
+import { useLocation } from 'wouter';
 
 interface SimulationCardProps {
   simulation: Simulation;
@@ -19,6 +20,7 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
   const canSpeak = typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   const { language, t } = useLanguage();
+  const [, navigate] = useLocation();
 
   const name = simulation.name[language];
   const description = simulation.description[language];
@@ -87,7 +89,7 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
     <>
       <div 
         className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-white/5 bg-card p-6 card-hover-glow cursor-pointer h-full"
-        onClick={() => setIsOpen(true)}
+        onClick={() => simulation.customRoute ? navigate(simulation.customRoute) : setIsOpen(true)}
         data-testid={`card-${simulation.id}`}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -101,7 +103,13 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
               <Badge variant="outline" className={`uppercase tracking-wider text-[10px] font-semibold ${simulation.gradeLevel === 'elementary' ? 'border-amber-500/30 text-amber-400' : 'border-blue-500/30 text-blue-400'}`}>
                 {gradeLabel}
               </Badge>
-              {simulation.localDev && (
+              {simulation.customRoute && (
+                <Badge variant="outline" className="border-emerald-500/30 text-emerald-400 uppercase tracking-wider text-[10px] font-semibold">
+                  <Sparkles className="h-2.5 w-2.5 mr-1" />
+                  {language === 'zh' ? '原创' : 'Original'}
+                </Badge>
+              )}
+              {simulation.localDev && !simulation.customRoute && (
                 <Badge variant="outline" className="border-green-500/30 text-green-400 uppercase tracking-wider text-[10px] font-semibold">
                   {language === 'zh' ? '已修改' : 'Modified'}
                 </Badge>

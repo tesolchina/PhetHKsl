@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/context/LanguageContext";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
+import FrictionLab from "@/pages/friction-lab";
 
 const queryClient = new QueryClient();
 
@@ -12,6 +13,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/friction-lab" component={FrictionLab} />
       <Route component={NotFound} />
     </Switch>
   );

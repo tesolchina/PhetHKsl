@@ -16,6 +16,7 @@ export interface Simulation {
   tags: { en: string[]; zh: string[] };
   guide: GuideStep[];
   localDev?: boolean;
+  customRoute?: string;
 }
 
 export const simulations: Simulation[] = [
@@ -59,18 +60,19 @@ export const simulations: Simulation[] = [
   },
   {
     id: 'friction',
-    name: { en: 'Friction', zh: '摩擦力' },
+    name: { en: 'Friction Lab', zh: '摩擦力实验室' },
     description: {
-      en: 'Rub two objects together and see what happens! Watch how rubbing makes things hotter at the tiny atom level.',
-      zh: '把两个物体摩擦在一起，看看会发生什么！观察摩擦如何在微小的原子层面让东西变热。'
+      en: 'An original interactive experience: explore how friction creates heat through story, prediction, simulation, and hands-on challenges!',
+      zh: '原创互动体验：通过故事、预测、模拟和动手挑战，探索摩擦力如何产生热量！'
     },
     url: {
       en: 'https://phet.colorado.edu/sims/html/friction/latest/friction_en.html',
       zh: 'https://phet.colorado.edu/sims/html/friction/latest/friction_zh_CN.html'
     },
+    customRoute: '/friction-lab',
     category: 'Physics',
     gradeLevel: 'elementary',
-    tags: { en: ['Friction', 'Heat', 'Atoms'], zh: ['摩擦力', '热量', '原子'] },
+    tags: { en: ['Friction', 'Heat', 'Atoms', 'Original'], zh: ['摩擦力', '热量', '原子', '原创'] },
     guide: [
       {
         title: { en: 'What is Friction?', zh: '什么是摩擦力？' },
