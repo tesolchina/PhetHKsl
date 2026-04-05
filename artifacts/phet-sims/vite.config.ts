@@ -5,6 +5,57 @@ import path from "path";
 import fs from "fs";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
+function contentApiServer(): Plugin {
+  const CONTENT_ROOT = path.resolve(import.meta.dirname, "content", "modules");
+  function handler(req: any, res: any, next: any) {
+    if (!req.url?.startsWith("/api/content")) return next();
+    const urlPath = req.url.replace(/^\/api\/content\/?/, "").split("?")[0];
+    res.setHeader("Content-Type", "application/json");
+    res.setHeader("Access-Control-Allow-Origin", "*");
+
+    if (!urlPath || urlPath === "") {
+      const dirs = fs.readdirSync(CONTENT_ROOT, { withFileTypes: true })
+        .filter(d => d.isDirectory())
+        .map(d => {
+          const modPath = path.join(CONTENT_ROOT, d.name, "module.json");
+          try {
+            const data = JSON.parse(fs.readFileSync(modPath, "utf-8"));
+            return { id: d.name, metadata: data.metadata };
+          } catch { return null; }
+        })
+        .filter(Boolean);
+      res.writeHead(200);
+      res.end(JSON.stringify(dirs));
+      return;
+    }
+
+    const moduleId = urlPath.replace(/\/$/, "");
+    const modPath = path.join(CONTENT_ROOT, moduleId, "module.json");
+    if (!modPath.startsWith(CONTENT_ROOT + path.sep)) {
+      res.writeHead(403);
+      res.end(JSON.stringify({ error: "Forbidden" }));
+      return;
+    }
+    try {
+      const data = fs.readFileSync(modPath, "utf-8");
+      res.writeHead(200);
+      res.end(data);
+    } catch {
+      res.writeHead(404);
+      res.end(JSON.stringify({ error: "Module not found" }));
+    }
+  }
+  return {
+    name: "content-api-server",
+    configureServer(server) {
+      server.middlewares.use(handler);
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(handler);
+    },
+  };
+}
+
 function phetLocalServer(): Plugin {
   const PHET_ROOT = path.resolve(import.meta.dirname, "..", "..", "phetsims");
   const MIME: Record<string, string> = {
@@ -84,6 +135,7 @@ export default defineConfig({
     tailwindcss(),
     runtimeErrorOverlay(),
     phetLocalServer(),
+    contentApiServer(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
@@ -101,6 +153,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "src"),
+      "@content": path.resolve(import.meta.dirname, "content"),
       "@assets": path.resolve(import.meta.dirname, "..", "..", "attached_assets"),
     },
     dedupe: ["react", "react-dom"],

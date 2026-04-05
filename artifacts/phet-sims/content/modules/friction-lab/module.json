@@ -1,0 +1,306 @@
+{
+  "metadata": {
+    "id": "friction-lab",
+    "version": "1.0.0",
+    "title": { "zh": "摩擦力实验室", "en": "Friction Lab" },
+    "description": {
+      "zh": "通过故事、预测、模拟和动手挑战，探索摩擦力如何产生热量！",
+      "en": "Explore how friction creates heat through story, prediction, simulation, and hands-on challenges!"
+    },
+    "grade": "3-4",
+    "subjects": ["science", "chinese", "english"],
+    "curriculumStandard": "2022",
+    "topic": { "zh": "物质科学 > 力的作用 > 摩擦力", "en": "Physical Science > Forces > Friction" },
+    "duration": "40min",
+    "costPerStudent": "1 RMB",
+    "authors": [],
+    "tags": {
+      "zh": ["摩擦力", "热量", "原子", "跨学科"],
+      "en": ["Friction", "Heat", "Atoms", "Cross-curricular"]
+    }
+  },
+  "steps": [
+    {
+      "type": "story",
+      "title": { "zh": "搓搓手，暖暖手", "en": "Rub Your Hands, Warm Your Hands" },
+      "subtitle": { "zh": "一个关于摩擦力的小故事", "en": "A Story About Friction" },
+      "image": "images/friction-story.png",
+      "imageAlt": { "zh": "小明在操场上搓手取暖", "en": "Xiao Ming rubbing hands on the playground" },
+      "paragraphs": [
+        { "zh": "冬天的早晨，小明在操场上冻得直哆嗦。", "en": "On a cold winter morning, Xiao Ming was shivering on the playground." },
+        { "zh": "他把两只手掌合在一起，快速地搓了起来。", "en": "He pressed his palms together and rubbed them quickly back and forth." },
+        { "zh": "神奇的事情发生了——手掌变暖了！", "en": "Something magical happened - his palms felt warm!" },
+        { "zh": "可是，热量是从哪里来的呢？", "en": "But where did the heat come from?" },
+        { "zh": "让我们一起来探索\"摩擦力\"的秘密吧！", "en": "Let's explore the secret of \"friction\" together!" }
+      ],
+      "hint": { "zh": "试试搓搓你自己的双手，感受一下温度的变化！", "en": "Try rubbing your own hands together and feel the temperature change!" },
+      "listenLabel": { "zh": "听故事", "en": "Listen" },
+      "nextLabel": { "zh": "我准备好了", "en": "I'm Ready" }
+    },
+    {
+      "type": "prediction",
+      "title": { "zh": "你来预测", "en": "Make Your Prediction" },
+      "questions": [
+        {
+          "question": { "zh": "用手快速搓桌子表面，手会感觉怎样？", "en": "If you rub the desk quickly with your hand, how will your hand feel?" },
+          "image": "images/quiz-rub-desk.png",
+          "imageAlt": { "zh": "手快速搓桌面", "en": "Hand rubbing desk surface" },
+          "options": [
+            { "zh": "变冷", "en": "Colder" },
+            { "zh": "变热", "en": "Warmer" },
+            { "zh": "没有变化", "en": "No change" }
+          ],
+          "correctIndex": 1,
+          "explanation": {
+            "zh": "摩擦会产生热量！两个表面接触并移动时，微小的原子互相碰撞，产生了热能。",
+            "en": "Friction generates heat! When two surfaces touch and slide, tiny atoms collide and produce thermal energy."
+          }
+        },
+        {
+          "question": { "zh": "哪个表面搓起来更费力？", "en": "Which surface takes more effort to rub?" },
+          "image": "images/quiz-surfaces.png",
+          "imageAlt": { "zh": "光滑玻璃和粗糙砂纸对比", "en": "Smooth glass vs rough sandpaper" },
+          "options": [
+            { "zh": "光滑的玻璃", "en": "Smooth glass" },
+            { "zh": "粗糙的砂纸", "en": "Rough sandpaper" },
+            { "zh": "两个一样", "en": "Both the same" }
+          ],
+          "correctIndex": 1,
+          "explanation": {
+            "zh": "粗糙的表面有更多凹凸不平的地方，原子之间的碰撞更多，所以摩擦力更大！",
+            "en": "Rough surfaces have more bumps, causing more atomic collisions, which means greater friction!"
+          }
+        },
+        {
+          "question": { "zh": "搓得越快，温度会……", "en": "If you rub faster, the temperature will..." },
+          "image": "images/quiz-speed.png",
+          "imageAlt": { "zh": "慢速和快速搓手对比", "en": "Slow vs fast rubbing comparison" },
+          "options": [
+            { "zh": "升得越高", "en": "Go higher" },
+            { "zh": "降得越低", "en": "Go lower" },
+            { "zh": "不变", "en": "Stay the same" }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "zh": "搓得越快，原子碰撞越剧烈，产生的热量就越多，温度升得越高。",
+            "en": "Faster rubbing means more intense atomic collisions, producing more heat, so the temperature rises higher."
+          }
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "simulationType": "friction",
+      "config": {
+        "surfaces": ["wood", "sandpaper", "ice"],
+        "showAtoms": true,
+        "showThermometer": true,
+        "showForceArrow": true
+      },
+      "instructions": {
+        "zh": "拖动木块来回摩擦，观察原子碰撞和温度变化",
+        "en": "Drag the block back and forth to observe atomic collisions and temperature changes"
+      }
+    },
+    {
+      "type": "challenge",
+      "title": { "zh": "知识挑战", "en": "Knowledge Challenge" },
+      "questions": [
+        {
+          "question": { "zh": "把这些表面按摩擦力从小到大排列：", "en": "Rank these surfaces from least to most friction:" },
+          "image": "images/quiz-rank-surfaces.png",
+          "imageAlt": { "zh": "冰面、木头、砂纸三种表面", "en": "Ice, wood, and sandpaper surfaces" },
+          "questionType": "rank",
+          "items": [
+            { "zh": "冰面", "en": "Ice" },
+            { "zh": "木头", "en": "Wood" },
+            { "zh": "砂纸", "en": "Sandpaper" }
+          ],
+          "correctOrder": [0, 1, 2],
+          "explanation": {
+            "zh": "冰面最光滑（摩擦力最小），砂纸最粗糙（摩擦力最大），木头在中间。表面越粗糙，原子之间的碰撞越多！",
+            "en": "Ice is the smoothest (least friction), sandpaper is the roughest (most friction), and wood is in between. Rougher surfaces cause more atomic collisions!"
+          }
+        },
+        {
+          "question": { "zh": "判断对错：", "en": "True or False:" },
+          "image": "images/quiz-rub-desk.png",
+          "imageAlt": { "zh": "搓手产生热量", "en": "Rubbing hands together" },
+          "questionType": "truefalse",
+          "statement": { "zh": "搓手的时候手会变热，这是因为摩擦产生了热量", "en": "When you rub your hands together they get warm because friction produces heat" },
+          "isTrue": true,
+          "explanation": {
+            "zh": "正确！当两个表面互相摩擦时，表面的微小粒子（原子）互相碰撞，碰撞产生了热能，所以手会变热。",
+            "en": "Correct! When two surfaces rub together, tiny particles (atoms) on the surfaces collide, and these collisions produce thermal energy, making your hands warm."
+          }
+        },
+        {
+          "question": { "zh": "判断对错：", "en": "True or False:" },
+          "image": "images/quiz-surfaces.png",
+          "imageAlt": { "zh": "光滑和粗糙表面", "en": "Smooth vs rough surfaces" },
+          "questionType": "truefalse",
+          "statement": { "zh": "在冰面上滑动比在砂纸上滑动会产生更多的热量", "en": "Sliding on ice produces more heat than sliding on sandpaper" },
+          "isTrue": false,
+          "explanation": {
+            "zh": "错误！砂纸更粗糙，摩擦力更大，产生的热量更多。冰面很光滑，摩擦力小，产生的热量很少。",
+            "en": "False! Sandpaper is rougher with more friction, so it produces more heat. Ice is smooth with little friction, producing very little heat."
+          }
+        },
+        {
+          "question": { "zh": "判断对错：", "en": "True or False:" },
+          "image": "images/quiz-speed.png",
+          "imageAlt": { "zh": "不同速度搓手", "en": "Different rubbing speeds" },
+          "questionType": "truefalse",
+          "statement": { "zh": "搓得越快，产生的热量越多", "en": "Rubbing faster produces more heat" },
+          "isTrue": true,
+          "explanation": {
+            "zh": "正确！速度越快，原子碰撞越剧烈、越频繁，产生的热能越多，温度上升越快。",
+            "en": "Correct! Higher speed means more intense and frequent atomic collisions, producing more thermal energy and a faster temperature rise."
+          }
+        }
+      ]
+    },
+    {
+      "type": "language-arts",
+      "title": { "zh": "语文与英语", "en": "Language Arts & English" },
+      "subtitle": { "zh": "用文字和语言表达你的科学发现", "en": "Express your scientific discoveries through language" },
+      "writing": {
+        "title": { "zh": "科学小作文", "en": "Science Writing" },
+        "subtitle": { "zh": "用你学到的知识写一段话", "en": "Write a paragraph about what you learned" },
+        "template": {
+          "zh": "今天我学到了关于摩擦力的知识。摩擦力是______。当两个表面互相摩擦时，______。表面越粗糙，______。我做了一个实验：______。我发现______。",
+          "en": "Today I learned about friction. Friction is ______. When two surfaces rub together, ______. The rougher the surface, ______. I did an experiment: ______. I discovered ______."
+        },
+        "tips": [
+          { "zh": "先写你观察到了什么（现象）", "en": "First, write what you observed (phenomenon)" },
+          { "zh": "再写你觉得为什么会这样（原因）", "en": "Then, write why you think it happened (reason)" },
+          { "zh": "最后写你的结论（总结）", "en": "Finally, write your conclusion (summary)" }
+        ],
+        "templateLabel": { "zh": "填空模板", "en": "Fill-in Template" },
+        "freeWriteLabel": { "zh": "自由写作", "en": "Free Writing" },
+        "placeholder": {
+          "zh": "请在这里写下你的科学发现……\n\n提示：可以用\"首先……然后……最后……\"来组织你的文字。",
+          "en": "Write about your science discovery here...\n\nTip: Use \"First... Then... Finally...\" to organize your writing."
+        }
+      },
+      "vocabulary": [
+        { "zh": "摩擦力", "pinyin": "mo ca li", "en": "friction", "sentenceZh": "摩擦力让我的手变热了。", "sentenceEn": "Friction made my hands warm." },
+        { "zh": "热能", "pinyin": "r\u00e8 n\u00e9ng", "en": "heat energy", "sentenceZh": "摩擦产生了热能。", "sentenceEn": "Friction produces heat energy." },
+        { "zh": "原子", "pinyin": "yu\u00e1n z\u01d0", "en": "atom", "sentenceZh": "原子碰撞会产生热量。", "sentenceEn": "Atoms collide and produce heat." },
+        { "zh": "粗糙", "pinyin": "c\u016b c\u0101o", "en": "rough", "sentenceZh": "砂纸的表面很粗糙。", "sentenceEn": "The surface of sandpaper is rough." },
+        { "zh": "光滑", "pinyin": "gu\u0101ng hu\u00e1", "en": "smooth", "sentenceZh": "冰面非常光滑。", "sentenceEn": "The ice surface is very smooth." },
+        { "zh": "温度", "pinyin": "w\u0113n d\u00f9", "en": "temperature", "sentenceZh": "搓手后温度升高了。", "sentenceEn": "The temperature rose after rubbing." }
+      ],
+      "song": {
+        "title": { "zh": "摩擦力之歌", "en": "The Friction Song" },
+        "subtitle": { "zh": "用英语唱出科学知识", "en": "Learn science words through singing" },
+        "melody": "(Tune: Row Row Row Your Boat)",
+        "lines": [
+          { "en": "Rub, rub, rub your hands,", "zh": "搓搓搓你的手，" },
+          { "en": "Feel the friction heat!", "zh": "感受摩擦的热！" },
+          { "en": "Atoms bump and atoms shake,", "zh": "原子碰撞原子抖，" },
+          { "en": "Making warmth so sweet!", "zh": "暖暖的真舒服！" },
+          { "en": "", "zh": "" },
+          { "en": "Rough, rough, rough the road,", "zh": "粗糙粗糙路面粗，" },
+          { "en": "Friction slows you down!", "zh": "摩擦力让你慢！" },
+          { "en": "Smooth, smooth, smooth the ice,", "zh": "光滑光滑冰面滑，" },
+          { "en": "You slide across the ground!", "zh": "你在地上滑！" }
+        ],
+        "keyWords": ["friction", "heat", "atoms", "rough", "smooth", "slide"]
+      }
+    },
+    {
+      "type": "hands-on",
+      "title": { "zh": "动手实验：摩擦力大比拼", "en": "Hands-On: Friction Challenge" },
+      "subtitle": { "zh": "现在轮到你亲手验证了！", "en": "Now it's your turn to test it for real!" },
+      "intro": {
+        "zh": "你在模拟中看到了摩擦力如何让原子抖动、产生热量。现在用真实的材料来做一次实验，看看现实和模拟是不是一样！",
+        "en": "You saw in the simulation how friction makes atoms vibrate and produce heat. Now use real materials to experiment and see if reality matches the simulation!"
+      },
+      "image": "images/friction-handson.png",
+      "cost": { "zh": "~1 元", "en": "~1 RMB" },
+      "time": { "zh": "~20 分钟", "en": "~20 minutes" },
+      "curriculum": {
+        "zh": "课标对应：物质科学 > 力的作用 > 摩擦力（3-4年级）",
+        "en": "Curriculum: Physical Science > Forces > Friction (Grade 3-4)"
+      },
+      "materials": [
+        { "name": { "zh": "小木块 1 个", "en": "1 small wooden block" }, "note": { "zh": "可以用橡皮代替", "en": "An eraser works too" } },
+        { "name": { "zh": "橡皮筋 1 根", "en": "1 rubber band" }, "note": { "zh": "用来测量拉力", "en": "To measure pulling force" } },
+        { "name": { "zh": "光滑桌面", "en": "Smooth desk surface" }, "note": { "zh": "教室课桌就可以", "en": "Your classroom desk" } },
+        { "name": { "zh": "砂纸 1 小片", "en": "1 piece of sandpaper" }, "note": { "zh": "五金店几毛钱一片", "en": "A few cents at hardware store" } },
+        { "name": { "zh": "毛巾 1 条", "en": "1 towel" }, "note": { "zh": "家里的毛巾即可", "en": "Any towel from home" } }
+      ],
+      "experimentSteps": [
+        { "zh": "用橡皮筋绑住小木块", "en": "Tie the rubber band around the wooden block" },
+        { "zh": "在光滑桌面上拉着木块滑动，观察橡皮筋拉长了多少厘米", "en": "Drag the block across the smooth desk — observe how many cm the rubber band stretches" },
+        { "zh": "把砂纸铺在桌上，再拉一次——橡皮筋拉得更长了！", "en": "Put sandpaper on the desk and drag again — the rubber band stretches more!" },
+        { "zh": "换成毛巾铺在桌上，再试一次", "en": "Replace sandpaper with a towel and try again" },
+        { "zh": "用手摸一摸滑动后的木块底部——感觉温度变化了吗？", "en": "Touch the bottom of the block after sliding — can you feel any temperature change?" }
+      ],
+      "record": {
+        "title": { "zh": "实验记录表", "en": "Experiment Record Sheet" },
+        "headers": [
+          { "zh": "表面", "en": "Surface" },
+          { "zh": "橡皮筋拉长(cm)", "en": "Band stretch (cm)" },
+          { "zh": "木块底部温度感觉", "en": "Block bottom temperature" }
+        ],
+        "rows": [
+          { "zh": "光滑桌面", "en": "Smooth desk" },
+          { "zh": "砂纸", "en": "Sandpaper" },
+          { "zh": "毛巾", "en": "Towel" }
+        ]
+      },
+      "verify": {
+        "zh": "做完实验后，回到模拟中切换不同表面（木头/砂纸/冰面），看看模拟结果和你的实验是不是一致！",
+        "en": "After the experiment, go back to the simulation and switch surfaces (wood/sandpaper/ice) to compare!"
+      }
+    },
+    {
+      "type": "reflection",
+      "title": { "zh": "总结与反思", "en": "Summary & Reflection" },
+      "subtitle": { "zh": "回顾你今天的学习旅程", "en": "Review your learning journey today" },
+      "journey": [
+        { "step": { "zh": "故事", "en": "Story" }, "desc": { "zh": "小明搓手取暖，发现摩擦生热", "en": "Xiao Ming rubbed his hands and discovered friction creates heat" } },
+        { "step": { "zh": "预测", "en": "Predict" }, "desc": { "zh": "预测摩擦力的效果", "en": "Predicted the effects of friction" } },
+        { "step": { "zh": "模拟", "en": "Simulate" }, "desc": { "zh": "拖动木块，观察原子碰撞产生热量", "en": "Dragged a block and observed atoms colliding to produce heat" } },
+        { "step": { "zh": "挑战", "en": "Challenge" }, "desc": { "zh": "回答问题巩固知识", "en": "Answered questions to reinforce knowledge" } },
+        { "step": { "zh": "读写", "en": "Language" }, "desc": { "zh": "用中英文表达科学发现", "en": "Expressed scientific discoveries in Chinese and English" } },
+        { "step": { "zh": "动手", "en": "Hands-On" }, "desc": { "zh": "亲手验证摩擦力", "en": "Verified friction through physical experiments" } }
+      ],
+      "keyFindings": [
+        {
+          "title": { "zh": "摩擦产生热", "en": "Friction Produces Heat" },
+          "desc": { "zh": "两个表面互相摩擦时，原子碰撞产生热能——搓手变热的原因！", "en": "When surfaces rub together, atoms collide and produce thermal energy!" }
+        },
+        {
+          "title": { "zh": "粗糙 = 摩擦力大", "en": "Rougher = More Friction" },
+          "desc": { "zh": "砂纸比冰面产生更多摩擦力，因为粗糙表面原子碰撞更多。", "en": "Sandpaper creates more friction than ice due to more atomic collisions." }
+        },
+        {
+          "title": { "zh": "速度快 = 热量多", "en": "Faster = More Heat" },
+          "desc": { "zh": "搓得越快，原子碰撞越剧烈，温度升得越快。", "en": "Rubbing faster means more intense collisions and faster temperature rise." }
+        }
+      ],
+      "journal": {
+        "title": { "zh": "科学日志", "en": "Science Journal" },
+        "prompt": { "zh": "写下你最大的发现和还想知道的问题：", "en": "Write about your biggest discovery and questions you still have:" },
+        "placeholder": {
+          "zh": "今天我最大的发现是……\n我还想知道……\n下次我想试试……",
+          "en": "My biggest discovery today was...\nI still want to know...\nNext time I want to try..."
+        }
+      },
+      "selfCheckTitle": { "zh": "自我评价", "en": "Self-Assessment" },
+      "selfCheckItems": [
+        { "zh": "我能解释摩擦力是怎么产生热量的", "en": "I can explain how friction produces heat" },
+        { "zh": "我能说出表面粗糙度如何影响摩擦力", "en": "I can describe how surface roughness affects friction" },
+        { "zh": "我能用中文和英文说出\"摩擦力\"等科学词汇", "en": "I can say science vocabulary in both Chinese and English" },
+        { "zh": "我完成了动手实验并记录了结果", "en": "I completed the hands-on experiment and recorded results" }
+      ],
+      "curriculum": {
+        "zh": "课标对应：义务教育科学课程标准（2022） > 物质科学 > 力的作用",
+        "en": "Curriculum: Compulsory Education Science Standards (2022) > Physical Science > Forces"
+      }
+    }
+  ]
+}

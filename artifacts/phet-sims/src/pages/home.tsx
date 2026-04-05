@@ -53,11 +53,13 @@ export default function Home() {
             <a href="#exhibition" className="hover:text-primary transition-colors">{t('nav.exhibitionHall')}</a>
             <a href="#physics" className="hover:text-primary transition-colors">{t('nav.physics')}</a>
             <a href="#chemistry" className="hover:text-primary transition-colors">{t('nav.chemistry')}</a>
-            <Link href="/teacher-guide">
-              <a className="hover:text-primary transition-colors flex items-center gap-1.5">
-                <BookOpen className="h-3.5 w-3.5" />
-                {t('nav.support') === 'Support' ? 'Teaching Guide' : '教学指南'}
-              </a>
+            <Link href="/teacher-guide" className="hover:text-primary transition-colors flex items-center gap-1.5">
+              <BookOpen className="h-3.5 w-3.5" />
+              {t('nav.support') === 'Support' ? 'Teaching Guide' : '教学指南'}
+            </Link>
+            <Link href="/content" className="hover:text-primary transition-colors flex items-center gap-1.5">
+              <GraduationCap className="h-3.5 w-3.5" />
+              {t('nav.support') === 'Support' ? 'Content' : '内容目录'}
             </Link>
             <LanguageToggle />
             <Button variant="outline" className="border-primary/30 hover:bg-primary hover:text-primary-foreground">

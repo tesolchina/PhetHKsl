@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import FrictionLab from "@/pages/friction-lab";
 import TeacherGuide from "@/pages/teacher-guide";
+import ContentCatalog from "@/pages/content-catalog";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/friction-lab" component={FrictionLab} />
       <Route path="/teacher-guide" component={TeacherGuide} />
+      <Route path="/content" component={ContentCatalog} />
       <Route component={NotFound} />
     </Switch>
   );
