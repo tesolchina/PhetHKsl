@@ -3,9 +3,10 @@ import { simulations, type GradeLevel } from '@/data/simulations';
 import { SimulationCard } from '@/components/SimulationCard';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Atom, Beaker, Globe, Activity, ChevronRight, GraduationCap } from 'lucide-react';
+import { ArrowDown, Atom, Beaker, Globe, Activity, ChevronRight, GraduationCap, BookOpen } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/context/LanguageContext';
+import { Link } from 'wouter';
 
 type GradeFilter = 'all' | GradeLevel;
 
@@ -52,6 +53,12 @@ export default function Home() {
             <a href="#exhibition" className="hover:text-primary transition-colors">{t('nav.exhibitionHall')}</a>
             <a href="#physics" className="hover:text-primary transition-colors">{t('nav.physics')}</a>
             <a href="#chemistry" className="hover:text-primary transition-colors">{t('nav.chemistry')}</a>
+            <Link href="/teacher-guide">
+              <a className="hover:text-primary transition-colors flex items-center gap-1.5">
+                <BookOpen className="h-3.5 w-3.5" />
+                {t('nav.support') === 'Support' ? 'Teaching Guide' : '教学指南'}
+              </a>
+            </Link>
             <LanguageToggle />
             <Button variant="outline" className="border-primary/30 hover:bg-primary hover:text-primary-foreground">
               {t('nav.support')}
