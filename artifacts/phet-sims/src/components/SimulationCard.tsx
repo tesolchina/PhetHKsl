@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { type SimulationItem } from '@workspace/api-client-react';
-import { Play, Volume2, VolumeX, BookOpen, ChevronRight, PanelRightOpen, PanelRightClose, Sparkles, Star } from 'lucide-react';
+import { Play, Volume2, VolumeX, BookOpen, ChevronRight, PanelRightOpen, PanelRightClose, Sparkles, Star, GraduationCap } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -143,6 +143,17 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
             </span>
           ))}
         </div>
+
+        {simulation.curriculumMappings && simulation.curriculumMappings.length > 0 && (
+          <div className="relative z-10 mt-3 flex items-center gap-1.5">
+            <GraduationCap className="h-3 w-3 text-emerald-400 shrink-0" />
+            <span className="text-[10px] text-emerald-400/80 font-medium truncate">
+              {language === 'zh'
+                ? `${simulation.curriculumMappings.length} 项课标对齐`
+                : `${simulation.curriculumMappings.length} curriculum mapping${simulation.curriculumMappings.length > 1 ? 's' : ''}`}
+            </span>
+          </div>
+        )}
       </div>
 
       <Dialog open={isOpen} onOpenChange={handleClose}>
@@ -261,6 +272,31 @@ export function SimulationCard({ simulation }: SimulationCardProps) {
                             <ChevronRight className="h-3 w-3 ml-1" />
                           </Button>
                         )}
+                      </div>
+                    </div>
+                  )}
+
+                  {simulation.curriculumMappings && simulation.curriculumMappings.length > 0 && (
+                    <div className="p-5 border-t border-white/5">
+                      <div className="flex items-center gap-2 mb-3">
+                        <GraduationCap className="h-4 w-4 text-emerald-400" />
+                        <h4 className="text-sm font-semibold text-emerald-400">
+                          {language === 'zh' ? '课程标准对齐' : 'Curriculum Alignment'}
+                        </h4>
+                      </div>
+                      <div className="space-y-2">
+                        {simulation.curriculumMappings.map((mapping, i) => (
+                          <div key={i} className="text-xs bg-emerald-500/5 border border-emerald-500/10 rounded-lg p-3">
+                            <div className="flex items-center gap-2 mb-1">
+                              <Badge variant="outline" className="text-[10px] border-emerald-500/20 text-emerald-400 px-1.5 py-0">
+                                {mapping.region === 'CN' ? '大陆' : mapping.region === 'HK' ? '香港' : mapping.region}
+                              </Badge>
+                              <span className="text-emerald-300 font-medium">{mapping.grade}</span>
+                              <span className="text-muted-foreground">{mapping.subject}</span>
+                            </div>
+                            <p className="text-muted-foreground leading-relaxed">{mapping.description}</p>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   )}

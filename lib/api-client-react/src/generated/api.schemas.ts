@@ -24,6 +24,15 @@ export interface GuideStep {
   content: GuideStepContent;
 }
 
+export interface CurriculumMapping {
+  standard: string;
+  region: string;
+  grade: string;
+  subject: string;
+  topic: string;
+  description: string;
+}
+
 export interface SimulationItem {
   id: number;
   slug: string;
@@ -44,6 +53,7 @@ export interface SimulationItem {
   localDev: boolean;
   customRoute?: string | null;
   guide: GuideStep[];
+  curriculumMappings: CurriculumMapping[];
 }
 
 export type ListSimulationsParams = {

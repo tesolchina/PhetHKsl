@@ -13,12 +13,17 @@ type GradeFilter = 'all' | 'elementary' | 'middle';
 export default function Home() {
   const { language, t } = useLanguage();
   const [gradeFilter, setGradeFilter] = useState<GradeFilter>('all');
+  const [curriculumOnly, setCurriculumOnly] = useState(false);
 
   const { data: simulations = [], isLoading, error } = useListSimulations();
 
-  const filtered = gradeFilter === 'all'
+  const gradeFiltered = gradeFilter === 'all'
     ? simulations
     : simulations.filter(s => s.gradeLevel === gradeFilter);
+
+  const filtered = curriculumOnly
+    ? gradeFiltered.filter(s => s.curriculumMappings && s.curriculumMappings.length > 0)
+    : gradeFiltered;
 
   const physicsSims = filtered.filter(s => s.category === 'Physics');
   const chemistrySims = filtered.filter(s => s.category === 'Chemistry');
@@ -28,6 +33,7 @@ export default function Home() {
 
   const elementaryCount = simulations.filter(s => s.gradeLevel === 'elementary').length;
   const middleCount = simulations.filter(s => s.gradeLevel === 'middle').length;
+  const curriculumCount = simulations.filter(s => s.curriculumMappings && s.curriculumMappings.length > 0).length;
 
   useEffect(() => {
     document.documentElement.classList.add('dark');
@@ -209,10 +215,15 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <GraduationCap className="w-6 h-6 text-primary" />
               <span className="text-lg font-medium text-foreground">
-                {t('grade.all')} ({simulations.length} {language === 'zh' ? '个模拟' : 'simulations'})
+                {t('grade.all')} ({filtered.length} {language === 'zh' ? '个模拟' : 'simulations'})
+                {(gradeFilter !== 'all' || curriculumOnly) && (
+                  <span className="text-sm text-muted-foreground ml-2">
+                    / {simulations.length} {language === 'zh' ? '总计' : 'total'}
+                  </span>
+                )}
               </span>
             </div>
-            <div className="flex gap-2" role="group" aria-label="Grade level filter">
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Filters">
               {gradeButtons.map(({ value, count }) => {
                 const label = t(`grade.${value}`);
                 const isActive = gradeFilter === value;
@@ -230,6 +241,17 @@ export default function Home() {
                   </button>
                 );
               })}
+              <button
+                onClick={() => setCurriculumOnly(!curriculumOnly)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-1.5 ${
+                  curriculumOnly
+                    ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/25'
+                    : 'bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground'
+                }`}
+              >
+                <GraduationCap className="h-3.5 w-3.5" />
+                {language === 'zh' ? `课标对齐 (${curriculumCount})` : `Curriculum (${curriculumCount})`}
+              </button>
             </div>
           </div>
         </div>

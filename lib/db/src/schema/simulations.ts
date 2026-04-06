@@ -25,6 +25,14 @@ export const simulationsTable = pgTable("simulations", {
     title: { en: string; zh: string };
     content: { en: string; zh: string };
   }>>().notNull().default([]),
+  curriculumMappings: jsonb("curriculum_mappings").$type<Array<{
+    standard: string;
+    region: string;
+    grade: string;
+    subject: string;
+    topic: string;
+    description: string;
+  }>>().notNull().default([]),
 });
 
 export const insertSimulationSchema = createInsertSchema(simulationsTable).omit({ id: true });

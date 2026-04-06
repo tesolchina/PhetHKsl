@@ -64,6 +64,7 @@ router.get("/simulations", async (req, res) => {
       localDev: r.localDev,
       customRoute: r.customRoute,
       guide: r.guide,
+      curriculumMappings: r.curriculumMappings,
     }));
 
     res.json(mapped);

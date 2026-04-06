@@ -92,6 +92,28 @@ components:
       required:
         - title
         - content
+    CurriculumMapping:
+      type: object
+      properties:
+        standard:
+          type: string
+        region:
+          type: string
+        grade:
+          type: string
+        subject:
+          type: string
+        topic:
+          type: string
+        description:
+          type: string
+      required:
+        - standard
+        - region
+        - grade
+        - subject
+        - topic
+        - description
     SimulationItem:
       type: object
       properties:
@@ -142,6 +164,10 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/GuideStep"
+        curriculumMappings:
+          type: array
+          items:
+            $ref: "#/components/schemas/CurriculumMapping"
       required:
         - id
         - slug
@@ -159,3 +185,4 @@ components:
         - isFeatured
         - localDev
         - guide
+        - curriculumMappings

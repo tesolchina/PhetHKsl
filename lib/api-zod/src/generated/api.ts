@@ -56,5 +56,15 @@ export const ListSimulationsResponseItem = zod.object({
       }),
     }),
   ),
+  curriculumMappings: zod.array(
+    zod.object({
+      standard: zod.string(),
+      region: zod.string(),
+      grade: zod.string(),
+      subject: zod.string(),
+      topic: zod.string(),
+      description: zod.string(),
+    }),
+  ),
 });
 export const ListSimulationsResponse = zod.array(ListSimulationsResponseItem);

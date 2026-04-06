@@ -5,6 +5,7 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
+import type { CurriculumMapping } from "./curriculumMapping";
 import type { GuideStep } from "./guideStep";
 
 export interface SimulationItem {
@@ -27,4 +28,5 @@ export interface SimulationItem {
   localDev: boolean;
   customRoute?: string | null;
   guide: GuideStep[];
+  curriculumMappings: CurriculumMapping[];
 }
