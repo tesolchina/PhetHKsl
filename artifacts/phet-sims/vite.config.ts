@@ -167,6 +167,16 @@ export default defineConfig({
     port,
     host: "0.0.0.0",
     allowedHosts: true,
+    proxy: {
+      "/api/simulations": {
+        target: "http://localhost:8080",
+        changeOrigin: true,
+      },
+      "/api/healthz": {
+        target: "http://localhost:8080",
+        changeOrigin: true,
+      },
+    },
     fs: {
       strict: true,
       deny: ["**/.*"],
