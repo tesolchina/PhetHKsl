@@ -26,12 +26,16 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 
 ## Community & Documentation
 
-- `README.md` — Project introduction (bilingual), getting started, how to contribute
-- `CONTRIBUTING.md` — Bilingual contribution guide (fork/branch/PR workflow, content types, quality standards, code of conduct)
-- `CONTENT_GUIDE.md` — Bilingual guide documenting the learning module JSON schema, step types, BilingualText format, file organization
-- `ROADMAP.md` — Near-term milestones for community participation
-- `hk-curriculum-mapping.md` — Hong Kong (P1-S6) + Mainland China curriculum mapping with cross-reference
-- `.github/PULL_REQUEST_TEMPLATE.md` — PR template with contributor checklist
+All community contribution docs are consolidated in `contribute/` folder:
+- `contribute/README.md` — File index and navigation guide (for contributors and external tools like DocAI)
+- `contribute/CONTRIBUTING.md` — Bilingual contribution guide (fork/branch/PR workflow, content types, quality standards, code of conduct)
+- `contribute/CONTENT_GUIDE.md` — Bilingual guide documenting the learning module JSON schema, step types, BilingualText format, file organization
+- `contribute/PIPELINE.md` — Complete PR pipeline: submission → automated checks → content review (5 dimensions) → merge → deploy → acknowledgment. Quality control at 3 layers (contributor self-check, maintainer review, automated checks). External tool integration guide for DocAI.
+- `contribute/CHANGELOG.md` — Update log recording every contribution and major update (reverse chronological)
+- `contribute/CONTRIBUTORS.md` — Contributor acknowledgment list with multi-level recognition (name list, module.json authors, git history)
+- `contribute/ROADMAP.md` — Near-term milestones for community participation
+- `contribute/hk-curriculum-mapping.md` — Hong Kong (P1-S6) + Mainland China curriculum mapping with cross-reference
+- `.github/PULL_REQUEST_TEMPLATE.md` — PR template with contributor checklist (stays in .github/ for GitHub recognition)
 - `.github/ISSUE_TEMPLATE/` — Issue templates for curriculum mapping, module proposals, content corrections
 
 ## Key Commands

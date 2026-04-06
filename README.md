@@ -75,7 +75,7 @@ pnpm --filter @workspace/api-server dev
 覆盖 1-6 年级数学和科学课标，按年级和学段组织，包含推荐新增模拟的优先级排序。
 
 ### 香港+大陆全学段映射
-📄 [`hk-curriculum-mapping.md`](hk-curriculum-mapping.md)
+📄 [`contribute/hk-curriculum-mapping.md`](contribute/hk-curriculum-mapping.md)
 
 覆盖香港常识科（P1-P6）、综合科学（S1-S3）、高中理科（S4-S6）以及大陆初中和高中的科学与数学课程。包含两地课程的交叉对比分析。
 
@@ -93,7 +93,7 @@ Story    → Predict → Explore    → Challenge → Language → Hands-on → 
 **当前模块 Current Modules:**
 - [摩擦力实验室 Friction Lab](artifacts/phet-sims/content/modules/friction-lab/module.json) — 3-4年级，探索摩擦力如何产生热量
 
-**如何创建新模块:** 请参阅 [CONTENT_GUIDE.md](CONTENT_GUIDE.md)。
+**如何创建新模块:** 请参阅 [contribute/CONTENT_GUIDE.md](contribute/CONTENT_GUIDE.md)。
 
 ---
 
@@ -102,13 +102,18 @@ Story    → Predict → Explore    → Challenge → Language → Hands-on → 
 ```
 PhetHKsl/
 ├── README.md                    # 本文件 / This file
-├── CONTRIBUTING.md              # 贡献指南 / Contribution guide
-├── CONTENT_GUIDE.md             # 内容创作指南 / Content creation guide
-├── ROADMAP.md                   # 项目路线图 / Project roadmap
-├── hk-curriculum-mapping.md     # 港陆课程映射 / HK + Mainland curriculum mapping
+├── contribute/                  # 社区贡献资源中心 / Community hub
+│   ├── README.md                # 文件索引和导航
+│   ├── CONTRIBUTING.md          # 贡献指南 / Contribution guide
+│   ├── CONTENT_GUIDE.md         # 内容创作指南 / Content creation guide
+│   ├── PIPELINE.md              # PR审核流程 / PR review pipeline
+│   ├── CHANGELOG.md             # 更新日志 / Update log
+│   ├── CONTRIBUTORS.md          # 贡献者名单 / Contributor list
+│   ├── ROADMAP.md               # 项目路线图 / Project roadmap
+│   └── hk-curriculum-mapping.md # 港陆课程映射 / Curriculum mapping
 ├── .github/
 │   ├── PULL_REQUEST_TEMPLATE.md # PR 模板
-│   └── ISSUE_TEMPLATE/         # Issue 模板
+│   └── ISSUE_TEMPLATE/          # Issue 模板
 │       ├── curriculum-mapping.md
 │       ├── module-proposal.md
 │       └── content-correction.md
@@ -147,10 +152,11 @@ We welcome contributions from all educators, curriculum specialists, and volunte
 
 ### 快速开始贡献 | Quick Start for Contributors
 
-1. 阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解完整流程
-2. 阅读 [CONTENT_GUIDE.md](CONTENT_GUIDE.md) 了解内容格式
-3. Fork 本仓库，创建分支，进行修改，提交 PR
-4. 查看 [ROADMAP.md](ROADMAP.md) 了解当前重点任务
+1. 阅读 [contribute/CONTRIBUTING.md](contribute/CONTRIBUTING.md) 了解完整流程
+2. 阅读 [contribute/CONTENT_GUIDE.md](contribute/CONTENT_GUIDE.md) 了解内容格式
+3. 阅读 [contribute/PIPELINE.md](contribute/PIPELINE.md) 了解审核标准
+4. Fork 本仓库，创建分支，进行修改，提交 PR
+5. 查看 [contribute/ROADMAP.md](contribute/ROADMAP.md) 了解当前重点任务
 
 本项目采用**工具中立**原则：您可以使用任何工具创作内容（手动编写、AI 辅助等），我们关注的是内容质量。
 
@@ -160,9 +166,9 @@ This project follows a **tool-neutral** approach: you may use any tool to create
 
 ## 路线图 | Roadmap
 
-查看 [ROADMAP.md](ROADMAP.md) 了解项目近期计划和参与机会。
+查看 [contribute/ROADMAP.md](contribute/ROADMAP.md) 了解项目近期计划和参与机会。查看 [contribute/CHANGELOG.md](contribute/CHANGELOG.md) 了解最近更新。
 
-See [ROADMAP.md](ROADMAP.md) for near-term plans and participation opportunities.
+See [contribute/ROADMAP.md](contribute/ROADMAP.md) for near-term plans and participation opportunities. See [contribute/CHANGELOG.md](contribute/CHANGELOG.md) for recent updates.
 
 **当前重点 Current Focus:**
 1. 🟡 完善香港常识科课程映射（初稿完成，待社区审核）

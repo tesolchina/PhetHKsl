@@ -31,7 +31,7 @@
 ## 检查清单 | Checklist
 
 ### 通用 | General
-- [ ] 我已阅读 [CONTRIBUTING.md](/CONTRIBUTING.md) / I have read the contributing guide
+- [ ] 我已阅读 [贡献指南](contribute/CONTRIBUTING.md) / I have read the [contributing guide](contribute/CONTRIBUTING.md)
 - [ ] 分支名称遵循命名约定 / Branch name follows naming conventions
 - [ ] 提交信息清晰描述了更改内容 / Commit messages clearly describe changes
 

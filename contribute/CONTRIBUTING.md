@@ -84,9 +84,9 @@ git checkout -b fix/friction-lab-typo
 
 ### 4. 进行修改 | Make Your Changes
 
-编辑或添加文件。请参阅 [CONTENT_GUIDE.md](CONTENT_GUIDE.md) 了解内容格式要求。
+编辑或添加文件。请参阅 [CONTENT_GUIDE.md](./CONTENT_GUIDE.md) 了解内容格式要求。完整的 JSON schema 和 DocAI 提示模板请查看 [content/README.md](../artifacts/phet-sims/content/README.md)。
 
-Edit or add files. See [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for content formatting requirements.
+Edit or add files. See [CONTENT_GUIDE.md](./CONTENT_GUIDE.md) for content formatting requirements. For the complete JSON schema and DocAI prompt template, see [content/README.md](../artifacts/phet-sims/content/README.md).
 
 ### 5. 提交更改 | Commit Your Changes
 
@@ -137,19 +137,19 @@ Fork → Branch → Edit → Commit → Push → Pull Request → Review → Mer
 
 将 PhET 模拟与特定地区/国家的课程标准进行对应。请参考：
 - 现有的中国大陆课程映射：`artifacts/phet-sims/curriculum-mapping.md`
-- 香港课程映射：`hk-curriculum-mapping.md`
+- 香港课程映射：[`hk-curriculum-mapping.md`](./hk-curriculum-mapping.md)
 - PhET 完整目录：`artifacts/phet-sims/phet-full-catalog.md`
 
 Map PhET simulations to specific regional/national curriculum standards. Reference:
 - Existing mainland China mapping: `artifacts/phet-sims/curriculum-mapping.md`
-- Hong Kong mapping: `hk-curriculum-mapping.md`
+- Hong Kong mapping: [`hk-curriculum-mapping.md`](./hk-curriculum-mapping.md)
 - Full PhET catalog: `artifacts/phet-sims/phet-full-catalog.md`
 
 ### 学习模块 | Learning Modules
 
-创建新的学习模块需要遵循 `module.json` 格式。详见 [CONTENT_GUIDE.md](CONTENT_GUIDE.md)。
+创建新的学习模块需要遵循 `module.json` 格式。详见 [CONTENT_GUIDE.md](./CONTENT_GUIDE.md)。
 
-Creating new learning modules requires following the `module.json` format. See [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for details.
+Creating new learning modules requires following the `module.json` format. See [CONTENT_GUIDE.md](./CONTENT_GUIDE.md) for details.
 
 每个模块应放在 `artifacts/phet-sims/content/modules/<module-id>/` 目录下。
 
