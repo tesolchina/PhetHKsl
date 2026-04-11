@@ -56,7 +56,7 @@ async function main() {
     });
   }
 
-  const htmlSims = phetData.simulations.filter(s => {
+  const htmlSims = (phetData.simulations || []).filter(s => {
     return s.name && s.type?.includes?.("html") !== false;
   });
 
