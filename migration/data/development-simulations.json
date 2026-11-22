@@ -1,0 +1,4887 @@
+[
+  {
+    "id": 409,
+    "slug": "color-vision",
+    "name_en": "Color Vision",
+    "name_zh": "彩色视觉",
+    "description_en": "Make a whole rainbow by mixing red, green, and blue light. Change the wavelength of a monochromatic beam or filter white light.",
+    "description_zh": "通过混合红、绿、蓝光制造彩虹。改变单色光束的波长或过滤白光。",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Light",
+      "Color",
+      "Mixing"
+    ],
+    "tags_zh": [
+      "光",
+      "颜色",
+      "混合"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/color-vision",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/color-vision/latest/color-vision-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "How Do We See Colors?",
+          "zh": "我们怎么看到颜色的？"
+        },
+        "content": {
+          "en": "Our eyes can see three main colors of light: red, green, and blue. When these colors mix together, they make all the other colors we see every day!",
+          "zh": "我们的眼睛能看到三种主要的光色：红色、绿色和蓝色。当这些颜色混合在一起时，就会变出我们每天看到的所有颜色！"
+        }
+      },
+      {
+        "title": {
+          "en": "Mixing Light is Like Magic!",
+          "zh": "混合光就像变魔术！"
+        },
+        "content": {
+          "en": "When you mix red light and green light, you get yellow! Red and blue make pink (magenta). Green and blue make light blue (cyan). And all three together make white light!",
+          "zh": "当你把红光和绿光混在一起，就会变成黄色！红色和蓝色变成粉色。绿色和蓝色变成浅蓝色。三种光全部混在一起就变成白光！"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Move the color sliders to mix different lights. Can you make your favorite color? Try making white light by turning all three colors to maximum!",
+          "zh": "移动颜色滑块来混合不同的光。你能调出你最喜欢的颜色吗？试试把三种颜色都调到最大，看看会变成什么！"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "3-4",
+        "topic": "光的传播与颜色",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-4",
+        "description": "三年级上册《光》单元：了解光的三原色和混合"
+      },
+      {
+        "grade": "P3",
+        "topic": "Light and Shadow",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P3",
+        "description": "P3 General Studies: properties of light, mixing colors"
+      }
+    ]
+  },
+  {
+    "id": 410,
+    "slug": "friction",
+    "name_en": "Friction Lab",
+    "name_zh": "摩擦力实验室",
+    "description_en": "An original interactive experience: explore how friction creates heat through story, prediction, simulation, and hands-on challenges!",
+    "description_zh": "原创互动体验：通过故事、预测、模拟和动手挑战，探索摩擦力如何产生热量！",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Friction",
+      "Heat",
+      "Atoms",
+      "Original"
+    ],
+    "tags_zh": [
+      "摩擦力",
+      "热量",
+      "原子",
+      "原创"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/friction/latest/friction_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/friction/latest/friction_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/friction",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/friction/latest/friction-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": "/friction-lab",
+    "guide": [
+      {
+        "title": {
+          "en": "What is Friction?",
+          "zh": "什么是摩擦力？"
+        },
+        "content": {
+          "en": "Friction is what happens when two things rub together. Try rubbing your hands together quickly - do you feel them getting warm? That warmth comes from friction!",
+          "zh": "摩擦力就是两个东西互相摩擦时产生的力。试着快速搓搓你的双手——感觉到变暖了吗？那个热量就是摩擦产生的！"
+        }
+      },
+      {
+        "title": {
+          "en": "Tiny Atoms Are Shaking!",
+          "zh": "小小的原子在抖动！"
+        },
+        "content": {
+          "en": "Everything around us is made of tiny tiny particles called atoms. When you rub things together, the atoms start shaking faster and faster. That shaking is what we feel as heat!",
+          "zh": "我们周围的一切都是由叫做\"原子\"的超小粒子组成的。当你摩擦东西时，原子会越抖越快。我们感觉到的热量就是原子在抖动！"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Drag the top book back and forth. Watch the little atoms jiggle! Rub really fast and see what happens - can you make the atoms break free?",
+          "zh": "来回拖动上面的书。看看那些小原子在抖动！使劲快速摩擦，看看会发生什么——你能让原子挣脱出来吗？"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "力与运动",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-5",
+        "description": "三年级下册：认识摩擦力及其在生活中的作用"
+      },
+      {
+        "grade": "4",
+        "topic": "热现象",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-3",
+        "description": "四年级上册：摩擦生热，热量的产生与传递"
+      },
+      {
+        "grade": "P4",
+        "topic": "Force and Friction",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P4",
+        "description": "P4 General Studies: forces in daily life, friction effects"
+      }
+    ]
+  },
+  {
+    "id": 411,
+    "slug": "states-of-matter",
+    "name_en": "States of Matter",
+    "name_zh": "物质状态",
+    "description_en": "Heat up or cool down atoms and watch them change between solid, liquid, and gas - just like ice, water, and steam!",
+    "description_zh": "给原子加热或冷却，观察它们在固态、液态和气态之间变化——就像冰、水和蒸气一样！",
+    "category": "Chemistry",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Solid",
+      "Liquid",
+      "Gas"
+    ],
+    "tags_zh": [
+      "固体",
+      "液体",
+      "气体"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/states-of-matter",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "Three Forms of Stuff",
+          "zh": "东西的三种形态"
+        },
+        "content": {
+          "en": "Everything around us can be a solid (like ice), a liquid (like water), or a gas (like steam). The tiny atoms inside behave differently in each form!",
+          "zh": "我们周围的一切都可以是固体（像冰）、液体（像水）或气体（像蒸气）。里面的小原子在每种形态下的表现都不一样！"
+        }
+      },
+      {
+        "title": {
+          "en": "Heat Makes Things Move!",
+          "zh": "加热让东西动起来！"
+        },
+        "content": {
+          "en": "In a solid, atoms stay in place and just wiggle a little. Add heat and they start moving more - that is melting! Add even more heat and they fly around everywhere - that is boiling!",
+          "zh": "在固体中，原子待在原地只是轻轻晃动。加热后它们开始移动更多——这就是融化！再加更多热量，它们就到处飞——这就是沸腾！"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Press the heat button to warm things up. Watch the atoms start moving faster! Then cool it down and watch them slow down and freeze. Try different materials like water or oxygen!",
+          "zh": "按加热按钮让东西变暖。看原子动得越来越快！然后冷却它们，看它们慢下来并冻住。试试不同的材料，比如水或氧气！"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "水的三态变化",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-1",
+        "description": "三年级上册《水》单元：固态、液态、气态的变化"
+      },
+      {
+        "grade": "4",
+        "topic": "物质的变化",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-4",
+        "description": "四年级上册：物质的状态变化与温度的关系"
+      },
+      {
+        "grade": "P3",
+        "topic": "Water and Changes",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P3",
+        "description": "P3 General Studies: water cycle, states of water"
+      }
+    ]
+  },
+  {
+    "id": 412,
+    "slug": "balancing-act",
+    "name_en": "Balancing Act",
+    "name_zh": "平衡探秘",
+    "description_en": "Play with objects on a seesaw to learn about balance! Can you figure out how to keep it level?",
+    "description_zh": "在跷跷板上放置物体来学习平衡！你能想出怎么让它保持水平吗？",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Balance",
+      "Seesaw",
+      "Weight"
+    ],
+    "tags_zh": [
+      "平衡",
+      "跷跷板",
+      "重量"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/balancing-act",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "The Seesaw Rule",
+          "zh": "跷跷板的秘密"
+        },
+        "content": {
+          "en": "On a seesaw, a heavy person sitting close to the middle can balance a lighter person sitting farther away. It is all about weight AND distance from the center!",
+          "zh": "在跷跷板上，一个重的人坐得离中间近，可以和一个轻的人坐得远的一边平衡。关键是重量和离中心的距离！"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Put different objects on each side of the seesaw. Can you make it balance? Try the game mode and see if you can guess where to put things!",
+          "zh": "在跷跷板的两边放不同的东西。你能让它平衡吗？试试游戏模式，看看你能不能猜对该把东西放在哪里！"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "杠杆与平衡",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-6",
+        "description": "三年级下册：简单机械——杠杆原理，平衡条件"
+      },
+      {
+        "grade": "3",
+        "topic": "等量关系",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3",
+        "description": "三年级：理解等量关系，为方程做准备"
+      }
+    ]
+  },
+  {
+    "id": 413,
+    "slug": "equality-explorer",
+    "name_en": "Equality Explorer",
+    "name_zh": "等式探索",
+    "description_en": "Use a balance scale to understand what \"equal\" really means. Put things on both sides and keep the scale level!",
+    "description_zh": "用天平来理解\"相等\"的到底是什么意思。在两边放东西，保持天平平衡！",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Equality",
+      "Balance",
+      "Math"
+    ],
+    "tags_zh": [
+      "等式",
+      "天平",
+      "数学"
+    ],
+    "url_en": "/phet-local/equality-explorer/equality-explorer_en.html",
+    "url_zh": "/phet-local/equality-explorer/equality-explorer_en.html?locale=zh_CN",
+    "github_repo_url": "https://github.com/phetsims/equality-explorer",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/equality-explorer/latest/equality-explorer-600.png",
+    "has_chinese_localization": false,
+    "is_featured": true,
+    "local_dev": true,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "What Does \"Equal\" Mean?",
+          "zh": "\"相等\"是什么意思？"
+        },
+        "content": {
+          "en": "When a balance scale is perfectly level, both sides have the same weight. That is what \"equal\" means - the two sides are the same!",
+          "zh": "当天平完全水平时，两边的重量一样。这就是\"相等\"的意思——两边是一样的！"
+        }
+      },
+      {
+        "title": {
+          "en": "Keep It Balanced!",
+          "zh": "保持平衡！"
+        },
+        "content": {
+          "en": "If you add something to one side, you need to add the same thing to the other side to keep it balanced. This is the most important rule!",
+          "zh": "如果你在一边加了东西，你也需要在另一边加上一样的东西来保持平衡。这是最重要的规则！"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Drag objects onto both sides of the scale. Can you keep it balanced? Try the \"Solve It!\" game to practice finding the mystery number!",
+          "zh": "把物体拖到天平的两边。你能保持平衡吗？试试\"解题\"游戏来练习找出神秘数字！"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "等式与等量",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-EQ",
+        "description": "三年级：理解等式概念，天平模型"
+      },
+      {
+        "grade": "4",
+        "topic": "简易方程",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-4-EQ",
+        "description": "四年级：用天平模型理解方程的含义"
+      }
+    ]
+  },
+  {
+    "id": 414,
+    "slug": "energy-skate-park",
+    "name_en": "Energy Skate Park",
+    "name_zh": "能量滑板公园",
+    "description_en": "Watch a skater zoom up and down on tracks! See how speed and height are connected through energy.",
+    "description_zh": "看滑板选手在轨道上飞驰！了解速度和高度是怎么通过能量联系在一起的。",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Energy",
+      "Speed",
+      "Height"
+    ],
+    "tags_zh": [
+      "能量",
+      "速度",
+      "高度"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/energy-skate-park",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "Energy is Like a Superpower!",
+          "zh": "能量就像超能力！"
+        },
+        "content": {
+          "en": "When the skater is high up, they have stored energy (like a stretched rubber band). As they roll down, that stored energy turns into speed energy. Higher up means faster at the bottom!",
+          "zh": "当滑板选手在高处时，他有储存的能量（就像拉伸的橡皮筋）。当他往下滑时，储存的能量变成了速度能量。起点越高，到底部就越快！"
+        }
+      },
+      {
+        "title": {
+          "en": "Energy Never Disappears!",
+          "zh": "能量不会消失！"
+        },
+        "content": {
+          "en": "Energy cannot just vanish! It changes form: height energy becomes speed energy, and speed energy becomes height energy. Watch the colored bars to see this happen!",
+          "zh": "能量不会凭空消失！它会变换形式：高度能量变成速度能量，速度能量又变回高度能量。看看彩色的柱状图就能看到这个过程！"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Put the skater at the top of the ramp and let go. Watch the energy bars change! Try turning on friction - where does the energy go then?",
+          "zh": "把滑板选手放在坡道顶部然后放手。看看能量柱状图的变化！试试打开摩擦力——那能量去哪里了呢？"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "能量",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-5",
+        "description": "四年级下册：能量的形式和转换"
+      }
+    ]
+  },
+  {
+    "id": 415,
+    "slug": "circuit-construction-kit-dc",
+    "name_en": "Circuit Construction Kit",
+    "name_zh": "电路组建实验",
+    "description_en": "Explore basic electricity relationships. Build circuits with batteries, resistors, light bulbs, and switches.",
+    "description_zh": "探索基本的电学关系。用电池、电阻、灯泡和开关搭建电路。",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Electricity",
+      "Circuits",
+      "Voltage"
+    ],
+    "tags_zh": [
+      "电学",
+      "电路",
+      "电压"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/circuit-construction-kit-dc",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "What is a Circuit?",
+          "zh": "什么是电路？"
+        },
+        "content": {
+          "en": "An electric circuit is a closed loop through which electric current can flow. It needs a power source (like a battery), a load (like a light bulb), and wires to connect them.",
+          "zh": "电路是电流可以流过的闭合回路。它需要电源（如电池）、负载（如灯泡）和连接它们的导线。"
+        }
+      },
+      {
+        "title": {
+          "en": "Ohm's Law",
+          "zh": "欧姆定律"
+        },
+        "content": {
+          "en": "Voltage (V) = Current (I) x Resistance (R). This fundamental law describes how voltage, current, and resistance relate to each other in a circuit.",
+          "zh": "电压（V）= 电流（I）x 电阻（R）。这个基本定律描述了电路中电压、电流和电阻之间的关系。"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Drag components from the toolbox to build a circuit. Connect a battery to a light bulb and watch it glow. Try adding resistors to see how brightness changes.",
+          "zh": "从工具箱中拖动元件来搭建电路。将电池连接到灯泡并观察它发光。试着添加电阻，看看亮度如何变化。"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "简单电路",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-6",
+        "description": "四年级下册《电》单元：简单电路的组成，串联与并联"
+      },
+      {
+        "grade": "P5",
+        "topic": "Electricity",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P5",
+        "description": "P5 General Studies: simple circuits, conductors and insulators"
+      }
+    ]
+  },
+  {
+    "id": 416,
+    "slug": "gravity-and-orbits",
+    "name_en": "Gravity and Orbits",
+    "name_zh": "万有引力与轨道",
+    "description_en": "Move the sun, earth, moon and space station to see how it affects their gravitational forces and orbital paths.",
+    "description_zh": "移动太阳、地球、月球和空间站，观察引力和轨道路径如何变化。",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Gravity",
+      "Force",
+      "Space"
+    ],
+    "tags_zh": [
+      "引力",
+      "力",
+      "太空"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/gravity-and-orbits",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "Universal Gravitation",
+          "zh": "万有引力"
+        },
+        "content": {
+          "en": "Every object with mass attracts every other object with mass. The force depends on both masses and the distance between them.",
+          "zh": "每个有质量的物体都会吸引其他有质量的物体。引力取决于两个物体的质量和它们之间的距离。"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Try changing the mass of the Earth or Sun. See what happens to the orbit when you increase the velocity.",
+          "zh": "试着改变地球或太阳的质量。看看当你增加速度时轨道会发生什么变化。"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "太阳系与宇宙",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-7",
+        "description": "三年级下册：太阳系行星运动"
+      }
+    ]
+  },
+  {
+    "id": 417,
+    "slug": "wave-on-a-string",
+    "name_en": "Wave on a String",
+    "name_zh": "绳波",
+    "description_en": "Explore the wonderful world of waves! Observe a string vibrate in slow motion.",
+    "description_zh": "探索奇妙的波动世界！以慢动作观察绳子的振动。",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Waves",
+      "Frequency",
+      "Amplitude"
+    ],
+    "tags_zh": [
+      "波",
+      "频率",
+      "振幅"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/wave-on-a-string",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "What is a Wave?",
+          "zh": "什么是波？"
+        },
+        "content": {
+          "en": "A wave is a disturbance that transfers energy from one place to another without transferring matter.",
+          "zh": "波是一种将能量从一个地方传递到另一个地方而不传递物质的扰动。"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Use the slider to change the frequency and amplitude. Switch between manual, oscillate, and pulse modes.",
+          "zh": "使用滑块来改变频率和振幅。在手动、振荡和脉冲模式之间切换。"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "声音",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-7",
+        "description": "四年级上册《声音》单元：声音的产生与传播，振动"
+      }
+    ]
+  },
+  {
+    "id": 418,
+    "slug": "build-an-atom",
+    "name_en": "Build an Atom",
+    "name_zh": "原子构建",
+    "description_en": "Build an atom out of protons, neutrons, and electrons, and see how the element, charge, and mass change.",
+    "description_zh": "用质子、中子和电子构建一个原子，观察元素、电荷和质量如何变化。",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Atoms",
+      "Elements",
+      "Protons"
+    ],
+    "tags_zh": [
+      "原子",
+      "元素",
+      "质子"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/build-an-atom",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "Atomic Structure",
+          "zh": "原子结构"
+        },
+        "content": {
+          "en": "Atoms are made of three subatomic particles: protons (positive charge), neutrons (no charge), and electrons (negative charge).",
+          "zh": "原子由三种亚原子粒子组成：质子（正电荷）、中子（无电荷）和电子（负电荷）。"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Drag protons, neutrons, and electrons into the atom. Watch how the element name, charge, and mass number change.",
+          "zh": "将质子、中子和电子拖到原子中。观察元素名称、电荷和质量数如何变化。"
+        }
+      }
+    ],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 419,
+    "slug": "masses-and-springs",
+    "name_en": "Masses and Springs",
+    "name_zh": "质量与弹簧",
+    "description_en": "Hang masses from springs and adjust the spring constant and damping.",
+    "description_zh": "在弹簧上悬挂质量块，调节弹簧常数和阻尼。",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Springs",
+      "Hooke's Law",
+      "Force"
+    ],
+    "tags_zh": [
+      "弹簧",
+      "胡克定律",
+      "力"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/masses-and-springs",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "Hooke's Law",
+          "zh": "胡克定律"
+        },
+        "content": {
+          "en": "The force exerted by a spring is proportional to how far it is stretched: F = -kx.",
+          "zh": "弹簧施加的力与其拉伸的距离成正比：F = -kx。"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Hang different masses on the springs. Change the spring constant and observe how stiffness affects the oscillation.",
+          "zh": "在弹簧上悬挂不同的质量。改变弹簧常数，观察刚度如何影响振荡。"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "弹力",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-8",
+        "description": "三年级下册：弹簧与弹力，力的大小"
+      }
+    ]
+  },
+  {
+    "id": 420,
+    "slug": "projectile-motion",
+    "name_en": "Projectile Motion",
+    "name_zh": "抛体运动",
+    "description_en": "Blast a car out of a cannon, and challenge yourself to hit a target!",
+    "description_zh": "用大炮发射汽车，挑战自己击中目标！",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Kinematics",
+      "Velocity",
+      "Vectors"
+    ],
+    "tags_zh": [
+      "运动学",
+      "速度",
+      "矢量"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/projectile-motion",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "Projectile Motion",
+          "zh": "抛体运动"
+        },
+        "content": {
+          "en": "A projectile moves in two independent directions: horizontally and vertically.",
+          "zh": "抛体在两个独立方向上运动：水平方向和竖直方向。"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Change the angle and initial speed. Try enabling air resistance.",
+          "zh": "改变角度和初始速度。尝试启用空气阻力。"
+        }
+      }
+    ],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 421,
+    "slug": "neuron",
+    "name_en": "Neuron",
+    "name_zh": "神经元",
+    "description_en": "Stimulate a neuron and watch what happens. Observe the ions as they move across the neuron membrane.",
+    "description_zh": "刺激一个神经元并观察发生了什么。观察离子穿过神经元细胞膜的过程。",
+    "category": "Biology",
+    "grade_level": "middle",
+    "tags_en": [
+      "Action Potential",
+      "Ions",
+      "Nerve"
+    ],
+    "tags_zh": [
+      "动作电位",
+      "离子",
+      "神经"
+    ],
+    "url_en": "/phet-local/neuron/neuron_en.html",
+    "url_zh": "/phet-local/neuron/neuron_en.html?locale=zh_CN",
+    "github_repo_url": "https://github.com/phetsims/neuron",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/neuron/latest/neuron-600.png",
+    "has_chinese_localization": false,
+    "is_featured": true,
+    "local_dev": true,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "What is a Neuron?",
+          "zh": "什么是神经元？"
+        },
+        "content": {
+          "en": "A neuron is a nerve cell that transmits electrical signals throughout the body.",
+          "zh": "神经元是一种通过全身传输电信号的神经细胞。"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Click the \"Stimulate Neuron\" button to trigger an action potential.",
+          "zh": "点击\"刺激神经元\"按钮触发一个动作电位。"
+        }
+      }
+    ],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 422,
+    "slug": "natural-selection",
+    "name_en": "Natural Selection",
+    "name_zh": "自然选择",
+    "description_en": "Explore natural selection by controlling the environment and observing how populations of bunnies evolve over time.",
+    "description_zh": "通过控制环境来探索自然选择，观察兔子种群如何随时间演化。",
+    "category": "Biology",
+    "grade_level": "middle",
+    "tags_en": [
+      "Evolution",
+      "Genetics",
+      "Adaptation"
+    ],
+    "tags_zh": [
+      "进化",
+      "遗传",
+      "适应"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/natural-selection/latest/natural-selection_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/natural-selection/latest/natural-selection_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/natural-selection",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/natural-selection/latest/natural-selection-600.png",
+    "has_chinese_localization": true,
+    "is_featured": true,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [
+      {
+        "title": {
+          "en": "Natural Selection",
+          "zh": "自然选择"
+        },
+        "content": {
+          "en": "Natural selection is the process where organisms with traits better suited to their environment survive and reproduce more.",
+          "zh": "自然选择是指具有更适应环境特征的生物能够更好地生存和繁殖的过程。"
+        }
+      },
+      {
+        "title": {
+          "en": "Try It!",
+          "zh": "试一试！"
+        },
+        "content": {
+          "en": "Add a mutation for fur color or teeth. Then change the environment.",
+          "zh": "添加毛色或牙齿的突变。然后改变环境。"
+        }
+      }
+    ],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "动物的适应性",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-8",
+        "description": "四年级下册：动物的特征与环境适应"
+      }
+    ]
+  },
+  {
+    "id": 423,
+    "slug": "alpha-decay",
+    "name_en": "Alpha Decay",
+    "name_zh": "阿尔法衰变",
+    "description_en": "Interactive physics simulation: Alpha Decay",
+    "description_zh": "互动物理模拟：阿尔法衰变",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/alpha-decay/latest/alpha-decay_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/alpha-decay/latest/alpha-decay_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/alpha-decay",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/alpha-decay/latest/alpha-decay-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 424,
+    "slug": "atomic-interactions",
+    "name_en": "Atomic Interactions",
+    "name_zh": "原子间相互作用",
+    "description_en": "Interactive chemistry simulation: Atomic Interactions",
+    "description_zh": "互动化学模拟：原子间相互作用",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/atomic-interactions/latest/atomic-interactions_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/atomic-interactions/latest/atomic-interactions_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/atomic-interactions",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/atomic-interactions/latest/atomic-interactions-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 425,
+    "slug": "balloons-and-static-electricity",
+    "name_en": "Balloons and Static Electricity",
+    "name_zh": "气球和静电",
+    "description_en": "Interactive physics simulation: Balloons and Static Electricity",
+    "description_zh": "互动物理模拟：气球和静电",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/balloons-and-static-electricity",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "静电现象",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-9",
+        "description": "四年级下册《电》单元：摩擦起电，静电现象"
+      },
+      {
+        "grade": "P4",
+        "topic": "Static Electricity",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P4",
+        "description": "P4: Exploring static electricity"
+      }
+    ]
+  },
+  {
+    "id": 426,
+    "slug": "bending-light",
+    "name_en": "Bending Light",
+    "name_zh": "光的折射",
+    "description_en": "Interactive physics simulation: Bending Light",
+    "description_zh": "互动物理模拟：光的折射",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/bending-light",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/bending-light/latest/bending-light-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 427,
+    "slug": "blackbody-spectrum",
+    "name_en": "Blackbody Spectrum",
+    "name_zh": "黑体辐射光谱",
+    "description_en": "Interactive physics simulation: Blackbody Spectrum",
+    "description_zh": "互动物理模拟：黑体辐射光谱",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/blackbody-spectrum",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 428,
+    "slug": "build-a-nucleus",
+    "name_en": "Build a Nucleus",
+    "name_zh": "构建原子核",
+    "description_en": "Interactive physics simulation: Build a Nucleus",
+    "description_zh": "互动物理模拟：构建原子核",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/build-a-nucleus/latest/build-a-nucleus_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/build-a-nucleus/latest/build-a-nucleus_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/build-a-nucleus",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/build-a-nucleus/latest/build-a-nucleus-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 429,
+    "slug": "buoyancy",
+    "name_en": "Buoyancy",
+    "name_zh": "浮力",
+    "description_en": "Interactive physics simulation: Buoyancy",
+    "description_zh": "互动物理模拟：浮力",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/buoyancy/latest/buoyancy_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/buoyancy/latest/buoyancy_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/buoyancy",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/buoyancy/latest/buoyancy-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 430,
+    "slug": "buoyancy-basics",
+    "name_en": "Buoyancy Basics",
+    "name_zh": "浮力基础",
+    "description_en": "Interactive physics simulation: Buoyancy Basics",
+    "description_zh": "互动物理模拟：浮力基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/buoyancy-basics/latest/buoyancy-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/buoyancy-basics/latest/buoyancy-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/buoyancy-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/buoyancy-basics/latest/buoyancy-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "沉与浮",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-9",
+        "description": "三年级上册：物体的沉浮与什么有关"
+      }
+    ]
+  },
+  {
+    "id": 431,
+    "slug": "capacitor-lab-basics",
+    "name_en": "Capacitor Lab: Basics",
+    "name_zh": "电容器实验室：基础",
+    "description_en": "Interactive physics simulation: Capacitor Lab: Basics",
+    "description_zh": "互动物理模拟：电容器实验室：基础",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/capacitor-lab-basics/latest/capacitor-lab-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/capacitor-lab-basics/latest/capacitor-lab-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/capacitor-lab-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/capacitor-lab-basics/latest/capacitor-lab-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 432,
+    "slug": "charges-and-fields",
+    "name_en": "Charges and Fields",
+    "name_zh": "电荷与电场",
+    "description_en": "Interactive physics simulation: Charges and Fields",
+    "description_zh": "互动物理模拟：电荷与电场",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/charges-and-fields",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 433,
+    "slug": "circuit-construction-kit-ac",
+    "name_en": "Circuit Construction Kit: AC",
+    "name_zh": "电路组建实验：交流",
+    "description_en": "Interactive physics simulation: Circuit Construction Kit: AC",
+    "description_zh": "互动物理模拟：电路组建实验：交流",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/circuit-construction-kit-ac",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 434,
+    "slug": "circuit-construction-kit-ac-virtual-lab",
+    "name_en": "Circuit Construction Kit: AC - Virtual Lab",
+    "name_zh": "电路组建实验：交流 - 虚拟实验室",
+    "description_en": "Interactive physics simulation: Circuit Construction Kit: AC - Virtual Lab",
+    "description_zh": "互动物理模拟：电路组建实验：交流 - 虚拟实验室",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac-virtual-lab/latest/circuit-construction-kit-ac-virtual-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac-virtual-lab/latest/circuit-construction-kit-ac-virtual-lab_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/circuit-construction-kit-ac-virtual-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac-virtual-lab/latest/circuit-construction-kit-ac-virtual-lab-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 435,
+    "slug": "circuit-construction-kit-dc-virtual-lab",
+    "name_en": "Circuit Construction Kit: DC - Virtual Lab",
+    "name_zh": "电路组建实验：直流 - 虚拟实验室",
+    "description_en": "Interactive physics simulation: Circuit Construction Kit: DC - Virtual Lab",
+    "description_zh": "互动物理模拟：电路组建实验：直流 - 虚拟实验室",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/circuit-construction-kit-dc-virtual-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 436,
+    "slug": "collision-lab",
+    "name_en": "Collision Lab",
+    "name_zh": "碰撞实验室",
+    "description_en": "Interactive physics simulation: Collision Lab",
+    "description_zh": "互动物理模拟：碰撞实验室",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/collision-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 437,
+    "slug": "coulombs-law",
+    "name_en": "Coulomb's Law",
+    "name_zh": "库仑定律",
+    "description_en": "Interactive physics simulation: Coulomb's Law",
+    "description_zh": "互动物理模拟：库仑定律",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/coulombs-law",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 438,
+    "slug": "density",
+    "name_en": "Density",
+    "name_zh": "密度",
+    "description_en": "Interactive physics simulation: Density",
+    "description_zh": "互动物理模拟：密度",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/density/latest/density_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/density/latest/density_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/density",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/density/latest/density-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 439,
+    "slug": "diffusion",
+    "name_en": "Diffusion",
+    "name_zh": "扩散",
+    "description_en": "Interactive physics simulation: Diffusion",
+    "description_zh": "互动物理模拟：扩散",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/diffusion",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 440,
+    "slug": "energy-forms-and-changes",
+    "name_en": "Energy Forms and Changes",
+    "name_zh": "能量的形式和转化",
+    "description_en": "Interactive physics simulation: Energy Forms and Changes",
+    "description_zh": "互动物理模拟：能量的形式和转化",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/energy-forms-and-changes",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "能量转换",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-10",
+        "description": "四年级下册：热能、光能、电能之间的转换"
+      }
+    ]
+  },
+  {
+    "id": 441,
+    "slug": "energy-skate-park-basics",
+    "name_en": "Energy Skate Park: Basics",
+    "name_zh": "能量滑板公园：基础",
+    "description_en": "Interactive physics simulation: Energy Skate Park: Basics",
+    "description_zh": "互动物理模拟：能量滑板公园：基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/energy-skate-park-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "能量",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-5",
+        "description": "四年级下册：能量的形式和转换（基础版）"
+      }
+    ]
+  },
+  {
+    "id": 442,
+    "slug": "faradays-law",
+    "name_en": "Faraday's Law",
+    "name_zh": "法拉第电磁感应定律",
+    "description_en": "Interactive physics simulation: Faraday's Law",
+    "description_zh": "互动物理模拟：法拉第电磁感应定律",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/faradays-law",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 443,
+    "slug": "faradays-electromagnetic-lab",
+    "name_en": "Faraday's Electromagnetic Lab",
+    "name_zh": "法拉第电磁实验室",
+    "description_en": "Interactive physics simulation: Faraday's Electromagnetic Lab",
+    "description_zh": "互动物理模拟：法拉第电磁实验室",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/faradays-electromagnetic-lab/latest/faradays-electromagnetic-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/faradays-electromagnetic-lab/latest/faradays-electromagnetic-lab_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/faradays-electromagnetic-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/faradays-electromagnetic-lab/latest/faradays-electromagnetic-lab-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 444,
+    "slug": "forces-and-motion-basics",
+    "name_en": "Forces and Motion: Basics",
+    "name_zh": "力和运动：基础",
+    "description_en": "Interactive physics simulation: Forces and Motion: Basics",
+    "description_zh": "互动物理模拟：力和运动：基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/forces-and-motion-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "力与运动",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-10",
+        "description": "三年级下册：推力和拉力，力的作用效果"
+      },
+      {
+        "grade": "P4",
+        "topic": "Forces",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P4",
+        "description": "P4: Forces and their effects on motion"
+      }
+    ]
+  },
+  {
+    "id": 445,
+    "slug": "fluid-pressure-and-flow",
+    "name_en": "Fluid Pressure and Flow",
+    "name_zh": "流体压强和流速",
+    "description_en": "Interactive physics simulation: Fluid Pressure and Flow",
+    "description_zh": "互动物理模拟：流体压强和流速",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/fluid-pressure-and-flow/latest/fluid-pressure-and-flow_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/fluid-pressure-and-flow/latest/fluid-pressure-and-flow_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/fluid-pressure-and-flow",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/fluid-pressure-and-flow/latest/fluid-pressure-and-flow-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 446,
+    "slug": "geometric-optics",
+    "name_en": "Geometric Optics",
+    "name_zh": "几何光学",
+    "description_en": "Interactive physics simulation: Geometric Optics",
+    "description_zh": "互动物理模拟：几何光学",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/geometric-optics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 447,
+    "slug": "geometric-optics-basics",
+    "name_en": "Geometric Optics: Basics",
+    "name_zh": "几何光学：基础",
+    "description_en": "Interactive physics simulation: Geometric Optics: Basics",
+    "description_zh": "互动物理模拟：几何光学：基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/geometric-optics-basics/latest/geometric-optics-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/geometric-optics-basics/latest/geometric-optics-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/geometric-optics-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/geometric-optics-basics/latest/geometric-optics-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "光的传播",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-11",
+        "description": "三年级上册《光》单元：光的直线传播、反射"
+      }
+    ]
+  },
+  {
+    "id": 448,
+    "slug": "gravity-force-lab",
+    "name_en": "Gravity Force Lab",
+    "name_zh": "万有引力实验室",
+    "description_en": "Interactive physics simulation: Gravity Force Lab",
+    "description_zh": "互动物理模拟：万有引力实验室",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/gravity-force-lab/latest/gravity-force-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/gravity-force-lab/latest/gravity-force-lab_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/gravity-force-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/gravity-force-lab/latest/gravity-force-lab-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 449,
+    "slug": "gravity-force-lab-basics",
+    "name_en": "Gravity Force Lab: Basics",
+    "name_zh": "万有引力实验室：基础",
+    "description_en": "Interactive physics simulation: Gravity Force Lab: Basics",
+    "description_zh": "互动物理模拟：万有引力实验室：基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/gravity-force-lab-basics/latest/gravity-force-lab-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/gravity-force-lab-basics/latest/gravity-force-lab-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/gravity-force-lab-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/gravity-force-lab-basics/latest/gravity-force-lab-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "重力",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-12",
+        "description": "三年级下册：地球引力，物体为什么会落下"
+      }
+    ]
+  },
+  {
+    "id": 450,
+    "slug": "greenhouse-effect",
+    "name_en": "Greenhouse Effect",
+    "name_zh": "温室效应",
+    "description_en": "Interactive earth science simulation: Greenhouse Effect",
+    "description_zh": "互动地球科学模拟：温室效应",
+    "category": "Earth Science",
+    "grade_level": "middle",
+    "tags_en": [
+      "Earth Science"
+    ],
+    "tags_zh": [
+      "地球科学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/greenhouse-effect/latest/greenhouse-effect_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/greenhouse-effect/latest/greenhouse-effect_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/greenhouse-effect",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/greenhouse-effect/latest/greenhouse-effect-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "地球与环境",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-11",
+        "description": "四年级下册：温室效应与气候变化"
+      }
+    ]
+  },
+  {
+    "id": 451,
+    "slug": "hookes-law",
+    "name_en": "Hooke's Law",
+    "name_zh": "胡克定律",
+    "description_en": "Interactive physics simulation: Hooke's Law",
+    "description_zh": "互动物理模拟：胡克定律",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/hookes-law/latest/hookes-law_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/hookes-law/latest/hookes-law_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/hookes-law",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/hookes-law/latest/hookes-law-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 452,
+    "slug": "john-travoltage",
+    "name_en": "John Travoltage",
+    "name_zh": "静电约翰",
+    "description_en": "Interactive physics simulation: John Travoltage",
+    "description_zh": "互动物理模拟：静电约翰",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/john-travoltage/latest/john-travoltage_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/john-travoltage/latest/john-travoltage_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/john-travoltage",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/john-travoltage/latest/john-travoltage-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "静电现象",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-9",
+        "description": "四年级下册《电》单元：静电与放电"
+      }
+    ]
+  },
+  {
+    "id": 453,
+    "slug": "keplers-laws",
+    "name_en": "Kepler's Laws",
+    "name_zh": "开普勒定律",
+    "description_en": "Interactive physics simulation: Kepler's Laws",
+    "description_zh": "互动物理模拟：开普勒定律",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/keplers-laws/latest/keplers-laws_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/keplers-laws/latest/keplers-laws_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/keplers-laws",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/keplers-laws/latest/keplers-laws-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 454,
+    "slug": "masses-and-springs-basics",
+    "name_en": "Masses and Springs: Basics",
+    "name_zh": "质量与弹簧：基础",
+    "description_en": "Interactive physics simulation: Masses and Springs: Basics",
+    "description_zh": "互动物理模拟：质量与弹簧：基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/masses-and-springs-basics/latest/masses-and-springs-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/masses-and-springs-basics/latest/masses-and-springs-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/masses-and-springs-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/masses-and-springs-basics/latest/masses-and-springs-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "弹力",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-8",
+        "description": "三年级下册：弹簧和弹力（基础版）"
+      }
+    ]
+  },
+  {
+    "id": 455,
+    "slug": "models-of-the-hydrogen-atom",
+    "name_en": "Models of the Hydrogen Atom",
+    "name_zh": "氢原子模型",
+    "description_en": "Interactive physics simulation: Models of the Hydrogen Atom",
+    "description_zh": "互动物理模拟：氢原子模型",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/models-of-the-hydrogen-atom/latest/models-of-the-hydrogen-atom_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/models-of-the-hydrogen-atom/latest/models-of-the-hydrogen-atom_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/models-of-the-hydrogen-atom",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/models-of-the-hydrogen-atom/latest/models-of-the-hydrogen-atom-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 456,
+    "slug": "my-solar-system",
+    "name_en": "My Solar System",
+    "name_zh": "我的太阳系",
+    "description_en": "Interactive physics simulation: My Solar System",
+    "description_zh": "互动物理模拟：我的太阳系",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/my-solar-system/latest/my-solar-system_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/my-solar-system/latest/my-solar-system_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/my-solar-system",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/my-solar-system/latest/my-solar-system-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "太阳系",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-7",
+        "description": "三年级下册：太阳系的组成"
+      }
+    ]
+  },
+  {
+    "id": 457,
+    "slug": "normal-modes",
+    "name_en": "Normal Modes",
+    "name_zh": "简正模式",
+    "description_en": "Interactive physics simulation: Normal Modes",
+    "description_zh": "互动物理模拟：简正模式",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/normal-modes/latest/normal-modes_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/normal-modes/latest/normal-modes_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/normal-modes",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/normal-modes/latest/normal-modes-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 458,
+    "slug": "ohms-law",
+    "name_en": "Ohm's Law",
+    "name_zh": "欧姆定律",
+    "description_en": "Interactive physics simulation: Ohm's Law",
+    "description_zh": "互动物理模拟：欧姆定律",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/ohms-law",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 459,
+    "slug": "optics-lab",
+    "name_en": "Optics Lab",
+    "name_zh": "光学实验室",
+    "description_en": "Interactive physics simulation: Optics Lab",
+    "description_zh": "Interactive simulation: Optics Lab",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [],
+    "url_en": "https://phet.colorado.edu/sims/html/optics-lab/latest/optics-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/optics-lab/latest/optics-lab_en.html",
+    "github_repo_url": "https://github.com/phetsims/optics-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/optics-lab/latest/optics-lab-600.png",
+    "has_chinese_localization": false,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 460,
+    "slug": "pendulum-lab",
+    "name_en": "Pendulum Lab",
+    "name_zh": "摆实验室",
+    "description_en": "Interactive physics simulation: Pendulum Lab",
+    "description_zh": "互动物理模拟：摆实验室",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/pendulum-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 461,
+    "slug": "photoelectric-effect",
+    "name_en": "Photoelectric Effect",
+    "name_zh": "光电效应",
+    "description_en": "Interactive physics simulation: Photoelectric Effect",
+    "description_zh": "互动物理模拟：光电效应",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/photoelectric-effect/latest/photoelectric-effect_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/photoelectric-effect/latest/photoelectric-effect_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/photoelectric-effect",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/photoelectric-effect/latest/photoelectric-effect-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 462,
+    "slug": "projectile-data-lab",
+    "name_en": "Projectile Data Lab",
+    "name_zh": "抛体数据实验室",
+    "description_en": "Interactive physics simulation: Projectile Data Lab",
+    "description_zh": "互动物理模拟：抛体数据实验室",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/projectile-data-lab/latest/projectile-data-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/projectile-data-lab/latest/projectile-data-lab_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/projectile-data-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/projectile-data-lab/latest/projectile-data-lab-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 463,
+    "slug": "quantum-measurement",
+    "name_en": "Quantum Measurement",
+    "name_zh": "量子测量",
+    "description_en": "Interactive physics simulation: Quantum Measurement",
+    "description_zh": "Interactive simulation: Quantum Measurement",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [],
+    "url_en": "https://phet.colorado.edu/sims/html/quantum-measurement/latest/quantum-measurement_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/quantum-measurement/latest/quantum-measurement_en.html",
+    "github_repo_url": "https://github.com/phetsims/quantum-measurement",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/quantum-measurement/latest/quantum-measurement-600.png",
+    "has_chinese_localization": false,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 464,
+    "slug": "resistance-in-a-wire",
+    "name_en": "Resistance in a Wire",
+    "name_zh": "导线电阻",
+    "description_en": "Interactive physics simulation: Resistance in a Wire",
+    "description_zh": "互动物理模拟：导线电阻",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/resistance-in-a-wire",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 465,
+    "slug": "rutherford-scattering",
+    "name_en": "Rutherford Scattering",
+    "name_zh": "卢瑟福散射",
+    "description_en": "Interactive physics simulation: Rutherford Scattering",
+    "description_zh": "互动物理模拟：卢瑟福散射",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/rutherford-scattering",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 466,
+    "slug": "solar-system-model",
+    "name_en": "Solar System Model",
+    "name_zh": "太阳系模型",
+    "description_en": "Interactive physics simulation: Solar System Model",
+    "description_zh": "互动物理模拟：太阳系模型",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/solar-system-model/latest/solar-system-model_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/solar-system-model/latest/solar-system-model_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/solar-system-model",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/solar-system-model/latest/solar-system-model-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "太阳系",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-7",
+        "description": "三年级下册：太阳系的结构和行星运动"
+      }
+    ]
+  },
+  {
+    "id": 467,
+    "slug": "under-pressure",
+    "name_en": "Under Pressure",
+    "name_zh": "压力之下",
+    "description_en": "Interactive physics simulation: Under Pressure",
+    "description_zh": "互动物理模拟：压力之下",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/under-pressure",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 468,
+    "slug": "vector-addition",
+    "name_en": "Vector Addition",
+    "name_zh": "矢量加法",
+    "description_en": "Interactive physics simulation: Vector Addition",
+    "description_zh": "互动物理模拟：矢量加法",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/vector-addition",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 469,
+    "slug": "wave-interference",
+    "name_en": "Wave Interference",
+    "name_zh": "波的干涉",
+    "description_en": "Interactive physics simulation: Wave Interference",
+    "description_zh": "互动物理模拟：波的干涉",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/wave-interference",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 470,
+    "slug": "waves-intro",
+    "name_en": "Waves Intro",
+    "name_zh": "波的简介",
+    "description_en": "Interactive physics simulation: Waves Intro",
+    "description_zh": "互动物理模拟：波的简介",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/waves-intro/latest/waves-intro_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/waves-intro/latest/waves-intro_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/waves-intro",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/waves-intro/latest/waves-intro-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "声音",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-7",
+        "description": "四年级上册：声音的产生与波"
+      }
+    ]
+  },
+  {
+    "id": 471,
+    "slug": "acid-base-solutions",
+    "name_en": "Acid-Base Solutions",
+    "name_zh": "酸碱溶液",
+    "description_en": "Interactive chemistry simulation: Acid-Base Solutions",
+    "description_zh": "互动化学模拟：酸碱溶液",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/acid-base-solutions/latest/acid-base-solutions_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/acid-base-solutions/latest/acid-base-solutions_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/acid-base-solutions",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/acid-base-solutions/latest/acid-base-solutions-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 472,
+    "slug": "balancing-chemical-equations",
+    "name_en": "Balancing Chemical Equations",
+    "name_zh": "配平化学方程式",
+    "description_en": "Interactive chemistry simulation: Balancing Chemical Equations",
+    "description_zh": "互动化学模拟：配平化学方程式",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/balancing-chemical-equations/latest/balancing-chemical-equations_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/balancing-chemical-equations/latest/balancing-chemical-equations_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/balancing-chemical-equations",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/balancing-chemical-equations/latest/balancing-chemical-equations-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 473,
+    "slug": "beers-law-lab",
+    "name_en": "Beer's Law Lab",
+    "name_zh": "比尔定律实验室",
+    "description_en": "Interactive chemistry simulation: Beer's Law Lab",
+    "description_zh": "互动化学模拟：比尔定律实验室",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/beers-law-lab",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 474,
+    "slug": "build-a-molecule",
+    "name_en": "Build a Molecule",
+    "name_zh": "搭建分子",
+    "description_en": "Interactive chemistry simulation: Build a Molecule",
+    "description_zh": "互动化学模拟：搭建分子",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/build-a-molecule/latest/build-a-molecule_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/build-a-molecule/latest/build-a-molecule_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/build-a-molecule",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/build-a-molecule/latest/build-a-molecule-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 475,
+    "slug": "concentration",
+    "name_en": "Concentration",
+    "name_zh": "浓度",
+    "description_en": "Interactive chemistry simulation: Concentration",
+    "description_zh": "互动化学模拟：浓度",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/concentration/latest/concentration_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/concentration/latest/concentration_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/concentration",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/concentration/latest/concentration-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 476,
+    "slug": "gas-properties",
+    "name_en": "Gas Properties",
+    "name_zh": "气体性质",
+    "description_en": "Interactive chemistry simulation: Gas Properties",
+    "description_zh": "互动化学模拟：气体性质",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/gas-properties",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 477,
+    "slug": "gases-intro",
+    "name_en": "Gases Intro",
+    "name_zh": "气体简介",
+    "description_en": "Interactive chemistry simulation: Gases Intro",
+    "description_zh": "互动化学模拟：气体简介",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/gases-intro",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 478,
+    "slug": "isotopes-and-atomic-mass",
+    "name_en": "Isotopes and Atomic Mass",
+    "name_zh": "同位素和原子量",
+    "description_en": "Interactive chemistry simulation: Isotopes and Atomic Mass",
+    "description_zh": "互动化学模拟：同位素和原子量",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/isotopes-and-atomic-mass",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 479,
+    "slug": "molarity",
+    "name_en": "Molarity",
+    "name_zh": "摩尔浓度",
+    "description_en": "Interactive chemistry simulation: Molarity",
+    "description_zh": "互动化学模拟：摩尔浓度",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/molarity/latest/molarity_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/molarity/latest/molarity_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/molarity",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/molarity/latest/molarity-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 480,
+    "slug": "molecule-polarity",
+    "name_en": "Molecule Polarity",
+    "name_zh": "分子极性",
+    "description_en": "Interactive chemistry simulation: Molecule Polarity",
+    "description_zh": "互动化学模拟：分子极性",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/molecule-polarity/latest/molecule-polarity_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/molecule-polarity/latest/molecule-polarity_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/molecule-polarity",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/molecule-polarity/latest/molecule-polarity-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 481,
+    "slug": "molecule-shapes",
+    "name_en": "Molecule Shapes",
+    "name_zh": "分子形状",
+    "description_en": "Interactive chemistry simulation: Molecule Shapes",
+    "description_zh": "互动化学模拟：分子形状",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/molecule-shapes",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 482,
+    "slug": "molecule-shapes-basics",
+    "name_en": "Molecule Shapes: Basics",
+    "name_zh": "分子形状：基础",
+    "description_en": "Interactive chemistry simulation: Molecule Shapes: Basics",
+    "description_zh": "互动化学模拟：分子形状：基础",
+    "category": "Chemistry",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/molecule-shapes-basics/latest/molecule-shapes-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/molecule-shapes-basics/latest/molecule-shapes-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/molecule-shapes-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/molecule-shapes-basics/latest/molecule-shapes-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 483,
+    "slug": "molecules-and-light",
+    "name_en": "Molecules and Light",
+    "name_zh": "分子和光",
+    "description_en": "Interactive chemistry simulation: Molecules and Light",
+    "description_zh": "互动化学模拟：分子和光",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/molecules-and-light",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 484,
+    "slug": "ph-scale",
+    "name_en": "pH Scale",
+    "name_zh": "pH值",
+    "description_en": "Interactive chemistry simulation: pH Scale",
+    "description_zh": "互动化学模拟：pH值",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/ph-scale",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 485,
+    "slug": "ph-scale-basics",
+    "name_en": "pH Scale: Basics",
+    "name_zh": "pH值：基础",
+    "description_en": "Interactive chemistry simulation: pH Scale: Basics",
+    "description_zh": "互动化学模拟：pH值：基础",
+    "category": "Chemistry",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/ph-scale-basics/latest/ph-scale-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/ph-scale-basics/latest/ph-scale-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/ph-scale-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/ph-scale-basics/latest/ph-scale-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 486,
+    "slug": "reactants-products-and-leftovers",
+    "name_en": "Reactants, Products and Leftovers",
+    "name_zh": "反应物、产物和剩余物",
+    "description_en": "Interactive chemistry simulation: Reactants, Products and Leftovers",
+    "description_zh": "互动化学模拟：反应物、产物和剩余物",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/reactants-products-and-leftovers",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 487,
+    "slug": "states-of-matter-basics",
+    "name_en": "States of Matter: Basics",
+    "name_zh": "物质状态：基础",
+    "description_en": "Interactive chemistry simulation: States of Matter: Basics",
+    "description_zh": "互动化学模拟：物质状态：基础",
+    "category": "Chemistry",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/states-of-matter-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "水的三态变化",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-1",
+        "description": "三年级上册：固态、液态、气态变化（基础版）"
+      }
+    ]
+  },
+  {
+    "id": 488,
+    "slug": "area-builder",
+    "name_en": "Area Builder",
+    "name_zh": "面积生成器",
+    "description_en": "Interactive math simulation: Area Builder",
+    "description_zh": "互动数学模拟：面积生成器",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/area-builder/latest/area-builder_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/area-builder/latest/area-builder_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/area-builder",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/area-builder/latest/area-builder-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "面积",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-AREA",
+        "description": "三年级下册：认识面积，长方形和正方形面积计算"
+      }
+    ]
+  },
+  {
+    "id": 489,
+    "slug": "area-model-algebra",
+    "name_en": "Area Model Algebra",
+    "name_zh": "面积模型代数",
+    "description_en": "Interactive math simulation: Area Model Algebra",
+    "description_zh": "互动数学模拟：面积模型代数",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/area-model-algebra/latest/area-model-algebra_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/area-model-algebra/latest/area-model-algebra_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/area-model-algebra",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/area-model-algebra/latest/area-model-algebra-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 490,
+    "slug": "area-model-decimals",
+    "name_en": "Area Model Decimals",
+    "name_zh": "面积模型小数",
+    "description_en": "Interactive math simulation: Area Model Decimals",
+    "description_zh": "互动数学模拟：面积模型小数",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/area-model-decimals/latest/area-model-decimals_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/area-model-decimals/latest/area-model-decimals_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/area-model-decimals",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/area-model-decimals/latest/area-model-decimals-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "小数",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-4-DEC",
+        "description": "四年级下册：小数的意义和加减法"
+      }
+    ]
+  },
+  {
+    "id": 491,
+    "slug": "area-model-introduction",
+    "name_en": "Area Model Introduction",
+    "name_zh": "面积模型简介",
+    "description_en": "Interactive math simulation: Area Model Introduction",
+    "description_zh": "互动数学模拟：面积模型简介",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/area-model-introduction/latest/area-model-introduction_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/area-model-introduction/latest/area-model-introduction_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/area-model-introduction",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/area-model-introduction/latest/area-model-introduction-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "面积",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-AREA",
+        "description": "三年级下册：面积模型入门"
+      }
+    ]
+  },
+  {
+    "id": 492,
+    "slug": "area-model-multiplication",
+    "name_en": "Area Model Multiplication",
+    "name_zh": "面积模型乘法",
+    "description_en": "Interactive math simulation: Area Model Multiplication",
+    "description_zh": "互动数学模拟：面积模型乘法",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/area-model-multiplication/latest/area-model-multiplication_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/area-model-multiplication/latest/area-model-multiplication_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/area-model-multiplication",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/area-model-multiplication/latest/area-model-multiplication-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "乘法",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-MUL",
+        "description": "三年级上册：多位数乘法，面积模型"
+      }
+    ]
+  },
+  {
+    "id": 493,
+    "slug": "arithmetic",
+    "name_en": "Arithmetic",
+    "name_zh": "算术",
+    "description_en": "Interactive math simulation: Arithmetic",
+    "description_zh": "互动数学模拟：算术",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/arithmetic/latest/arithmetic_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/arithmetic/latest/arithmetic_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/arithmetic",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/arithmetic/latest/arithmetic-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "四则运算",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-CALC",
+        "description": "三年级：加减乘除基本运算"
+      }
+    ]
+  },
+  {
+    "id": 494,
+    "slug": "build-a-fraction",
+    "name_en": "Build a Fraction",
+    "name_zh": "搭建分数",
+    "description_en": "Interactive math simulation: Build a Fraction",
+    "description_zh": "互动数学模拟：搭建分数",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/build-a-fraction/latest/build-a-fraction_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/build-a-fraction/latest/build-a-fraction_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/build-a-fraction",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/build-a-fraction/latest/build-a-fraction-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "分数的初步认识",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-FRAC",
+        "description": "三年级上册：分数的初步认识"
+      }
+    ]
+  },
+  {
+    "id": 495,
+    "slug": "calculus-grapher",
+    "name_en": "Calculus Grapher",
+    "name_zh": "微积分图形",
+    "description_en": "Interactive math simulation: Calculus Grapher",
+    "description_zh": "互动数学模拟：微积分图形",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/calculus-grapher/latest/calculus-grapher_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/calculus-grapher/latest/calculus-grapher_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/calculus-grapher",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/calculus-grapher/latest/calculus-grapher-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 496,
+    "slug": "center-and-variability",
+    "name_en": "Center and Variability",
+    "name_zh": "集中与变异",
+    "description_en": "Interactive math simulation: Center and Variability",
+    "description_zh": "互动数学模拟：集中与变异",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/center-and-variability/latest/center-and-variability_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/center-and-variability/latest/center-and-variability_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/center-and-variability",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/center-and-variability/latest/center-and-variability-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 497,
+    "slug": "counting",
+    "name_en": "Counting",
+    "name_zh": "计数",
+    "description_en": "Interactive math simulation: Counting",
+    "description_zh": "互动数学模拟：计数",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/counting/latest/counting_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/counting/latest/counting_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/counting",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/counting/latest/counting-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 498,
+    "slug": "curve-fitting",
+    "name_en": "Curve Fitting",
+    "name_zh": "曲线拟合",
+    "description_en": "Interactive math simulation: Curve Fitting",
+    "description_zh": "互动数学模拟：曲线拟合",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/curve-fitting/latest/curve-fitting_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/curve-fitting/latest/curve-fitting_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/curve-fitting",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/curve-fitting/latest/curve-fitting-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 499,
+    "slug": "equality-explorer-basics",
+    "name_en": "Equality Explorer: Basics",
+    "name_zh": "等式探索：基础",
+    "description_en": "Interactive math simulation: Equality Explorer: Basics",
+    "description_zh": "互动数学模拟：等式探索：基础",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/equality-explorer-basics/latest/equality-explorer-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/equality-explorer-basics/latest/equality-explorer-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/equality-explorer-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/equality-explorer-basics/latest/equality-explorer-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "等式",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-EQ",
+        "description": "三年级：等式概念入门"
+      }
+    ]
+  },
+  {
+    "id": 500,
+    "slug": "equality-explorer-two-variables",
+    "name_en": "Equality Explorer: Two Variables",
+    "name_zh": "等式探索：两个变量",
+    "description_en": "Interactive math simulation: Equality Explorer: Two Variables",
+    "description_zh": "互动数学模拟：等式探索：两个变量",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/equality-explorer-two-variables/latest/equality-explorer-two-variables_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/equality-explorer-two-variables/latest/equality-explorer-two-variables_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/equality-explorer-two-variables",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/equality-explorer-two-variables/latest/equality-explorer-two-variables-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 501,
+    "slug": "estimation",
+    "name_en": "Estimation",
+    "name_zh": "估算",
+    "description_en": "Interactive math simulation: Estimation",
+    "description_zh": "互动数学模拟：估算",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/estimation/latest/estimation_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/estimation/latest/estimation_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/estimation",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/estimation/latest/estimation-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "估算",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-EST",
+        "description": "三年级上册：估算方法与应用"
+      }
+    ]
+  },
+  {
+    "id": 502,
+    "slug": "expression-exchange",
+    "name_en": "Expression Exchange",
+    "name_zh": "表达式变换",
+    "description_en": "Interactive math simulation: Expression Exchange",
+    "description_zh": "互动数学模拟：表达式变换",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/expression-exchange/latest/expression-exchange_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/expression-exchange/latest/expression-exchange_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/expression-exchange",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/expression-exchange/latest/expression-exchange-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 503,
+    "slug": "fraction-matcher",
+    "name_en": "Fraction Matcher",
+    "name_zh": "分数配对",
+    "description_en": "Interactive math simulation: Fraction Matcher",
+    "description_zh": "互动数学模拟：分数配对",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/fraction-matcher/latest/fraction-matcher_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/fraction-matcher/latest/fraction-matcher_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/fraction-matcher",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/fraction-matcher/latest/fraction-matcher-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "分数的初步认识",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-FRAC",
+        "description": "三年级上册：比较分数大小"
+      }
+    ]
+  },
+  {
+    "id": 504,
+    "slug": "fractions-equality",
+    "name_en": "Fractions: Equality",
+    "name_zh": "分数：相等",
+    "description_en": "Interactive math simulation: Fractions: Equality",
+    "description_zh": "互动数学模拟：分数：相等",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/fractions-equality",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "分数",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-FRAC",
+        "description": "三年级：相等的分数"
+      }
+    ]
+  },
+  {
+    "id": 505,
+    "slug": "fractions-intro",
+    "name_en": "Fractions: Intro",
+    "name_zh": "分数：简介",
+    "description_en": "Interactive math simulation: Fractions: Intro",
+    "description_zh": "互动数学模拟：分数：简介",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/fractions-intro/latest/fractions-intro_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/fractions-intro/latest/fractions-intro_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/fractions-intro",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/fractions-intro/latest/fractions-intro-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "分数的初步认识",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-FRAC",
+        "description": "三年级上册：认识分数"
+      }
+    ]
+  },
+  {
+    "id": 506,
+    "slug": "fractions-mixed-numbers",
+    "name_en": "Fractions: Mixed Numbers",
+    "name_zh": "分数：混合数",
+    "description_en": "Interactive math simulation: Fractions: Mixed Numbers",
+    "description_zh": "互动数学模拟：分数：混合数",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/fractions-mixed-numbers/latest/fractions-mixed-numbers_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/fractions-mixed-numbers/latest/fractions-mixed-numbers_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/fractions-mixed-numbers",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/fractions-mixed-numbers/latest/fractions-mixed-numbers-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "分数",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-4-FRAC",
+        "description": "四年级下册：带分数"
+      }
+    ]
+  },
+  {
+    "id": 507,
+    "slug": "function-builder",
+    "name_en": "Function Builder",
+    "name_zh": "函数生成器",
+    "description_en": "Interactive math simulation: Function Builder",
+    "description_zh": "互动数学模拟：函数生成器",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/function-builder/latest/function-builder_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/function-builder/latest/function-builder_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/function-builder",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/function-builder/latest/function-builder-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 508,
+    "slug": "function-builder-basics",
+    "name_en": "Function Builder: Basics",
+    "name_zh": "函数生成器：基础",
+    "description_en": "Interactive math simulation: Function Builder: Basics",
+    "description_zh": "互动数学模拟：函数生成器：基础",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/function-builder-basics/latest/function-builder-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/function-builder-basics/latest/function-builder-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/function-builder-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/function-builder-basics/latest/function-builder-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 509,
+    "slug": "graphing-lines",
+    "name_en": "Graphing Lines",
+    "name_zh": "画线",
+    "description_en": "Interactive math simulation: Graphing Lines",
+    "description_zh": "互动数学模拟：画线",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/graphing-lines/latest/graphing-lines_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/graphing-lines/latest/graphing-lines_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/graphing-lines",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/graphing-lines/latest/graphing-lines-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 510,
+    "slug": "graphing-quadratics",
+    "name_en": "Graphing Quadratics",
+    "name_zh": "画二次方程图",
+    "description_en": "Interactive math simulation: Graphing Quadratics",
+    "description_zh": "互动数学模拟：画二次方程图",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/graphing-quadratics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 511,
+    "slug": "graphing-slope-intercept",
+    "name_en": "Graphing Slope-Intercept",
+    "name_zh": "画斜截式图",
+    "description_en": "Interactive math simulation: Graphing Slope-Intercept",
+    "description_zh": "互动数学模拟：画斜截式图",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/graphing-slope-intercept/latest/graphing-slope-intercept_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/graphing-slope-intercept/latest/graphing-slope-intercept_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/graphing-slope-intercept",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/graphing-slope-intercept/latest/graphing-slope-intercept-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 512,
+    "slug": "least-squares-regression",
+    "name_en": "Least-Squares Regression",
+    "name_zh": "最小二乘回归",
+    "description_en": "Interactive math simulation: Least-Squares Regression",
+    "description_zh": "互动数学模拟：最小二乘回归",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/least-squares-regression",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 513,
+    "slug": "make-a-ten",
+    "name_en": "Make a Ten",
+    "name_zh": "凑十",
+    "description_en": "Interactive math simulation: Make a Ten",
+    "description_zh": "互动数学模拟：凑十",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/make-a-ten/latest/make-a-ten_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/make-a-ten/latest/make-a-ten_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/make-a-ten",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/make-a-ten/latest/make-a-ten-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "加法",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-ADD",
+        "description": "基础：凑十法加法策略"
+      }
+    ]
+  },
+  {
+    "id": 514,
+    "slug": "mean-share-and-balance",
+    "name_en": "Mean: Share and Balance",
+    "name_zh": "平均数：分享和平衡",
+    "description_en": "Interactive math simulation: Mean: Share and Balance",
+    "description_zh": "互动数学模拟：平均数：分享和平衡",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/mean-share-and-balance",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 515,
+    "slug": "number-compare",
+    "name_en": "Number Compare",
+    "name_zh": "数字比较",
+    "description_en": "Interactive math simulation: Number Compare",
+    "description_zh": "互动数学模拟：数字比较",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/number-compare/latest/number-compare_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/number-compare/latest/number-compare_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/number-compare",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/number-compare/latest/number-compare-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "万以内数的认识",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-NUM",
+        "description": "三年级：数的大小比较"
+      }
+    ]
+  },
+  {
+    "id": 516,
+    "slug": "number-line-distance",
+    "name_en": "Number Line: Distance",
+    "name_zh": "数轴：距离",
+    "description_en": "Interactive math simulation: Number Line: Distance",
+    "description_zh": "互动数学模拟：数轴：距离",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/number-line-distance/latest/number-line-distance_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/number-line-distance/latest/number-line-distance_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/number-line-distance",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/number-line-distance/latest/number-line-distance-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 517,
+    "slug": "number-line-integers",
+    "name_en": "Number Line: Integers",
+    "name_zh": "数轴：整数",
+    "description_en": "Interactive math simulation: Number Line: Integers",
+    "description_zh": "互动数学模拟：数轴：整数",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/number-line-integers/latest/number-line-integers_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/number-line-integers/latest/number-line-integers_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/number-line-integers",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/number-line-integers/latest/number-line-integers-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 518,
+    "slug": "number-line-operations",
+    "name_en": "Number Line: Operations",
+    "name_zh": "数轴：运算",
+    "description_en": "Interactive math simulation: Number Line: Operations",
+    "description_zh": "互动数学模拟：数轴：运算",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/number-line-operations/latest/number-line-operations_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/number-line-operations/latest/number-line-operations_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/number-line-operations",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/number-line-operations/latest/number-line-operations-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "数轴运算",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-3-NUM",
+        "description": "三年级：在数轴上理解加减法"
+      }
+    ]
+  },
+  {
+    "id": 519,
+    "slug": "number-play",
+    "name_en": "Number Play",
+    "name_zh": "数字游戏",
+    "description_en": "Interactive math simulation: Number Play",
+    "description_zh": "互动数学模拟：数字游戏",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/number-play/latest/number-play_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/number-play/latest/number-play_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/number-play",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/number-play/latest/number-play-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 520,
+    "slug": "plinko-probability",
+    "name_en": "Plinko Probability",
+    "name_zh": "弹珠概率",
+    "description_en": "Interactive math simulation: Plinko Probability",
+    "description_zh": "互动数学模拟：弹珠概率",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/plinko-probability",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 521,
+    "slug": "proportion-playground",
+    "name_en": "Proportion Playground",
+    "name_zh": "比例游乐场",
+    "description_en": "Interactive math simulation: Proportion Playground",
+    "description_zh": "互动数学模拟：比例游乐场",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/proportion-playground",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "比例",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-4-RATIO",
+        "description": "四年级：比例的认识"
+      }
+    ]
+  },
+  {
+    "id": 522,
+    "slug": "ratio-and-proportion",
+    "name_en": "Ratio and Proportion",
+    "name_zh": "比和比例",
+    "description_en": "Interactive math simulation: Ratio and Proportion",
+    "description_zh": "互动数学模拟：比和比例",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/ratio-and-proportion/latest/ratio-and-proportion_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/ratio-and-proportion/latest/ratio-and-proportion_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/ratio-and-proportion",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/ratio-and-proportion/latest/ratio-and-proportion-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "比和比例",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-4-RATIO",
+        "description": "四年级：比的意义和比例"
+      }
+    ]
+  },
+  {
+    "id": 523,
+    "slug": "trig-tour",
+    "name_en": "Trig Tour",
+    "name_zh": "三角函数之旅",
+    "description_en": "Interactive math simulation: Trig Tour",
+    "description_zh": "互动数学模拟：三角函数之旅",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/trig-tour",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 524,
+    "slug": "unit-rates",
+    "name_en": "Unit Rates",
+    "name_zh": "单位费率",
+    "description_en": "Interactive math simulation: Unit Rates",
+    "description_zh": "互动数学模拟：单位费率",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/unit-rates/latest/unit-rates_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/unit-rates/latest/unit-rates_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/unit-rates",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/unit-rates/latest/unit-rates-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 525,
+    "slug": "vector-addition-equations",
+    "name_en": "Vector Addition: Equations",
+    "name_zh": "矢量加法：方程",
+    "description_en": "Interactive math simulation: Vector Addition: Equations",
+    "description_zh": "互动数学模拟：矢量加法：方程",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/vector-addition-equations/latest/vector-addition-equations_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/vector-addition-equations/latest/vector-addition-equations_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/vector-addition-equations",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/vector-addition-equations/latest/vector-addition-equations-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 526,
+    "slug": "gene-expression-essentials",
+    "name_en": "Gene Expression Essentials",
+    "name_zh": "基因表达基础",
+    "description_en": "Interactive biology simulation: Gene Expression Essentials",
+    "description_zh": "互动生物模拟：基因表达基础",
+    "category": "Biology",
+    "grade_level": "middle",
+    "tags_en": [
+      "Biology"
+    ],
+    "tags_zh": [
+      "生物"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/gene-expression-essentials/latest/gene-expression-essentials_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/gene-expression-essentials/latest/gene-expression-essentials_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/gene-expression-essentials",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/gene-expression-essentials/latest/gene-expression-essentials-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 527,
+    "slug": "selection",
+    "name_en": "Selection",
+    "name_zh": "选择",
+    "description_en": "Interactive biology simulation: Selection",
+    "description_zh": "互动生物模拟：选择",
+    "category": "Biology",
+    "grade_level": "middle",
+    "tags_en": [
+      "Biology"
+    ],
+    "tags_zh": [
+      "生物"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/selection/latest/selection_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/selection/latest/selection_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/selection",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/selection/latest/selection-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 528,
+    "slug": "bamboo",
+    "name_en": "Bamboo",
+    "name_zh": "竹子",
+    "description_en": "Interactive physics simulation: Bamboo",
+    "description_zh": "Interactive simulation: Bamboo",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [],
+    "url_en": "https://phet.colorado.edu/sims/html/bamboo/latest/bamboo_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/bamboo/latest/bamboo_en.html",
+    "github_repo_url": "https://github.com/phetsims/bamboo",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/bamboo/latest/bamboo-600.png",
+    "has_chinese_localization": false,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 529,
+    "slug": "beer-lambert-law",
+    "name_en": "Beer-Lambert Law",
+    "name_zh": "比尔-朗伯定律",
+    "description_en": "Interactive chemistry simulation: Beer-Lambert Law",
+    "description_zh": "互动化学模拟：比尔-朗伯定律",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/beer-lambert-law/latest/beer-lambert-law_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/beer-lambert-law/latest/beer-lambert-law_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/beer-lambert-law",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/beer-lambert-law/latest/beer-lambert-law-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 530,
+    "slug": "beta-decay",
+    "name_en": "Beta Decay",
+    "name_zh": "贝塔衰变",
+    "description_en": "Interactive physics simulation: Beta Decay",
+    "description_zh": "互动物理模拟：贝塔衰变",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/beta-decay/latest/beta-decay_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/beta-decay/latest/beta-decay_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/beta-decay",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/beta-decay/latest/beta-decay-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 531,
+    "slug": "center-and-spread",
+    "name_en": "Center and Spread",
+    "name_zh": "集中与离散",
+    "description_en": "Interactive math simulation: Center and Spread",
+    "description_zh": "互动数学模拟：集中与离散",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/center-and-spread/latest/center-and-spread_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/center-and-spread/latest/center-and-spread_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/center-and-spread",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/center-and-spread/latest/center-and-spread-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 532,
+    "slug": "chains",
+    "name_en": "Chains",
+    "name_zh": "链条",
+    "description_en": "Interactive physics simulation: Chains",
+    "description_zh": "Interactive simulation: Chains",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [],
+    "url_en": "https://phet.colorado.edu/sims/html/chains/latest/chains_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/chains/latest/chains_en.html",
+    "github_repo_url": "https://github.com/phetsims/chains",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/chains/latest/chains-600.png",
+    "has_chinese_localization": false,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 533,
+    "slug": "circus-act",
+    "name_en": "Circus Act",
+    "name_zh": "杂技表演",
+    "description_en": "Interactive physics simulation: Circus Act",
+    "description_zh": "Interactive simulation: Circus Act",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [],
+    "url_en": "https://phet.colorado.edu/sims/html/circus-act/latest/circus-act_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/circus-act/latest/circus-act_en.html",
+    "github_repo_url": "https://github.com/phetsims/circus-act",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/circus-act/latest/circus-act-600.png",
+    "has_chinese_localization": false,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 534,
+    "slug": "color-vision-basics",
+    "name_en": "Color Vision: Basics",
+    "name_zh": "彩色视觉：基础",
+    "description_en": "Interactive physics simulation: Color Vision: Basics",
+    "description_zh": "互动物理模拟：彩色视觉：基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/color-vision-basics/latest/color-vision-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/color-vision-basics/latest/color-vision-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/color-vision-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/color-vision-basics/latest/color-vision-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "光与颜色",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-4",
+        "description": "三年级上册《光》单元：光的三原色（基础版）"
+      }
+    ]
+  },
+  {
+    "id": 535,
+    "slug": "decay-rates",
+    "name_en": "Decay Rates",
+    "name_zh": "衰变速率",
+    "description_en": "Interactive physics simulation: Decay Rates",
+    "description_zh": "互动物理模拟：衰变速率",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/decay-rates/latest/decay-rates_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/decay-rates/latest/decay-rates_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/decay-rates",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/decay-rates/latest/decay-rates-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 536,
+    "slug": "eating-exercise-and-energy",
+    "name_en": "Eating, Exercise, and Energy",
+    "name_zh": "饮食、运动与能量",
+    "description_en": "Interactive biology simulation: Eating, Exercise, and Energy",
+    "description_zh": "互动生物模拟：饮食、运动与能量",
+    "category": "Biology",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Biology"
+    ],
+    "tags_zh": [
+      "生物"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/eating-exercise-and-energy/latest/eating-exercise-and-energy_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/eating-exercise-and-energy/latest/eating-exercise-and-energy_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/eating-exercise-and-energy",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/eating-exercise-and-energy/latest/eating-exercise-and-energy-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "人体与健康",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-12",
+        "description": "四年级上册：食物中的营养和能量"
+      }
+    ]
+  },
+  {
+    "id": 537,
+    "slug": "expression-basics",
+    "name_en": "Expression Basics",
+    "name_zh": "表达式基础",
+    "description_en": "Interactive math simulation: Expression Basics",
+    "description_zh": "互动数学模拟：表达式基础",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/expression-basics/latest/expression-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/expression-basics/latest/expression-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/expression-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/expression-basics/latest/expression-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 538,
+    "slug": "fourier-making-waves",
+    "name_en": "Fourier: Making Waves",
+    "name_zh": "傅里叶：制造波",
+    "description_en": "Interactive physics simulation: Fourier: Making Waves",
+    "description_zh": "互动物理模拟：傅里叶：制造波",
+    "category": "Physics",
+    "grade_level": "middle",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/fourier-making-waves",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 539,
+    "slug": "gene-machine",
+    "name_en": "Gene Machine",
+    "name_zh": "基因机器",
+    "description_en": "Interactive biology simulation: Gene Machine",
+    "description_zh": "Interactive simulation: Gene Machine",
+    "category": "Biology",
+    "grade_level": "middle",
+    "tags_en": [
+      "Biology"
+    ],
+    "tags_zh": [],
+    "url_en": "https://phet.colorado.edu/sims/html/gene-machine/latest/gene-machine_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/gene-machine/latest/gene-machine_en.html",
+    "github_repo_url": "https://github.com/phetsims/gene-machine",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/gene-machine/latest/gene-machine-600.png",
+    "has_chinese_localization": false,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 540,
+    "slug": "gravity-basics",
+    "name_en": "Gravity Basics",
+    "name_zh": "引力基础",
+    "description_en": "Interactive physics simulation: Gravity Basics",
+    "description_zh": "互动物理模拟：引力基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/gravity-basics/latest/gravity-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/gravity-basics/latest/gravity-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/gravity-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/gravity-basics/latest/gravity-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 541,
+    "slug": "isotopes",
+    "name_en": "Isotopes",
+    "name_zh": "同位素",
+    "description_en": "Interactive chemistry simulation: Isotopes",
+    "description_zh": "互动化学模拟：同位素",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/isotopes/latest/isotopes_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/isotopes/latest/isotopes_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/isotopes",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/isotopes/latest/isotopes-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 542,
+    "slug": "magnets-and-electromagnets",
+    "name_en": "Magnets and Electromagnets",
+    "name_zh": "磁铁和电磁铁",
+    "description_en": "Interactive physics simulation: Magnets and Electromagnets",
+    "description_zh": "互动物理模拟：磁铁和电磁铁",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/magnets-and-electromagnets/latest/magnets-and-electromagnets_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/magnets-and-electromagnets/latest/magnets-and-electromagnets_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/magnets-and-electromagnets",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/magnets-and-electromagnets/latest/magnets-and-electromagnets-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "磁铁",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-13",
+        "description": "三年级下册：磁铁的性质和磁极"
+      },
+      {
+        "grade": "4",
+        "topic": "电磁铁",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-13",
+        "description": "四年级下册《电》单元：电磁铁的原理"
+      },
+      {
+        "grade": "P3",
+        "topic": "Magnets",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P3",
+        "description": "P3 General Studies: properties of magnets"
+      }
+    ]
+  },
+  {
+    "id": 543,
+    "slug": "meanshare-and-balance",
+    "name_en": "Mean, Median, and Mode",
+    "name_zh": "平均数、中位数和众数",
+    "description_en": "Interactive math simulation: Mean, Median, and Mode",
+    "description_zh": "互动数学模拟：平均数、中位数和众数",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/meanshare-and-balance/latest/meanshare-and-balance_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/meanshare-and-balance/latest/meanshare-and-balance_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/meanshare-and-balance",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/meanshare-and-balance/latest/meanshare-and-balance-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 544,
+    "slug": "membrane-channels",
+    "name_en": "Membrane Channels",
+    "name_zh": "膜通道",
+    "description_en": "Interactive biology simulation: Membrane Channels",
+    "description_zh": "互动生物模拟：膜通道",
+    "category": "Biology",
+    "grade_level": "middle",
+    "tags_en": [
+      "Biology"
+    ],
+    "tags_zh": [
+      "生物"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/membrane-channels/latest/membrane-channels_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/membrane-channels/latest/membrane-channels_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/membrane-channels",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/membrane-channels/latest/membrane-channels-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 545,
+    "slug": "mirrors",
+    "name_en": "Mirrors",
+    "name_zh": "镜子",
+    "description_en": "Interactive physics simulation: Mirrors",
+    "description_zh": "互动物理模拟：镜子",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/mirrors/latest/mirrors_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/mirrors/latest/mirrors_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/mirrors",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/mirrors/latest/mirrors-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "光的反射",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-11",
+        "description": "三年级上册：镜子与光的反射"
+      }
+    ]
+  },
+  {
+    "id": 546,
+    "slug": "molality",
+    "name_en": "Molality",
+    "name_zh": "质量摩尔浓度",
+    "description_en": "Interactive chemistry simulation: Molality",
+    "description_zh": "互动化学模拟：质量摩尔浓度",
+    "category": "Chemistry",
+    "grade_level": "middle",
+    "tags_en": [
+      "Chemistry"
+    ],
+    "tags_zh": [
+      "化学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/molality/latest/molality_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/molality/latest/molality_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/molality",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/molality/latest/molality-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 547,
+    "slug": "number-pairs",
+    "name_en": "Number Pairs",
+    "name_zh": "数字配对",
+    "description_en": "Interactive math simulation: Number Pairs",
+    "description_zh": "互动数学模拟：数字配对",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/number-pairs/latest/number-pairs_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/number-pairs/latest/number-pairs_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/number-pairs",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/number-pairs/latest/number-pairs-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 548,
+    "slug": "percent",
+    "name_en": "Percent",
+    "name_zh": "百分数",
+    "description_en": "Interactive math simulation: Percent",
+    "description_zh": "互动数学模拟：百分数",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/percent/latest/percent_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/percent/latest/percent_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/percent",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/percent/latest/percent-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "百分数",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-4-PCT",
+        "description": "四年级：百分数的初步认识"
+      }
+    ]
+  },
+  {
+    "id": 549,
+    "slug": "plate-tectonics",
+    "name_en": "Plate Tectonics",
+    "name_zh": "板块构造",
+    "description_en": "Interactive earth science simulation: Plate Tectonics",
+    "description_zh": "互动地球科学模拟：板块构造",
+    "category": "Earth Science",
+    "grade_level": "middle",
+    "tags_en": [
+      "Earth Science"
+    ],
+    "tags_zh": [
+      "地球科学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/plate-tectonics/latest/plate-tectonics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/plate-tectonics/latest/plate-tectonics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/plate-tectonics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/plate-tectonics/latest/plate-tectonics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "地球内部",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-14",
+        "description": "四年级下册：地球内部构造，板块运动"
+      }
+    ]
+  },
+  {
+    "id": 550,
+    "slug": "projectile-sampling-distributions",
+    "name_en": "Projectile Sampling Distributions",
+    "name_zh": "抛射采样分布",
+    "description_en": "Interactive math simulation: Projectile Sampling Distributions",
+    "description_zh": "Interactive simulation: Projectile Sampling Distributions",
+    "category": "Math",
+    "grade_level": "middle",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [],
+    "url_en": "https://phet.colorado.edu/sims/html/projectile-sampling-distributions/latest/projectile-sampling-distributions_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/projectile-sampling-distributions/latest/projectile-sampling-distributions_en.html",
+    "github_repo_url": "https://github.com/phetsims/projectile-sampling-distributions",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/projectile-sampling-distributions/latest/projectile-sampling-distributions-600.png",
+    "has_chinese_localization": false,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 551,
+    "slug": "radioactive-dating-game",
+    "name_en": "Radioactive Dating Game",
+    "name_zh": "放射性定年游戏",
+    "description_en": "Interactive earth science simulation: Radioactive Dating Game",
+    "description_zh": "互动地球科学模拟：放射性定年游戏",
+    "category": "Earth Science",
+    "grade_level": "middle",
+    "tags_en": [
+      "Earth Science"
+    ],
+    "tags_zh": [
+      "地球科学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/radioactive-dating-game/latest/radioactive-dating-game_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/radioactive-dating-game/latest/radioactive-dating-game_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/radioactive-dating-game",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/radioactive-dating-game/latest/radioactive-dating-game-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 552,
+    "slug": "seasons",
+    "name_en": "Seasons",
+    "name_zh": "季节",
+    "description_en": "Interactive earth science simulation: Seasons",
+    "description_zh": "互动地球科学模拟：季节",
+    "category": "Earth Science",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Earth Science"
+    ],
+    "tags_zh": [
+      "地球科学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/seasons/latest/seasons_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/seasons/latest/seasons_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/seasons",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/seasons/latest/seasons-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "四季变化",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-14",
+        "description": "三年级上册：季节更替与地球公转"
+      },
+      {
+        "grade": "P3",
+        "topic": "Seasons and Weather",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P3",
+        "description": "P3: Understanding seasons and weather patterns"
+      }
+    ]
+  },
+  {
+    "id": 553,
+    "slug": "sound-waves",
+    "name_en": "Sound Waves",
+    "name_zh": "声波",
+    "description_en": "Interactive physics simulation: Sound Waves",
+    "description_zh": "互动物理模拟：声波",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/sound-waves/latest/sound-waves_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/sound-waves/latest/sound-waves_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/sound-waves",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/sound-waves/latest/sound-waves-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "声音",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-4-7",
+        "description": "四年级上册《声音》单元：声波的传播"
+      },
+      {
+        "grade": "P4",
+        "topic": "Sound",
+        "region": "HK",
+        "subject": "常识",
+        "standard": "HK-GS-P4",
+        "description": "P4: How sound is produced and travels"
+      }
+    ]
+  },
+  {
+    "id": 554,
+    "slug": "sun-and-earth",
+    "name_en": "Sun and Earth",
+    "name_zh": "太阳与地球",
+    "description_en": "Interactive earth science simulation: Sun and Earth",
+    "description_zh": "互动地球科学模拟：太阳与地球",
+    "category": "Earth Science",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Earth Science"
+    ],
+    "tags_zh": [
+      "地球科学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/sun-and-earth/latest/sun-and-earth_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/sun-and-earth/latest/sun-and-earth_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/sun-and-earth",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/sun-and-earth/latest/sun-and-earth-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "昼夜交替",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-15",
+        "description": "三年级下册：地球自转与昼夜交替"
+      }
+    ]
+  },
+  {
+    "id": 555,
+    "slug": "temperature-change",
+    "name_en": "Temperature Change",
+    "name_zh": "温度变化",
+    "description_en": "Interactive physics simulation: Temperature Change",
+    "description_zh": "互动物理模拟：温度变化",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/temperature-change/latest/temperature-change_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/temperature-change/latest/temperature-change_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/temperature-change",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/temperature-change/latest/temperature-change-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "3",
+        "topic": "温度",
+        "region": "CN",
+        "subject": "科学",
+        "standard": "2022-CN-SCI-3-16",
+        "description": "三年级上册：温度的测量"
+      }
+    ]
+  },
+  {
+    "id": 556,
+    "slug": "thinking-in-3d",
+    "name_en": "Thinking in 3D",
+    "name_zh": "三维思维",
+    "description_en": "Interactive math simulation: Thinking in 3D",
+    "description_zh": "互动数学模拟：三维思维",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [
+      "数学"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/thinking-in-3d/latest/thinking-in-3d_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/thinking-in-3d/latest/thinking-in-3d_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/thinking-in-3d",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/thinking-in-3d/latest/thinking-in-3d-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": [
+      {
+        "grade": "4",
+        "topic": "图形与几何",
+        "region": "CN",
+        "subject": "数学",
+        "standard": "2022-CN-MATH-4-GEO",
+        "description": "四年级：空间与图形"
+      }
+    ]
+  },
+  {
+    "id": 557,
+    "slug": "wave-on-a-string-basics",
+    "name_en": "Wave on a String: Basics",
+    "name_zh": "绳波：基础",
+    "description_en": "Interactive physics simulation: Wave on a String: Basics",
+    "description_zh": "互动物理模拟：绳波：基础",
+    "category": "Physics",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Physics"
+    ],
+    "tags_zh": [
+      "物理"
+    ],
+    "url_en": "https://phet.colorado.edu/sims/html/wave-on-a-string-basics/latest/wave-on-a-string-basics_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/wave-on-a-string-basics/latest/wave-on-a-string-basics_zh_CN.html",
+    "github_repo_url": "https://github.com/phetsims/wave-on-a-string-basics",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/wave-on-a-string-basics/latest/wave-on-a-string-basics-600.png",
+    "has_chinese_localization": true,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  },
+  {
+    "id": 558,
+    "slug": "whack-a-mole",
+    "name_en": "Whack-a-Mole",
+    "name_zh": "打地鼠",
+    "description_en": "Interactive math simulation: Whack-a-Mole",
+    "description_zh": "Interactive simulation: Whack-a-Mole",
+    "category": "Math",
+    "grade_level": "elementary",
+    "tags_en": [
+      "Math"
+    ],
+    "tags_zh": [],
+    "url_en": "https://phet.colorado.edu/sims/html/whack-a-mole/latest/whack-a-mole_en.html",
+    "url_zh": "https://phet.colorado.edu/sims/html/whack-a-mole/latest/whack-a-mole_en.html",
+    "github_repo_url": "https://github.com/phetsims/whack-a-mole",
+    "thumbnail_url": "https://phet.colorado.edu/sims/html/whack-a-mole/latest/whack-a-mole-600.png",
+    "has_chinese_localization": false,
+    "is_featured": false,
+    "local_dev": false,
+    "custom_route": null,
+    "guide": [],
+    "curriculum_mappings": []
+  }
+]

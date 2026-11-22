@@ -1,5 +1,12 @@
 # PhET 中文学习平台 | PhET Chinese Learning Platform
 
+## Hosting migration / 托管迁移
+
+See **[Railway migration and data-preservation guide](migration/RAILWAY.md)**.
+It contains the database export, restore commands, production URL status, Railway
+settings, and the mandatory checklist before deleting the Replit project.
+**Production data has not yet been verified/exported; do not delete Replit yet.**
+
 **让每个孩子都能通过互动模拟探索科学的奥秘**
 
 **Helping every child explore the wonders of science through interactive simulations**

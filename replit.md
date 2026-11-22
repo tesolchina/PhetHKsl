@@ -1,5 +1,14 @@
 # Workspace
 
+## Hosting handover
+
+The user intends to delete this Replit project and redeploy on Railway. Preserve
+application data and redeployment instructions in GitHub; never include secrets.
+See `migration/RAILWAY.md` for the handover and deletion gate.
+**Why:** deleting Replit before independently verifying the replacement can lose data.
+Production database access was unavailable during the handover; the development
+export must not be assumed to cover production. Check the guide's deletion checklist.
+
 ## Overview
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies. The project is a showcase website for PhET Interactive Simulations — free, research-based science and math simulations.

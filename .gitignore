@@ -47,3 +47,9 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# Credentials must never be included in migration exports.
+.env
+.env.*
+!.env.example
+/generated-artifacts/

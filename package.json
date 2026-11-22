@@ -2,7 +2,12 @@
   "name": "workspace",
   "version": "0.0.0",
   "license": "MIT",
+  "packageManager": "pnpm@10.26.1",
+  "engines": { "node": "24.x" },
   "scripts": {
+    "build:railway": "pnpm --filter @workspace/scripts exec node src/build-phet.mjs && PORT=3000 BASE_PATH=/ NODE_ENV=production pnpm --filter @workspace/phet-sims run build && pnpm --filter @workspace/api-server run build",
+    "start:railway": "NODE_ENV=production SERVE_WEB=true pnpm --filter @workspace/api-server run start",
+    "restore:railway": "pnpm --filter @workspace/scripts exec node src/restore-railway.mjs",
     "preinstall": "sh -c 'rm -f package-lock.json yarn.lock; case \"$npm_config_user_agent\" in pnpm/*) ;; *) echo \"Use pnpm instead\" >&2; exit 1 ;; esac'",
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",

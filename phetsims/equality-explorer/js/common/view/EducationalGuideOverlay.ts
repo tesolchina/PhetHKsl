@@ -6,8 +6,8 @@ import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import Node from '../../../../scenery/js/nodes/Node.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
-import VBox from '../../../../scenery/js/nodes/VBox.js';
-import HBox from '../../../../scenery/js/nodes/HBox.js';
+import VBox from '../../../../scenery/js/layout/nodes/VBox.js';
+import HBox from '../../../../scenery/js/layout/nodes/HBox.js';
 import Panel from '../../../../sun/js/Panel.js';
 import RectangularPushButton from '../../../../sun/js/buttons/RectangularPushButton.js';
 
