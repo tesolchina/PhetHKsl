@@ -158,6 +158,17 @@ Credentials are deliberately not included in this repository.
 
 ## Verification and deletion checklist
 
+Completed during handover:
+- Pushed the migration package to GitHub and cloned it back into a separate directory.
+- Installed dependencies from the frozen lockfile in that fresh clone.
+- Built the frontend, backend, and 2,513 PhET modules from that clone successfully.
+- Rechecked the cloned export's SHA256 and restored/compared all 150 records in
+  a temporary table, then rolled back.
+- Confirmed preview HTTP 200 responses for health, simulations, content listing,
+  friction module content, neuron HTML, and both local simulation entry modules.
+- Confirmed the homepage renders in the preview. Actual Railway deployment and
+  interactive simulation behavior on Railway remain to be verified.
+
 - [ ] Resolve production-data uncertainty and preserve any additional records.
 - [ ] Fresh clone contains the migration export and all source/asset files.
 - [ ] `pnpm build:railway` completes.
