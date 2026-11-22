@@ -1,11 +1,11 @@
 # Replit → Railway handover
 
-## STOP: not yet safe to delete Replit
+## Database preservation complete; verify Railway before deletion
 
-This repository preserves the accessible **development** database, source code,
-educational content, images, and modified PhET sources. It does **not** yet contain
-a verified production database export. Do not treat seed data or this development
-export as proof that production has no additional records.
+This repository preserves development and production database exports, source code,
+educational content, images, and modified PhET sources. After the database was
+unpaused, production was queried successfully: its simulations table has **0 rows**.
+Use the **150-row development export** to populate Railway.
 
 Audit date: 2026-11-22 (UTC).
 
@@ -14,8 +14,9 @@ Audit date: 2026-11-22 (UTC).
 - Deployment metadata: autoscale, public, current build not successful.
 - HTTP check returned 404, “This app isn't live yet”. This is not a working
   frontend URL, and it will not be a replacement for a Railway domain.
-- Production database SELECT failed: “Production database read replicas are
-  unavailable for this project.” No claim about production row counts is possible.
+- Production database SELECT now succeeds after unpausing. The earlier access
+  blocker is resolved. Production contains zero simulation rows and one internal
+  Replit migration-history row.
 - No Railway deployment was created by this handover.
 
 ## What is preserved
@@ -23,6 +24,8 @@ Audit date: 2026-11-22 (UTC).
 | Item | Repository location |
 | --- | --- |
 | All 150 accessible development records, including IDs and every column | `migration/data/development-simulations.json` |
+| Verified empty production simulations table | `migration/data/production-simulations.json` |
+| One internal Replit migration-history record, archival only | `migration/data/production-system-migrations.json` |
 | PostgreSQL schema (checked against live columns) | `migration/schema.sql` |
 | Empty-database restore and full-record verification | `scripts/src/restore-railway.mjs` |
 | Bilingual module content | `artifacts/phet-sims/content/` |
@@ -41,6 +44,16 @@ JSON guides and curriculum mappings. The schema and JSON were restored into a
 temporary test table, compared field-for-field, then rolled back without changing
 application records.
 
+Production inventory: `public.simulations` and
+`_system.replit_database_migrations_v1` are the only non-PostgreSQL-system base
+tables returned. The simulations schema matches `migration/schema.sql`.
+The `_system` record is platform bookkeeping, not application content; retain its
+JSON as an archive but do not recreate Replit's internal schema on Railway.
+Production export SHA256:
+`37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570`.
+System-history export SHA256:
+`f8bb45c5f975d53af0273e03ccedaef56def33bae20878c1b4dd0c25f3ed68ae`.
+
 No application object-storage integration or server-side file uploads were found.
 Browser language preference (`phet-lang`) is local to each browser and is not a
 database record. PhET originals, remote thumbnails, web fonts, and other
@@ -51,26 +64,15 @@ Dependencies and generated build output are intentionally excluded from Git.
 Railway regenerates the frontend, backend, and `phetsims/chipper/dist/js/`.
 The visual mockup sandbox is an authoring tool, not required by the live website.
 
-## Required production export before deletion
+## Production export completed
 
-1. In Replit open **Database → Production → My Data**. Inspect every schema/table.
-   If production was never provisioned, establish that in the UI; a failed Agent
-   connection alone is not proof.
-2. Export every application table as JSON, retaining every field. For
-   `simulations`, save the JSON array as
-   `migration/data/production-simulations.json`. Compare its counts and contents
-   against development; do not overwrite the development snapshot.
-3. If additional tables exist, export their schema and rows too and extend the
-   restore procedure. The provided restore tool supports only the observed
-   `simulations` schema. Do not discard additional tables.
-4. Inspect exports for personal information, sessions, tokens, or credentials
-   before committing. The current development table is educational catalog data;
-   unknown production tables may not be appropriate for a public repository.
-   Preserve sensitive data in a private repository or encrypted private storage.
-5. Commit and push the export, record its counts/hash, and verify that it is
-   downloadable from GitHub. Test restoring the production export on Railway.
-6. If the UI is inaccessible too, keep Replit until access is recovered. A broken
-   frontend does not imply an empty database.
+The unpaused production database was exported using read-only SELECTs. A separate
+COUNT query confirmed zero simulation rows. There are no additional production
+application records to merge into the development catalog. The earlier failed
+connection was not used to infer this result.
+
+If either database receives writes after this export, export it again before
+deletion. Do not restore the empty production JSON over the development dataset.
 
 Official export help:
 https://docs.replit.com/features/data-and-storage/work-with-your-data
@@ -136,14 +138,14 @@ Never put connection strings in GitHub, chat, command arguments, or documentatio
 read -rsp 'Railway database URL: ' RAILWAY_DATABASE_URL; echo
 export RAILWAY_DATABASE_URL
 export CONFIRM_RAILWAY_RESTORE=new-empty-database
-# Prefer production after exporting/verifying it:
-export MIGRATION_DATA_FILE=migration/data/production-simulations.json
+# Production is empty; preserve the populated development catalog:
+export MIGRATION_DATA_FILE=migration/data/development-simulations.json
 pnpm restore:railway
 unset RAILWAY_DATABASE_URL CONFIRM_RAILWAY_RESTORE MIGRATION_DATA_FILE
 ```
 
-If production is confirmed absent, use
-`migration/data/development-simulations.json` instead. The tool refuses to
+The production JSON is an archival empty array, not the restore input.
+The restore tool intentionally rejects empty arrays. It refuses to
 overwrite an existing table, restores in one transaction, verifies every field,
 and advances the ID sequence. Failure rolls back. It never defaults a real
 restore to Replit's `DATABASE_URL`.
@@ -169,7 +171,7 @@ Completed during handover:
 - Confirmed the homepage renders in the preview. Actual Railway deployment and
   interactive simulation behavior on Railway remain to be verified.
 
-- [ ] Resolve production-data uncertainty and preserve any additional records.
+- [x] Resolve production-data uncertainty and preserve any additional records.
 - [ ] Fresh clone contains the migration export and all source/asset files.
 - [ ] `pnpm build:railway` completes.
 - [ ] Restore finishes with the expected count and full-record comparison.
@@ -184,4 +186,4 @@ Completed during handover:
       be relied upon.
 
 Build and restore checks in Replit do not substitute for testing Railway itself.
-The production-data blocker remains open until explicitly resolved.
+The production-data blocker is resolved. Railway deployment verification remains.

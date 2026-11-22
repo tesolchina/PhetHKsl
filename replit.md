@@ -6,8 +6,9 @@ The user intends to delete this Replit project and redeploy on Railway. Preserve
 application data and redeployment instructions in GitHub; never include secrets.
 See `migration/RAILWAY.md` for the handover and deletion gate.
 **Why:** deleting Replit before independently verifying the replacement can lose data.
-Production database access was unavailable during the handover; the development
-export must not be assumed to cover production. Check the guide's deletion checklist.
+Production access was restored after unpausing: zero simulation records and one
+internal migration-history record were exported. Use the populated development
+export for Railway. Check the guide's deletion checklist.
 
 ## Overview
 

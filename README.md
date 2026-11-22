@@ -5,7 +5,8 @@
 See **[Railway migration and data-preservation guide](migration/RAILWAY.md)**.
 It contains the database export, restore commands, production URL status, Railway
 settings, and the mandatory checklist before deleting the Replit project.
-**Production data has not yet been verified/exported; do not delete Replit yet.**
+**Both databases have been exported: development has 150 simulations; production
+has zero. Restore development data and verify Railway before deleting Replit.**
 
 **让每个孩子都能通过互动模拟探索科学的奥秘**
 
